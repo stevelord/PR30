@@ -1,0 +1,29 @@
+opengt
+  set com 115200n81
+  set senddelay 0.05
+  waitquiet 1 0.2
+:start
+  flash 0.1
+:getapn
+  let $x=$env("COMGTAPN")
+  let a=len($x)
+  if a=0 goto apnerror
+  if a>32 goto apnerror
+:enterapn
+  send "AT+CGDCONT=1,\"IP\",\""
+  send $x
+  send "\"^m"
+  waitfor 4.0 "OK","ERR"
+  if % = -1 goto timeerror
+  if % = 0 goto OK
+  if % = 1 goto apnerror
+:apnerror
+  print "entering APN"
+  print "EU return"
+  exit 1
+:timeerror
+  print "entering APN"
+  print "The device timeout."
+  exit 1
+:OK
+  exit 0

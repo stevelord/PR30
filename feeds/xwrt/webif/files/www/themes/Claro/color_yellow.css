@@ -1,0 +1,82 @@
+/* color theme: yellow */
+
+#header {
+    color: #909090;
+    background-color: #252525;
+    background-image: url('/themes/bandluxe/logo_grey.png');
+}
+
+
+#header #header-signal {
+	color: #909090;
+}
+
+#submenu{
+   
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #252525;
+}
+#mainmenu{
+    background-color: #FFCA29;
+    border-top: 2px solid #FFFFFF;
+}
+
+a {
+	color: Black;
+}
+
+#save .page-save, #footer { background-color: #909090; }
+
+#save .apply { 
+    color: #909090;
+    background-color: #252525; 
+}
+
+#mainmenu a:hover,
+#mainmenu .selected a{ 
+    background-color: #FFFFFF;
+}
+
+#submenu a:hover,
+#submenu .selected a{
+    color: #FFFFFF;
+    background-color: #252525;
+}
+
+#container { background-color: #FFCA29; }
+#colorswitcher{ background-color: #FFCA29; }
+
+
+#content {
+    color: #252525;
+    background-color: #FFCA29; 
+}
+
+#content h2 { color: #252525; }
+
+#save a:hover { 
+    color: #FFFFFF;
+    background-color: #909090;
+}
+
+#content h3 { 
+    background-color: #FFFFFF; 
+    color: #252525;
+}
+
+
+.progressbar-unfilled {
+	color: Black;
+	background-color: White;
+}
+.progressbar-filled {
+	background-color: #CCCCCC;
+	color: Black;
+}
+
+#content h3.warning {
+	color: Black;
+	border-color: Black;
+}
+.odd {	background-color: #eee }
+.warning { color: Black; }

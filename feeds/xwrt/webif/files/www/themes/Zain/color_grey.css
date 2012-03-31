@@ -1,0 +1,76 @@
+ /* color theme: grey */
+
+#header {
+    color: #B8BFBA;
+    background-color: #000000;
+    background-image: url('/themes/bandluxe/logo_white.png');
+}
+
+#header #header-signal {
+    color: #B8BFBA;
+}
+
+#submenu{
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #3D403E;
+}
+#mainmenu{
+    background-color: #7B7F7C;
+    border-top: 2px solid #FFFFFF;
+}
+
+a {
+	color: Black;
+}
+
+#save .page-save { background-color: #B8BFBA; }
+
+#footer,
+#save .apply { 
+    color: #B8BFBA;
+    background-color: #000000; 
+}
+
+#mainmenu a:hover,
+#mainmenu .selected a{ 
+    background-color: #B8BFBA;
+    color: #000000;
+}
+
+#submenu a:hover,
+#submenu .selected a{
+    color: #FFFFFF;
+    background-color: #3D403E;
+}
+
+#container { background-color: #7B7F7C; }
+#colorswitcher{ background-color: #7B7F7C; }
+
+
+#content {
+    color: #252525;
+    background-color: #7B7F7C; 
+}
+
+#content h2 { color: #FFFFFF; }
+
+#save a:hover { 
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+#content h3 { 
+    background-color: #B8BFBA; 
+    color: #3D403E;
+}
+
+
+.progressbar-filled {
+	color: White;
+	background-color: #2b1b9f;
+}
+
+.progressbar-unfilled {
+	color: Black;
+	background-color: Black;
+}

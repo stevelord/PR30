@@ -1,0 +1,25 @@
+include /lib/network
+config_load network
+scan_interfaces
+config_get proto "$INTERFACE" proto
+[ "$proto" = "dhcp" ] && {
+	config_get iface "$INTERFACE" ifname
+	case "$ACTION" in
+		ifup)
+			#iptables -I LAN_ACCEPT 1 -i "$iface" -j RETURN
+			iptables -A FORWARD -o "$iface" -j ACCEPT
+			iptables -t nat -A POSTROUTING -o "$iface" -j MASQUERADE 
+			iptables -A INPUT -p tcp --dport 22 -i "$iface" -j DROP
+			iptables -A INPUT -p tcp --dport 80 -i "$iface" -j DROP
+			set_3g_led 1 1 0
+			/etc/br_firewall.sh start
+		;;
+		ifdown)
+			/etc/br_firewall.sh stop
+			iptables -F FORWARD
+			iptables -F INPUT
+			iptables -t nat -F
+			set_3g_led 0 0 0
+		;;
+	esac
+}

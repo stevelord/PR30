@@ -1,0 +1,20 @@
+Source-Makefile: feeds/packages/net/batman-advanced/Makefile
+Package: kmod-batman-adv-kernelland
+Submenu: Network Support
+Version: <LINUX_VERSION>+0.2.1-1
+Depends: @LINUX_2_6
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: B.A.T.M.A.N. layer 2
+Maintainer: Marek Lindner <lindner_marek@yahoo.de>
+Source: 
+Type: ipkg
+Description: B.A.T.M.A.N. layer 2
+http://www.open-mesh.org/
+@@
+Config:
+	source "feeds/packages/net/batman-advanced/Config.in"
+@@
+
+

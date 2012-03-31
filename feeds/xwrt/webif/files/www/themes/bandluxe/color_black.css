@@ -1,0 +1,58 @@
+ /* color theme: black */
+#header {
+    color: #BEDBED;
+    background-color: #000000;
+    background-image: url('/themes/bandluxe/logo_lightgrey.png');
+} 
+
+#header #header-signal {
+	color: #BEDBED;
+}
+
+#mainmenu { 
+    background-color: #69B5E1;
+    border-top: solid 1px White; 
+}
+
+#submenu { 
+    background-color: #FFFFFF; 
+    border-bottom: solid 1px #69B5E1;
+}
+
+#save .page-save { background-color: #BEDBED; }
+
+#save .apply, #footer { background-color: #69B5E1; }
+
+#mainmenu a:hover,
+#mainmenu .selected a,
+#save a:hover { background-color: #BEDBED; }
+
+#submenu a:hover,
+#submenu .selected a{ background-color: #69B5E1; }
+
+#container { background-color: #000000; }
+#colorswitcher{ background-color: #000000; }
+#colorswitcher div {
+	border: 1px solid White;
+}
+
+#content { color: #FFFFFF;
+	   background-color: #000000; }
+#content h2 { color: #FFFFFF; }
+#content h3 { 
+    background-color: #BEDBED;
+    color: #000000; 
+	    }
+#content td { 
+    color: #69B5E1; 
+	    }
+
+.progressbar-filled {
+	color: White;
+	background-color: #2b1b9f;
+}
+
+.progressbar-unfilled {
+	color: Black;
+	background-color: Black;
+}

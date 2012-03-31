@@ -1,0 +1,23 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006 OpenWrt.org
+START=90 
+
+DEFAULT=/etc/default/freeswitch
+OPTIONS=""
+
+boot() {
+	# Do nothing on boot
+	exit 0
+}
+
+start() {
+	[ -f $DEFAULT ] && . $DEFAULT
+	mkdir -p $FS_DIR_DB
+	mkdir -p $FS_DIR_LOG
+	$FS_DIR/usr/bin/freeswitch $OPTIONS -c &
+}
+
+stop() {
+	[ -f $DEFAULT ] && . $DEFAULT
+	$FS_DIR/usr/bin/freeswitch $OPTIONS -stop
+}

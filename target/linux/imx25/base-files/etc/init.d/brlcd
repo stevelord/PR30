@@ -1,0 +1,21 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006 OpenWrt.org 
+
+START=20
+USERDATA_PATH=`br_mount_point /dev/mtdblock5`
+BR_FACTORY_ENABLE=`br_factory`
+
+start() {	
+
+	/usr/bin/bandluxed &
+	/usr/bin/BatteryMonitor
+
+        if [ ${BR_FACTORY_ENABLE} -eq 1 ]; then
+		echo "[factory mode] Don;t execute brlcd"
+	else
+#		[ -d ${USERDATA_PATH}/brlcd ] && ${USERDATA_PATH}/brlcd/brlcd
+		/usr/bin/brlcd
+	fi
+
+}
+

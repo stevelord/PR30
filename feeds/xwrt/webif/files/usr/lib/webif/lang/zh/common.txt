@@ -1,0 +1,382 @@
+?# ================================================================================================
+# NOTICE!! Translation principle: ONLY need to modify the strings on the RIGHT HAND SIDE of => .
+# IF you see something like $refresh_timeout (string starts with a $) or <br \>, 
+# please DO NOT modify this kind of variable of our program.
+# ================================================================================================
+# leave at least one comment here to skip the BOM character
+# language name
+Advanced => 進階
+Wizard => 精靈
+
+# Advanced-confman.sh
+Backup and Restore => 備份與還原
+confman_noauto_click => 如果沒有自動開始下載，請在30秒之內按此處
+Restore Configuration => 還原組態設定
+confman_restoring_conf => 正在還原組態設定。
+confman_restoring_file => 還原中
+Rebooting now => 正在重新開機
+confman_bad_dir => 錯誤目錄
+confman_good_conf => 已勾選組態設定檔案
+Restore => 還原
+Backup Configuration => 備份組態設定
+Name this configuration => 命名此組態設定
+Backup => 備份
+Saved config.tgz file => 儲存config.tgz檔
+Reset Function => 重新設定功能
+Reset To Default => 回復原廠設定
+Backup &amp; Restore => 備份與還原
+Reset back to factory default succeeded => 已成功重新設定為出廠設定值
+The system is restarting in 5 seconds => 系統將在5秒之內重新啟動
+Reset back to factory default failed => 重新設定為出廠設定值失敗
+
+# Advanced-dhcp.sh
+DHCP Configuration => DHCP組態設定
+DHCP Start IP => DHCP起始IP
+DHCP Limit => DHCP限制
+DHCP Lease Time => DHCP租用時間
+DHCP => DHCP
+On => 開
+Off => 關
+Start => 起始
+Limit => 限制
+Lease Time (in minutes) => 租用時間（以分鐘為單位）
+network_hosts_Active_Leases => 使用中的DHCP租約
+network_hosts_MAC => MAC位址
+network_hosts_IP => IP位址
+network_hosts_Name => 名稱
+network_hosts_Expires => 逾時於
+expired => 已逾時
+network_hosts_No_leases => 沒有已知的DHCP租約。
+DHCP Server => DHCP伺服器
+IP range cannot be over 255 => IP範圍不可超過255
+
+# Advanced-HSPAconfig.sh
+HSPA Config => HSPA設定
+Authentication Type => 驗證類型
+Roaming Connection => 漫遊連線
+Enabled => 啟用
+Disabled => 停用
+Redial Policy => 連線方式
+Connect on Demand => 隨需連線
+Keep Alive => 保持連線
+Maximum Idle Time (in minutes) => 最大閒置時間（以分鐘為單位）
+Auto APN => 自動APN
+Update APN => 更新APN
+Profile => 設定檔
+Username => 使用者名稱
+Password => 密碼
+Dial Number => 撥接號碼
+Network Selection => 網路選擇
+Preference => 喜好設定
+Automatic => 自動
+UMTS only => 僅UMTS
+GPRS only => 僅GPRS
+Select Network => 選擇網路
+Auto => 自動
+Manual => 手動
+Availabe Networks => 可用的網路
+Scan Network => 掃描網路
+HSPA Configuration => HSPA組態設定
+Operator => 通訊業者
+Type => 類型
+Update APN status => 更新APN狀態
+Success => 成功
+Fail => 失敗
+Helptext Idle Time => 路由器在中斷網際網路連線之前，應等待的無網際網路流量的分鐘數（僅適用於隨需連線）
+Configuration => 組態設定
+Information Not Available => 無可用的資訊
+
+# Advanced-info.sh
+NO SERVICE => 無服務
+Info => 資訊
+System Information => 系統資訊
+System Status => 系統狀態
+Battery Status => 電池狀態
+Battery Capacity => 電池容量
+Local Network => 區域網路
+Router IP Address (USB) => 路由器IP位址（USB）
+Router IP Address (WLAN) => 路由器IP位址（WLAN）
+Netmask (WLAN) => 網路遮罩（WLAN）
+DHCP Start IP Address => DHCP起始IP位址
+DHCP End IP Address => DHCP結束IP位址
+Register Network => 註冊網路
+SIM Status => SIM狀態
+Network Name => 網路名稱
+Network Technology => 網路技術
+Roaming => 漫遊
+Internet Connection => 網際網路連線
+Connection Type => 連線類型
+Internet IP Address => 網際網路IP位址
+Subnet Mask => 子網路遮罩
+Default Gateway => 預設閘道
+Personal => Personal
+WLAN Network => WLAN網路
+Standard Channel => 標準頻道
+Security => 安全性
+SSID Broadcast => SSID廣播
+Firmware Information => 韌體資訊
+Router Firmware Version => 路由器韌體版本
+Modem Firmware Version => 數據機韌體版本
+APN Version => APN版本
+APN => APN
+PIN Disabled => PIN已停用
+PIN Enabled => PIN已啟用
+PIN Enabled requires verification => PIN已啟用需要驗證
+PIN Blocked => PIN已封阻
+PIN Invalid => PIN無效
+Read SIM Failed => 讀取SIM失敗
+Home => 本網
+Charging Mode => 充電模式
+Battery Mode => 電池模式
+
+# Advanced-network.sh
+Network => 網路
+WLAN IP Address => WLAN IP位址
+WLAN Netmask => WLAN網路遮罩
+WLAN Network Configuration => WLAN網路組態設定
+Router IP Address Via WLAN => 路由器IP位址透過WLAN
+Netmask => 網路遮罩
+USB Network Configuration => USB網路組態設定
+Router IP Address Via USB => 路由器IP位址透過USB
+Basic Firewall => 基本防火牆
+Firewall Settings => 防火牆設定
+Network Configuration => 網路組態設定
+USB IP Address => USB IP位址
+
+# Advanced-password.sh
+Passwords do not match => 密碼不符
+Password Change => 登入密碼變更
+New Password => 新密碼
+Confirm Password => 確認密碼
+
+# Advanced-pinmanage.sh
+PIN Management => PIN管理
+PIN Code => PIN碼
+PIN Verify => PIN驗證
+Old PIN Code => 舊PIN碼
+New PIN Code => 新PIN碼
+New PIN Confirm => 新PIN確認
+PIN Verification => PIN驗證
+Verify => 驗證
+PIN Protection => PIN保護
+Apply => 套用
+PIN Modification => PIN修改
+Change => 變更
+PIN code for the SIM card, should be 4 to 8 digits => SIM卡的PIN碼，應為4至8位數
+Please enter the PIN code => 請輸入PIN碼
+PIN Verification Succeeded => PIN驗證成功
+PIN Verification Failed => PIN驗證失敗
+more tries before the SIM locked => 次嘗試後SIM會鎖住
+PIN Enabled Succeeded => PIN啟用成功
+PIN Enabled Failed => PIN啟用失敗
+PIN Disabled Succeeded => PIN停用成功
+PIN Disabled Failed => PIN停用失敗
+The new PIN codes are not matched => 新PIN碼不相符
+PIN Change Succeeded => PIN變更成功
+PIN Change Failed => PIN變更失敗
+
+# Advanced-sdcard.sh
+SD Card Settings => SD卡設定
+Network Sharing => 網路分享
+SD Memory Card => SD記憶卡
+SD Card => SD卡
+
+# Advanced-upgrade.sh
+Firmware Upgrade => 韌體升級
+Do not save current configuration => 不保留目前的組態設定
+Firmware Image => 韌體檔案
+Upgrade => 升級
+Upgrading firmware => 升級韌體
+Don't backup user configuration => 不備份使用者組態設定
+Fail to backup user configuration => 備份使用者組態設定失敗
+backup user configuration => 備份使用者組態設定
+Browse => 瀏覽
+
+# Advanced-wlan.sh
+Helptext WEP => Helptext WEP
+WLAN => WLAN
+Pre-Shared Key => 預先分享的金鑰
+Selected WEP Key => 選取的WEP金鑰
+WEP Key => WEP金鑰
+Basic Configuration => 基本組態設定
+Operation Mode => 運作模式
+Auto-off => 自動關閉
+Manual-off => 手動關閉
+Maximum Idle Time => 最大閒置時間
+Radio => 無線電
+On => 開
+Off => 關
+Minutes => 分鐘
+Channel => 頻道
+WLAN Security Setting => WLAN安全設定
+Encryption Type => 加密類型
+Passphrase => 密碼字串
+Generate 40/64-bit Keys => 產生40/64位元金鑰
+Generate 104/128-bit Key => 產生104/128位元金鑰
+WPA Encryption => WPA加密
+Pre-shared key => 預先分享的金鑰
+WLAN Configuration => WLAN組態設定
+WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then  enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button. => WEP是基本的加密方法，但安全性不如其他兩種方法WPA及WPA2。如果您要使用密碼字串（Passphrase），請在「密碼字串」欄位中輸入，並按一下您選擇的加密等級40/64位元或104/128位元的「產生」按鈕。如果您要手動輸入WEP金鑰，請在WEP金鑰1-4欄位中輸入。若要指示使用哪一個WEP金鑰，請選擇該項目的單選按鈕。
+WPA offers two encryption methods, TKIP and AES, with dynamic encryption keys. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits. => WPA提供TKIP與AES兩種加密方法 ，具備動態加密金鑰。輸入密碼字串（8至63個ASCII字元）或64個十六進位數字。
+WPA2 is a stronger encryption method than WPA. This method offers two encryption methods, AES and WPA-TKIP or WPA2-AES, with dynamic encryption keys. Select the type of encryption method you want  to use, AES or TKIP or TKIP+AES. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits. => WPA2是比WPA更安全的加密方法。此方法提供兩種加密方式，包括AES及WPA-TKIP或 WPA2-AES，並具有動態加密金鑰。選擇您要使用的加密方法類型，AES、TKIP或TKIP+AES。輸入密碼字串（8至63個ASCII字元）或64個十六進位數字。
+
+# Apply.sh
+Processing => 處理中
+Critical Error => 嚴重錯誤
+Could not replace => 無法取代
+Media full => 媒體已滿
+Starting => 開始
+Stopping => 停止
+config file => 組態設定檔
+Applying => 套用
+conntrack settings => 合約設定
+Setting => 設定
+Done => 完成
+Initializing theme ... => 初始化主題...
+Error => 錯誤
+installing theme package => 安裝主題套件
+Installing language pack => 安裝語言包
+Error installing language pack => 安裝語言包錯誤
+Committing => 提交
+Waiting for the commit to finish => 等待提交以完成程序
+Reloading => 重新載入
+network => 網路
+ro=1 and user roaming disable => ro=1且使用者漫遊停用
+go => 前往
+change 3g setting => 變更3g設定值
+wireless => 無線
+OpenVPN => OpenVPN
+Exporting => 匯出
+l2tpns server settings => l2tpns伺服器設定值
+l2tpns server => l2tpns伺服器
+TZ setting => TZ設定值
+Starting SSL => 開始SSL
+Stopping SSL => 停止SSL
+upnpd => upnpd
+qos => qos
+syslogd => syslogd
+
+# Browser.awk
+browser_Filesystem_Browser => 檔案系統瀏覽器
+browser_Root => Root
+browser_Permissions => 許可
+browser_Owner => 擁有者
+browser_Group => 群組
+browser_Time => 時間
+browser_Parent_Directory => 上一層目錄
+browser_Directory => 目錄
+browser_Delete => 刪除
+browser_File => 檔案
+browser_Edit => 編輯
+
+# Common.awk
+Short help => 短說明
+caption => 標題
+name => 名稱
+
+# Config.sh
+No config change. => 沒有組態設定完成變更。
+Config discarded. => 您的組態設定變更已經取消。
+Config changes: => 目前組態設定變更：
+Edited files: => 已編輯的檔案：
+Updating config... => 正在更新您的組態設定.....請等待
+second => 秒
+Stays with the same language configuration. => 維持相同的語言組態設定。
+Stays with the default configuration. => 維持預設的組態設定。
+
+# Editor.awk
+editor_File => 檔案
+editor_click_apply => 在您完成變更檔案及調整其他組態設定之後，您必須按下「套用」連結，以永久儲存變更結果。
+
+# Form.awk
+Add => 新增
+more... => 更多...
+Remove => 移除
+
+# Functions.sh
+Installing package => 安裝套件
+Refreshing outdated packages lists => 重新整理過期的套件清單
+Package install failed. => 套件安裝失敗。
+features_require_package => 此頁的功能需要此套件
+features_install => 立即安裝
+
+# Notes.awk
+notes_header => 附註
+notes_save_changes => 在您按下「儲存變更」按鈕之後，變更項目就會永久儲存。
+
+# Reboot.sh
+Yes, really reboot now => 是，立即重新開機
+Rebooting now => 正在重新開機
+reboot_wait => 請等待約
+reboot_seconds => 秒。
+reboot_reload => 路由器將自動重新載入。
+
+# Subcategories.awk
+Subcategories => 子類別
+
+# Validate.awk
+Invalid value => 無效的值
+Invalid key length => 無效的金鑰長度
+String too long => 字串過長
+String too short => 字串過短
+Invalid hex key => 無效的十六進位金鑰
+No value entered => 未輸入數值
+Value too small => 數值過小
+minimum => 最小值
+minimum length => 最小長度
+Value too large => 數值過大
+maximum => 最大值
+maximum length => 最大長度
+Invalid dots => 無效的點
+Invalid spaces => 無效的空格
+Missing netmask => 無網路遮罩
+Netmask not allowed => 網路遮罩無法使用
+Error in => 發生錯誤
+
+# Webif.sh
+big_warning => 警告
+page_incomplete => 此頁不完整，可能無法正確運作，或完全無法運作。
+page_untested => 此頁未經測試，可能無法正確運作。
+page_untested_kamikaze => 此頁未更新，亦未檢查在Kamikaze之下的功能正確性。
+features_require_package => 此頁的功能需要此套件
+features_install => 立即安裝
+Settings saved => 設定已儲存
+Settings not saved => 設定未儲存
+Save Changes => 儲存變更
+Administrative Console => 管理主控台
+PR30 Series Administration Console => PR30系列管理主控台
+Password_mismatch => 輸入的密碼不相符！
+Warning => 警告
+Password_warning => 您沒有設定網頁介面及SSH存取的密碼。<br />請輸入一個密碼（您瀏覽器的使用者名稱將為「root」）。
+Set => 設定
+Proceed Changes => 進行變更
+Apply Changes => 套用變更
+Clear Changes => 清除變更
+Review Changes => 預覽變更
+Previous => 上一步
+Next => 下一步
+Save => 儲存
+Cancel => 取消
+Finish => 完成
+
+# Wizard-finish.sh
+Setup Wizard Completed! The router is functional now. => 設定精靈已完成！路由器現在已經開始運作。
+
+# Wizard-language.sh
+OK => 確定
+Language Settings => 語言設定
+Language => 語言
+English => English
+Traditional Chinese => 繁體中文
+Arabic => العربية
+Spanish => Español
+French => Français
+
+# Wizard-wifi.sh
+WLAN Settings => WLAN設定
+SSID => SSID
+Generate 40bit Keys => 產生40位元金鑰
+Generate 128bit Key => 產生128位元金鑰
+WPA Pre-shared key => WPA預先分享的金鑰
+WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to  enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button. => WEP是基本的加密方法，但安全性不如其他兩種方法WPA及WPA2。如果您要使用密碼字串（Passphrase），請在「密碼字串」欄位中輸入，並按一下您選擇的加密等級40/64位元或104/128位元的「產生」按鈕。如果您要手動輸入WEP金鑰，請在WEP金鑰1-4欄位中輸入。若要指示使用哪一個WEP金鑰，請選擇該項目的單選按鈕。
+

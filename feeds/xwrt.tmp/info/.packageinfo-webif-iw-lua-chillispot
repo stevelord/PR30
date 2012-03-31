@@ -1,0 +1,17 @@
+Source-Makefile: feeds/xwrt/webif-iw-lua-chillispot/Makefile
+Package: webif-iw-lua-chillispot
+Submenu: webif
+Version: 1.0-2
+Depends: +webif-iw-lua +chillispot
+Provides: 
+Build-Depends: +lua/host
+Section: admin
+Category: Administration
+Title: ChilliSpot Configuration Script in LUA
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description: ChilliSpot Configuration Script in LUA
+@@
+
+

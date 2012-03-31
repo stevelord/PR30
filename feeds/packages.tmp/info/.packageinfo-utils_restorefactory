@@ -1,0 +1,15 @@
+Source-Makefile: feeds/packages/utils/restorefactory/Makefile
+Package: restorefactory
+Version: 1-1
+Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Mimic original functionality of the reset button
+Maintainer: Nuno Goncalves <nunojpg@gmail.com>
+Source: 
+Type: ipkg
+Description: Mimic original functionality of the reset button
+@@
+
+

@@ -1,0 +1,17 @@
+Source-Makefile: feeds/packages/net/hiawatha/Makefile
+Package: hiawatha
+Submenu: Web
+Version: 7.2-1
+Depends: +libpthread
+Provides: 
+Section: net
+Category: Network
+Title: A very lightweight web server
+Maintainer: Raphaël HUCK <rhk@cksum.org>
+Source: hiawatha-7.2.tar.gz
+Type: ipkg
+Description: Hiawatha is a webserver for Unix.
+http://www.hiawatha-webserver.org/
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: feeds/packages/libs/xmlrpc-c/Makefile
+Package: xmlrpc-c
+Version: 1.22.2_r1913-1
+Depends: +libcurl +libxml2
+Provides: 
+Build-Depends: libcurl libxml2 libtool
+Section: libs
+Category: Libraries
+Title: XML-RPC library for C/C++ (Xmlrpc-c)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: xmlrpc-c-1.22.2_r1913.tar.gz
+Type: ipkg
+Description:     Programming library for writing an XML-RPC server or client in C or C++.
+    XML-RPC is a standard network protocol to allow a client program to make 
+    a simple remote procedure call (RPC) type request of a server.
+http://xmlrpc-c.sourceforge.net/
+@@
+
+

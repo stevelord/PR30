@@ -1,0 +1,16 @@
+Source-Makefile: feeds/packages/lang/tcl/Makefile
+Package: tcl
+Version: 8.4.19-1
+Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: TCL Lang
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tcl8.4.19-src.tar.gz
+Type: ipkg
+Description: 	TCL Scripting Language
+http://www.tcl.tk
+@@
+
+

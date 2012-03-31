@@ -1,0 +1,17 @@
+Source-Makefile: feeds/packages/net/yaddns/Makefile
+Package: yaddns
+Version: 0.1.1-1
+Depends: @BROKEN
+Provides: 
+Section: net
+Category: Network
+Title: Yet Another DDNS client
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: yaddns-0.1.1.tar.bz2
+Type: ipkg
+Description: Yaddns is a small ddns client with multiple ddns server supports (dyndns, ...)
+and a high flexibility. Yaddns is particularly appropriate for embedded systems.
+http://patatrac.info/yaddns
+@@
+
+

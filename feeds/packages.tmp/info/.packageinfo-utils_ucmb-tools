@@ -1,0 +1,15 @@
+Source-Makefile: feeds/packages/utils/ucmb-tools/Makefile
+Package: ucmb-tools
+Version: 1
+Depends: +kmod-ucmb
+Provides: 
+Section: utils
+Category: Utilities
+Title: Microcontroller Message Bus tools
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description: 	Debugging tool for UCMB
+@@
+
+

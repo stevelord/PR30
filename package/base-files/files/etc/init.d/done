@@ -1,0 +1,35 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006 OpenWrt.org
+
+START=95
+
+mount_point() {
+        local temp
+        temp="$(/bin/grep $1 /proc/mounts | /usr/bin/awk -F" " '{ print $2 }')"
+        echo "$1 mount on $temp"
+        if [ $temp != $1 ]; then
+                echo "Change $1  mount point from $temp to $1"
+                /bin/mount -o move $temp $2
+        fi
+}
+
+
+boot() {
+	[ -d /tmp/root ] && {
+		lock /tmp/.switch2jffs
+		firstboot switch2jffs
+		lock -u /tmp/.switch2jffs
+       		mount_point /dev/mtdblock1 /data
+       		mount_point /dev/mtdblock5 /userdata
+		mount_point /dev/mmcblk0p1 /mnt
+	}
+
+	# process user commands
+	[ -f /etc/rc.local ] && {
+		sh /etc/rc.local
+	}
+
+	# set leds to normal state
+	. /etc/diag.sh
+	set_state done
+}

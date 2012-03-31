@@ -1,0 +1,70 @@
+diff -Nru busybox-1.15.3-old/networking/udhcp/common.h busybox-1.15.3-new/networking/udhcp/common.h
+--- busybox-1.15.3-old/networking/udhcp/common.h	2009-12-12 09:45:08.000000000 +0800
++++ busybox-1.15.3-new/networking/udhcp/common.h	2010-08-19 16:12:15.000000000 +0800
+@@ -60,6 +60,8 @@
+ uint16_t udhcp_checksum(void *addr, int count) FAST_FUNC;
+ 
+ void udhcp_init_header(struct dhcp_packet *packet, char type) FAST_FUNC;
++/* for Icera bugs */
++void udhcp_init_header2(struct dhcp_packet *packet, char type, struct dhcp_packet *oldpacket) FAST_FUNC;
+ 
+ /*int udhcp_recv_raw_packet(struct dhcp_packet *dhcp_pkt, int fd); - in dhcpc.h */
+ int udhcp_recv_kernel_packet(struct dhcp_packet *packet, int fd) FAST_FUNC;
+diff -Nru busybox-1.15.3-old/networking/udhcp/options.h busybox-1.15.3-new/networking/udhcp/options.h
+--- busybox-1.15.3-old/networking/udhcp/options.h	2009-12-12 09:45:08.000000000 +0800
++++ busybox-1.15.3-new/networking/udhcp/options.h	2010-08-19 16:36:51.000000000 +0800
+@@ -84,6 +84,8 @@
+ #define BOOTREPLY               2
+ 
+ #define ETH_10MB                1
++/* for Icera bugs */
++#define ARCNET_TYPE             7
+ #define ETH_10MB_LEN            6
+ 
+ #define DHCPDISCOVER            1 /* client -> server */
+diff -Nru busybox-1.15.3-old/networking/udhcp/packet.c busybox-1.15.3-new/networking/udhcp/packet.c
+--- busybox-1.15.3-old/networking/udhcp/packet.c	2010-08-18 12:02:47.000000000 +0800
++++ busybox-1.15.3-new/networking/udhcp/packet.c	2010-08-19 16:37:35.000000000 +0800
+@@ -36,6 +36,28 @@
+ 	add_simple_option(packet->options, DHCP_MESSAGE_TYPE, type);
+ }
+ 
++/* fix Icera bugs */
++void FAST_FUNC udhcp_init_header_2(struct dhcp_packet *packet, char type, struct dhcp_packet *old_packet)
++{
++	memset(packet, 0, sizeof(struct dhcp_packet));
++	packet->op = BOOTREQUEST; /* if client to a server */
++	switch (type) {
++	case DHCPOFFER:
++	case DHCPACK:
++	case DHCPNAK:
++		packet->op = BOOTREPLY; /* if server to client */
++	}
++	/* for Icera bugs */
++	if(old_packet->htype == ARCNET_TYPE)
++	  packet->htype = ARCNET_TYPE;
++	else
++	  packet->htype = ETH_10MB;
++	packet->hlen = ETH_10MB_LEN;
++	packet->cookie = htonl(DHCP_MAGIC);
++	packet->options[0] = DHCP_END;
++	add_simple_option(packet->options, DHCP_MESSAGE_TYPE, type);
++}
++
+ #if defined CONFIG_UDHCP_DEBUG && CONFIG_UDHCP_DEBUG >= 2
+ void FAST_FUNC udhcp_dump_packet(struct dhcp_packet *packet)
+ {
+diff -Nru busybox-1.15.3-old/networking/udhcp/serverpacket.c busybox-1.15.3-new/networking/udhcp/serverpacket.c
+--- busybox-1.15.3-old/networking/udhcp/serverpacket.c	2009-12-12 09:45:08.000000000 +0800
++++ busybox-1.15.3-new/networking/udhcp/serverpacket.c	2010-08-19 16:10:33.000000000 +0800
+@@ -86,7 +86,9 @@
+ 
+ static void init_packet(struct dhcp_packet *packet, struct dhcp_packet *oldpacket, char type)
+ {
+-	udhcp_init_header(packet, type);
++	/* udhcp_init_header(packet, type); */
++	/* for Icera bugs */
++	udhcp_init_header_2(packet, type, oldpacket);
+ 	packet->xid = oldpacket->xid;
+ 	memcpy(packet->chaddr, oldpacket->chaddr, sizeof(oldpacket->chaddr));
+ 	packet->flags = oldpacket->flags;

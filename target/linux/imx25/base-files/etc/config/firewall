@@ -1,0 +1,3 @@
+config	firewall   defaults
+	option	enable	0
+	option  icmp_reply   0

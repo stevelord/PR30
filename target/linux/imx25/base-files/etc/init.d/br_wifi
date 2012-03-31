@@ -1,0 +1,45 @@
+#!/bin/sh /etc/rc.common
+. /etc/br_hostapd.sh
+
+START=45
+STOP=85
+USERDATA_PATH=`br_mount_point /dev/mtdblock5`
+BR_FACTORY_ENABLE=`br_factory`
+WIFI_PATH="${USERDATA_PATH}/ap_driver"
+echo "radio_enable=$radio_enable" 
+
+start() {
+	case $radio_enable in
+	    0) echo "user disable wireless"
+		set_hostapd_shm 0
+		;;
+	    1) 
+		if [ ${BR_FACTORY_ENABLE} -eq 2 ]; then
+			echo "[BANDRICH]Don't execute AP mode wifi in factory wifi test"
+		elif [ ${BR_FACTORY_ENABLE} -eq 1 ]; then
+			echo "[BANDRICH]Don't execute AP mode wifi in factory mode"
+		else
+			echo "Start WiFi..."
+			produce_hostapd_conf
+
+
+			/tmp/ap_run
+			set_hostapd_shm 1
+		fi
+		;;
+	    *) echo "ignore unknown value";;
+	esac
+}
+
+stop() {
+
+	if [ ${BR_FACTORY_ENABLE} -eq 2 ]; then
+		echo "[BANDRICH]Do nothing in factory wifi mode"
+	else
+		echo "Stop Wifi..."
+
+
+		/tmp/ap_rm
+		set_hostapd_shm 0
+	fi
+}

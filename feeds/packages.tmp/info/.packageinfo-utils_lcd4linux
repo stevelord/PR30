@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/utils/lcd4linux/Makefile
+Package: lcd4linux
+Menu: 1
+Version: r1116-2
+Depends: +LCD4LINUX_NEEDS_libdbus:libdbus +LCD4LINUX_NEEDS_libgd:libgd +LCD4LINUX_NEEDS_libiconv:libiconv +LCD4LINUX_NEEDS_libmysqlclient:libmysqlclient +LCD4LINUX_NEEDS_libncurses:libncurses +LCD4LINUX_NEEDS_libnmeap:libnmeap +LCD4LINUX_NEEDS_libsqlite3:libsqlite3 +LCD4LINUX_NEEDS_libusb:libusb +LCD4LINUX_NEEDS_libvncserver:libvncserver +LCD4LINUX_NEEDS_serdisplib:serdisplib +LCD4LINUX_NEEDS_st2205tool:st2205tool 
+Provides: 
+Build-Depends: libdbus libgd libiconv libmysqlclient libncurses libnmeap libsqlite3 libvncserver ppp serdisplib st2205tool  libtool
+Section: utils
+Category: Utilities
+Title: LCD display utility
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: lcd4linux-r1116.tar.bz2
+Type: ipkg
+Description:  LCD4Linux is a small program that grabs information from the kernel and 
+ some subsystems and displays it on an external liquid crystal display.
+http://lcd4linux.bulix.org/
+@@
+Config:
+	menu "Configuration"
+		depends on PACKAGE_lcd4linux
+		source "feeds/packages/utils/lcd4linux/Config.in"
+	endmenu
+@@
+
+

@@ -1,0 +1,7 @@
+::sysinit:/etc/init.d/rcS S boot
+::respawn:/sbin/getty -L ttymxc0 115200 vt100 -n -l /bin/br_login.sh
+::shutdown:/etc/init.d/rcS K stop
+#ttyS0::askfirst:/bin/ash --login
+#ttyS1::askfirst:/bin/ash --login
+#ttymxc0::askfirst:/bin/ash --login
+#ttymxc1::askfirst:/bin/ash --login

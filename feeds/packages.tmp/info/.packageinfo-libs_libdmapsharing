@@ -1,0 +1,17 @@
+Source-Makefile: feeds/packages/libs/libdmapsharing/Makefile
+Package: libdmapsharing
+Version: 1.9.0.15-2
+Depends: +libsoup +mdnsresponder +gstreamer
+Provides: 
+Build-Depends: libtool
+Section: libs
+Category: Extra packages
+Title: libdmapsharing
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: libdmapsharing-1.9.0.15.tar.gz
+Type: ipkg
+Description: libdmapsharing
+http://www.flyn.org/projects/libdmapsharing/
+@@
+
+

@@ -1,0 +1,17 @@
+Source-Makefile: feeds/packages/Xorg/font/dejavu-fonts-ttf/Makefile
+Package: dejavu-fonts-ttf
+Submenu: font
+Version: 2.23-1
+Depends: @DISPLAY_SUPPORT
+Provides: 
+Section: xorg-font
+Category: Xorg
+Title: dejavu-fonts-ttf
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: dejavu-fonts-ttf-2.23.tar.bz2
+Type: ipkg
+Description: dejavu-fonts-ttf
+http://dejavu.sourceforge.net/
+@@
+
+

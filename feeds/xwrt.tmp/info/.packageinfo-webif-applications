@@ -1,0 +1,16 @@
+Source-Makefile: feeds/xwrt/webif-applications/Makefile
+Package: webif-applications
+Submenu: webif
+Version: 0.1-1
+Depends: +webif
+Provides: 
+Section: admin
+Category: Administration
+Title: XWrt applications plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description: XWrt applications plugin
+@@
+
+

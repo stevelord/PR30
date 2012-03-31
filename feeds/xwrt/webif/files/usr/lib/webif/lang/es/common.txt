@@ -1,0 +1,382 @@
+?# ================================================================================================
+# NOTICE!! Translation principle: ONLY need to modify the strings on the RIGHT HAND SIDE of => .
+# IF you see something like $refresh_timeout (string starts with a $) or <br \>, 
+# please DO NOT modify this kind of variable of our program.
+# ================================================================================================
+# leave at least one comment here to skip the BOM character
+# language name
+Advanced => Avanzada
+Wizard => Asistente
+
+# Advanced-confman.sh
+Backup and Restore => Copiar y restaurar
+confman_noauto_click => Si la descarga no comienza automáticamente, haga clic aquí en 30 segundos
+Restore Configuration => Restaurar configuración
+confman_restoring_conf => Restaurando configuración.
+confman_restoring_file => restaurando
+Rebooting now => Reiniciando ahora
+confman_bad_dir => directorio dañado
+confman_good_conf => Archivo de configuración comprobado
+Restore => Restaurar
+Backup Configuration => Copia de seguridad de la configuración
+Name this configuration => Nombrar esta configuración
+Backup => Copia de seguridad
+Saved config.tgz file => Archivo config.tgz guardado
+Reset Function => Función Restaurar
+Reset To Default => Restaurar a valores predeterminados
+Backup &amp; Restore => Copiar y restaurar
+Reset back to factory default succeeded => Restauración a los valores de fábrica con éxito
+The system is restarting in 5 seconds => El sistema reiniciará en 5 segundos
+Reset back to factory default failed => Error de restauración de los valores de fábrica
+
+# Advanced-dhcp.sh
+DHCP Configuration => Configuración DHCP
+DHCP Start IP => IP de inicio DHCP
+DHCP Limit => Límite DHCP
+DHCP Lease Time => Tiempo de transferencia DHCP
+DHCP => DHCP
+On => Activado
+Off => Desactivado
+Start => Inicio
+Limit => Límite
+Lease Time (in minutes) => Tiempo de transferencia (en minutos)
+network_hosts_Active_Leases => Transferencias DHCP
+network_hosts_MAC => Dirección MAC
+network_hosts_IP => Dirección IP
+network_hosts_Name => Nombre
+network_hosts_Expires => Expira en
+expired => expirado
+network_hosts_No_leases => No hay transferencias DHCP conocidas.
+DHCP Server => Servidor DHCP
+IP range cannot be over 255 => El rango IP no puede superar 255
+
+# Advanced-HSPAconfig.sh
+HSPA Config => Configuración HSPA
+Authentication Type => Tipo de autenticación
+Roaming Connection => Conexión en itinerancia
+Enabled => Activado
+Disabled => Desactivado
+Redial Policy => Política de rellamada
+Connect on Demand => Conexión On Demand
+Keep Alive => Keep Alive
+Maximum Idle Time (in minutes) => Tiempo máximo de inactividad (en minutos)
+Auto APN => APN automático
+Update APN => Actualizar APN
+Profile => Perfil
+Username => Nombre de usuario
+Password => Contraseña 
+Dial Number => Marcar número
+Network Selection => Selección de red
+Preference => Preferencias
+Automatic => Automático
+UMTS only => Sólo UMTS
+GPRS only => Sólo GPRS
+Select Network => Seleccionar red
+Auto => Automático
+Manual => Manual
+Availabe Networks => Redes disponibles
+Scan Network => Buscar redes
+HSPA Configuration => Configuración HSPA
+Operator => Operador
+Type => Tipo
+Update APN status => Actualizar estado APN
+Success => Con éxito
+Fail => Error
+Helptext Idle Time => El número de minutos sin tráfico de Internet  que el router esperará antes de desconectarse de Internet (sólo Conexión on Demand)
+Configuration => Configuración
+Information Not Available => Información no disponible
+
+# Advanced-info.sh
+NO SERVICE => NO HAY SERVICIO
+Info => Información
+System Information => Información del sistema
+System Status => Estado del sistema
+Battery Status => Estado de la batería
+Battery Capacity => Capacidad de la batería
+Local Network => Red local
+Router IP Address (USB) => Dirección IP del router (USB)
+Router IP Address (WLAN) => Dirección IP del router (WLAN)
+Netmask (WLAN) => Máscara de red (WLAN)
+DHCP Start IP Address => Dirección IP inicio DHCP
+DHCP End IP Address => Dirección IP fin DHCP
+Register Network => Registrar red
+SIM Status => Estado SIM
+Network Name => Nombre de red
+Network Technology => Tecnología de red
+Roaming => Itinerancia
+Internet Connection => Conexión a Internet
+Connection Type => Tipo de conexión
+Internet IP Address => Dirección IP de Internet
+Subnet Mask => Máscara de subred
+Default Gateway => Puerta de enlace predeterminada
+Personal => Personal
+WLAN Network => Red WLAN
+Standard Channel => Canal estándar
+Security => Seguridad
+SSID Broadcast => Emisión SSID
+Firmware Information => Información del Firmware
+Router Firmware Version => Versión del Firmware del router
+Modem Firmware Version => Versión del Firmware del módem
+APN Version => Versión APN
+APN => APN
+PIN Disabled => PIN desactivado
+PIN Enabled => PIN activado
+PIN Enabled requires verification => La activación de PIN necesita verificación
+PIN Blocked => PIN bloqueado
+PIN Invalid => PIN no válido
+Read SIM Failed => Fallo al leer de la SIM
+Home => Principal
+Charging Mode => Modo de carga
+Battery Mode => Modo batería
+
+# Advanced-network.sh
+Network => Red
+WLAN IP Address => Dirección WLAN IP
+WLAN Netmask => Máscara de red WLAN
+WLAN Network Configuration => Configuración de red WLAN
+Router IP Address Via WLAN => Dirección IP del router a través de WLAN
+Netmask => Máscara de red
+USB Network Configuration => Configuración de red USB
+Router IP Address Via USB => Dirección IP del router a través de USB
+Basic Firewall => Cortafuegos básico
+Firewall Settings => Configuración de cortafuegos
+Network Configuration => Configuración de red
+USB IP Address => Dirección USB IP
+
+# Advanced-password.sh
+Passwords do not match => Las contraseñas no coinciden
+Password Change => Cambio de contraseña
+New Password => Contraseña nueva
+Confirm Password => Confirmar contraseña
+
+# Advanced-pinmanage.sh
+PIN Management => Administración de PIN
+PIN Code => Código PIN
+PIN Verify => Verificar PIN
+Old PIN Code => Código PIN antiguo
+New PIN Code => Código PIN nuevo
+New PIN Confirm => Confirmación de PIN nuevo
+PIN Verification => Verificación de PIN
+Verify => Verificar
+PIN Protection => Protección PIN
+Apply => Aplicar
+PIN Modification => Modificación PIN
+Change => Cambiar
+PIN code for the SIM card, should be 4 to 8 digits => Código PIN para la tarjeta SIM, debería ser de 4 a 8 dígitos
+Please enter the PIN code => Escriba el código PIN
+PIN Verification Succeeded => Verificación de PIN con éxito
+PIN Verification Failed => Error de verificación de PIN
+more tries before the SIM locked => intentos más antes del bloqueo de SIM
+PIN Enabled Succeeded => PIN activado con éxito
+PIN Enabled Failed => Error al activar PIN
+PIN Disabled Succeeded => PIN desactivado con éxito
+PIN Disabled Failed => Error al desactivar PIN
+The new PIN codes are not matched => Los nuevos códigos PIN no coinciden
+PIN Change Succeeded => Cambio de PIN con éxito
+PIN Change Failed => Error al cambiar PIN
+
+# Advanced-sdcard.sh
+SD Card Settings => Configuración de la tarjeta SD
+Network Sharing => Compartir red
+SD Memory Card => Tarjeta de memoria SD
+SD Card => Tarjeta SD
+
+# Advanced-upgrade.sh
+Firmware Upgrade => Actualización del firmware
+Do not save current configuration => No guardar la configuración actual
+Firmware Image => Imagen del Firmware
+Upgrade => Actualizar
+Upgrading firmware => Actualizar firmware
+Don't backup user configuration => No realizar copia de la configuración de usuario
+Fail to backup user configuration => Error al copiar configuración de usuario
+backup user configuration => copiar configuración del usuario
+Browse => Examinar
+
+# Advanced-wlan.sh
+Helptext WEP => Texto de ayuda WEP
+WLAN => WLAN
+Pre-Shared Key => Clave pre-compartida
+Selected WEP Key => Clave WEP seleccionada
+WEP Key => Clave WEP
+Basic Configuration => Configuración básica
+Operation Mode => Modo de operación
+Auto-off => Apagado automático
+Manual-off => Apagado manual
+Maximum Idle Time => Tiempo máximo de inactividad
+Radio => Radio
+On => Activado
+Off => Desactivado
+Minutes => Minutos
+Channel => Canal
+WLAN Security Setting => Configuración de seguridad WLAN
+Encryption Type => Tipo de cifrado
+Passphrase => Frase secreta
+Generate 40/64-bit Keys => Generar claves de 40/64 bits
+Generate 104/128-bit Key => Generar clave de 104/128 bits
+WPA Encryption => Cifrado WPA
+Pre-shared key => Clave pre-compartida
+WLAN Configuration => Configuración WLAN
+WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then  enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button. => WEP es un método de cifrado básico, no tan seguro como los otros dos métodos, WPA y WPA2. Si desea utilizar una Frase secreta, escríbala en el campo Frase secreta y haga clic en el botón Generar del nivel de cifrado WEP elegido, 40/64 bits o 104/128 bits. Si desea escribir la clave WEP manualmente, escríbala en el campo Clave WEP 1-4. Para indicar qué clave WEP usar, marque el botón de selección apropiado.
+WPA offers two encryption methods, TKIP and AES, with dynamic encryption keys. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits. => WPA ofrece dos métodos de cifrado, TKIP y AES, con claves de cifrado dinámicas. Escriba la Frase secreta (8 a 63 caracteres ASCII) o 64 dígitos hexadecimales.
+WPA2 is a stronger encryption method than WPA. This method offers two encryption methods, AES and WPA-TKIP or WPA2-AES, with dynamic encryption keys. Select the type of encryption method you want  to use, AES or TKIP or TKIP+AES. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits. => WPA2 es un método de cifrado más fuerte que WPA. Este método ofrece dos métodos de cifrado, AES y WPA-TKIP o WPA2-AES, con claves de cifrado dinámicas. Seleccione el método de cifrado que desea usar, AES o TKIP o TKIP+AES. Escriba la Frase secreta (8 a 63 caracteres ASCII) o 64 dígitos hexadecimales.
+
+# Apply.sh
+Processing => Procesando
+Critical Error => Error crítico
+Could not replace => No se pudo cambiar
+Media full => Disco lleno
+Starting => Iniciando
+Stopping => Deteniendo
+config file => Archivo de configuración
+Applying => Aplicando
+conntrack settings => configuración conntrack
+Setting => Configuración
+Done => Listo
+Initializing theme ... => Inicializando tema...
+Error => Error
+installing theme package => instalando paquete del tema
+Installing language pack => Instalando paquete de idiomas
+Error installing language pack => Error al instalar el paquete de idiomas
+Committing => Llevando a cabo
+Waiting for the commit to finish => Esperando a que finalice la acción
+Reloading => Recargando
+network => red
+ro=1 and user roaming disable => ro=1 e itinerancia de usuario desactivado
+go => ir
+change 3g setting => cambiar configuración 3g
+wireless => inalámbrico
+OpenVPN => OpenVPN
+Exporting => Exportando
+l2tpns server settings => Configuración del servidor l2tpns
+l2tpns server => servidor l2tpns
+TZ setting => Configuración TZ
+Starting SSL => Iniciando SSL
+Stopping SSL => Deteniendo SSL
+upnpd => upnpd
+qos => qos
+syslogd => syslogd
+
+# Browser.awk
+browser_Filesystem_Browser => Explorador del sistema de archivos
+browser_Root => Raíz
+browser_Permissions => Permisos
+browser_Owner => Propietario
+browser_Group => Grupo
+browser_Time => Hora
+browser_Parent_Directory => Directorio padre
+browser_Directory => Directorio
+browser_Delete => Eliminar
+browser_File => Archivo
+browser_Edit => Editar
+
+# Common.awk
+Short help => Ayuda corta
+caption => imagen
+name => nombre
+
+# Config.sh
+No config change. => No se ha realizado ningún cambio de configuración.
+Config discarded. => Los cambios en su configuración han sido descartados.
+Config changes: => Cambios en la configuración actual:
+Edited files: => Archivos editados:
+Updating config... => Actualizando su configuración..... Espere
+second => segundo
+Stays with the same language configuration. => Permanece con la misma configuración de idioma.
+Stays with the default configuration. => Permanece con la configuración predeterminada.
+
+# Editor.awk
+editor_File => Archivo
+editor_click_apply => Tras realizar los cambios de archivos y otros ajustes de configuración, deberá hacer clic en Aplicar para que los cambios sean permanentes.
+
+# Form.awk
+Add => Añadir
+more... => más...
+Remove => Quitar
+
+# Functions.sh
+Installing package => Instalando paquete
+Refreshing outdated packages lists => Actualizando listas de paquetes atrasados
+Package install failed. => Error al instalar el paquete.
+features_require_package => Las características de este paquete requieren que el paquete
+features_install => instalar ahora
+
+# Notes.awk
+notes_header => Notas
+notes_save_changes => Los cambios son permanentes tras hacer clic en el botón Guardar cambios.
+
+# Reboot.sh
+Yes, really reboot now => Sí, reiniciar ahora
+Rebooting now => Reiniciando ahora
+reboot_wait => Espere unos
+reboot_seconds => segundos.
+reboot_reload => El router debería recargar automáticamente.
+
+# Subcategories.awk
+Subcategories => Subcategorías
+
+# Validate.awk
+Invalid value => Valor no válido
+Invalid key length => Longitud de clave no válida
+String too long => Cadena demasiado larga
+String too short => Cadena demasiado corta
+Invalid hex key => Clave hexadecimal no válida
+No value entered => No se ha introducido un valor
+Value too small => Valor demasiado pequeño
+minimum => mínimo
+minimum length => longitud mínima
+Value too large => valor demasiado grande
+maximum => máximo
+maximum length => longitud máxima
+Invalid dots => Puntos no válidos
+Invalid spaces => Espacios no válidos
+Missing netmask => Falta máscara de red
+Netmask not allowed => Máscara de red no permitida
+Error in => Error in
+
+# Webif.sh
+big_warning => ADVERTENCIA
+page_incomplete => Esta página está incompleta y puede no funcionar correctamente.
+page_untested => Esta página no ha sido probada y puede o no funcionar correctamente.
+page_untested_kamikaze => Esta página no ha sido actualizada o verificada para el correcto funcionamiento con Kamikaze.
+features_require_package => Las características de este paquete requieren que el paquete
+features_install => instalar ahora
+Settings saved => Configuración guardada
+Settings not saved => Configuración no guardada
+Save Changes => Guardar cambios
+Administrative Console => Consola administrativa
+PR30 Series Administration Console => Consola de administración serie PR30
+Password_mismatch => ¡Las contraseñas introducidas no coinciden!
+Warning => Advertencia
+Password_warning => No ha ajustado una contraseña para la interfaz Web y el acceso SSH.<br />Escriba una ahora (el nombre de usuario en su explorador será 'root').
+Set => Configurar
+Proceed Changes => Realizar cambios
+Apply Changes => Aplicar cambios
+Clear Changes => Borrar cambios
+Review Changes => Revisar cambios
+Previous => Anterior
+Next => Siguiente
+Save => Guardar
+Cancel => Cancelar
+Finish => Finalizar
+
+# Wizard-finish.sh
+Setup Wizard Completed! The router is functional now. => ¡Asistente para la instalación completado! El router ya está en funcionamiento.
+
+# Wizard-language.sh
+OK => Aceptar
+Language Settings => Configuración del idioma
+Language => Idioma
+English => English
+Traditional Chinese => 繁體中文
+Arabic => العربية
+Spanish => Español
+French => Français
+
+# Wizard-wifi.sh
+WLAN Settings => Configuración WLAN
+SSID => SSID
+Generate 40bit Keys => Generar claves de 40bit
+Generate 128bit Key => Generar clave de 128bit
+WPA Pre-shared key => Clave pre-compartida WPA
+WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to  enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button. => WEP es un método de cifrado básico, no tan seguro como los otros dos métodos, WPA y WPA2. Si desea utilizar una Frase secreta, escríbala en el campo Frase secreta y haga clic en el botón Generar del nivel de cifrado WEP elegido, 40/64 bits o 104/128 bits. Si desea escribir la clave WEP manualmente, escríbala en el campo Clave WEP 1-4. Para indicar qué clave WEP usar, marque el botón de selección apropiado.
+

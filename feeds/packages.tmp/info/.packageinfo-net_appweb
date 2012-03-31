@@ -1,0 +1,17 @@
+Source-Makefile: feeds/packages/net/appweb/Makefile
+Package: appweb
+Version: 3.0B.2-3
+Depends: @!avr32
+Provides: 
+Section: net
+Category: Network
+Title: Appweb Web Server
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: appweb-src-3.0B.2-3.tar.gz
+Type: ipkg
+Description: 	Appweb is a powerful, compact embedded web server designed for dynamic web
+	applications.
+http://www.appwebserver.org/
+@@
+
+

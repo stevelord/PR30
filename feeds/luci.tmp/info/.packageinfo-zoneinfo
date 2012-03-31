@@ -1,0 +1,171 @@
+Source-Makefile: feeds/luci/zoneinfo/Makefile
+Package: zoneinfo-simple
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (simple)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (simple)
+@@
+
+Package: zoneinfo-core
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (core)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (core)
+@@
+
+Package: zoneinfo-africa
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (Africa)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (Africa)
+@@
+
+Package: zoneinfo-northamerica
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (NorthAmerica)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (NorthAmerica)
+@@
+
+Package: zoneinfo-southamerica
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (SouthAmerica)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (SouthAmerica)
+@@
+
+Package: zoneinfo-poles
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (Arctic, Antarctic)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (Arctic, Antarctic)
+@@
+
+Package: zoneinfo-asia
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (Asia)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (Asia)
+@@
+
+Package: zoneinfo-atlantic
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (Atlantic)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (Atlantic)
+@@
+
+Package: zoneinfo-australia-nz
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (Australia-NZ)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (Australia-NZ)
+@@
+
+Package: zoneinfo-pacific
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (Pacific)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (Pacific)
+@@
+
+Package: zoneinfo-europe
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (Europe)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (Europe)
+@@
+
+Package: zoneinfo-india
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (India)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (India)
+@@
+
+Package: zoneinfo-middleeast
+Version: 2009c-2
+Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Zone Information (MiddleEast)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: tzdata2009c.tar.gz
+Type: ipkg
+Description: Zone Information (MiddleEast)
+@@
+
+

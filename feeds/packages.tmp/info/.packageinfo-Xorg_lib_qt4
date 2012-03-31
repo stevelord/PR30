@@ -1,0 +1,212 @@
+Source-Makefile: feeds/packages/Xorg/lib/qt4/Makefile
+Package: qt4
+Submenu: framework
+Version: 4.6.2-2
+Depends: @FEATURE_drawing-backend_DirectFB +FEATURE_drawing-backend_DirectFB:directfb +zlib +libstdcpp +libsqlite3 
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4
+http://qt.nokia.com/
+@@
+
+Package: qt4-gui
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +libpng +libtiff +libjpeg +libfreetype
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (gui)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (gui)
+http://qt.nokia.com/
+@@
+
+Package: qt4-demos
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +qt4-gui
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (demos)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (demos)
+http://qt.nokia.com/
+@@
+
+Package: qt4-examples
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +qt4-gui
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (examples)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (examples)
+http://qt.nokia.com/
+@@
+
+Package: qt4-network
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (network)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (network)
+http://qt.nokia.com/
+@@
+
+Package: qt4-sqlite
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +libsqlite3
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (sqlite)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (sqlite)
+http://qt.nokia.com/
+@@
+
+Package: qt4-mysql
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +libmysqlclient
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (mysql)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (mysql)
+http://qt.nokia.com/
+@@
+
+Package: qt4-phonon
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +qt4-gui
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (phonon)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (phonon)
+http://qt.nokia.com/
+@@
+
+Package: qt4-svg
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +qt4-gui
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (svg)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (svg)
+http://qt.nokia.com/
+@@
+
+Package: qt4-webkit
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 @USE_GLIBC||@USE_EGLIBC 
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (webkit)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (webkit)
+http://qt.nokia.com/
+@@
+
+Package: qt4-script
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 @USE_GLIBC||@USE_EGLIBC 
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (script)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (script)
+http://qt.nokia.com/
+@@
+
+Package: qt4-scripttools
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +qt4-script
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (scripttools)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (scripttools)
+http://qt.nokia.com/
+@@
+
+Package: qt4-dbus
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4 +libdbus
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (dbus)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (dbus)
+http://qt.nokia.com/
+@@
+
+Package: qt4-qt3support
+Submenu: framework
+Version: 4.6.2-2
+Depends: qt4
+Provides: 
+Section: xorg-framework
+Category: Xorg
+Title: qt4 (qt3support)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: qt-everywhere-opensource-src-4.6.2.tar.gz
+Type: ipkg
+Description: qt4 (qt3support)
+http://qt.nokia.com/
+@@
+
+

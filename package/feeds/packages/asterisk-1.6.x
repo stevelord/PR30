@@ -1,0 +1,1 @@
+../../../feeds/packages/net/asterisk-1.6.x

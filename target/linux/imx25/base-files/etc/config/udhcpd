@@ -1,0 +1,7 @@
+config  udhcpd  wlan
+        option  enable		 1
+        option  wfip		 192.168.100.1
+        option  start    	 100
+        option  limit    	 105
+        option  leasetime        86400
+

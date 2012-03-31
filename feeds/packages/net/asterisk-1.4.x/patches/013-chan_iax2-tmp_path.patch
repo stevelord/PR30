@@ -1,0 +1,12 @@
+diff -Nru asterisk-1.4.25.org/channels/chan_iax2.c asterisk-1.4.25/channels/chan_iax2.c
+--- asterisk-1.4.25.org/channels/chan_iax2.c	2009-05-05 00:37:31.000000000 +0200
++++ asterisk-1.4.25/channels/chan_iax2.c	2009-06-04 21:01:25.000000000 +0200
+@@ -1898,7 +1898,7 @@
+ 		last++;
+ 	else
+ 		last = s;
+-	snprintf(s2, strlen(s) + 100, "/var/tmp/%s-%ld", last, (unsigned long)ast_random());
++	snprintf(s2, strlen(s) + 100, "/tmp/%s-%ld", last, (unsigned long)ast_random());
+ 	res = stat(s, &stbuf);
+ 	if (res < 0) {
+ 		ast_log(LOG_WARNING, "Failed to stat '%s': %s\n", s, strerror(errno));

@@ -1,0 +1,422 @@
+MCC,MNC,Dial No.,APN,UserName,Passwaord,ProfileName,Country
+466,01,*99#,fetims,,,FET,Taiwan
+466,88,*99#,internet,,,FET-KGT,Taiwan
+466,89,*99#,internet,,,VIBO-internet,Taiwan
+466,92,*99#,internet,,,Chunghwa,Taiwan
+466,93,*99#,internet,,,TWN-Mobitai,Taiwan
+466,97,*99#,internet,,,TWN,Taiwan
+466,99,*99#,internet,,,TWN-TAT,Taiwan
+454,00,*99#,hkcsl,,,CSL1010,HongKong
+454,10,*99#,internet,,,NewWorld,HongKong
+454,06,*99#,SmarTone-Vodafone,,,Smartone HK 06,HongKong
+456,15,*99#,SmarTone-Vodafone,,,Smartone HK 15,HongKong
+454,04,*99#,web-g.three.com.hk,,,3(2G)-HK,HongKong
+454,03,*99#,ipc.three.com.hk,,,3 HK DATA,HongKong
+454,12,*99#,peoples.net,,,Peoples,HongKong
+454,16,*99#,pccwdata,,,PCCW(GPRS),HongKong (Show operator's name as PCCW)
+454,19,*99#,pccw,,,PCCW(3G),HongKong (Show operator's name as PCCW)
+455,01,*99#,ctm-mobile,,,CTM,Macau
+455,03,*99#,web.hutchisonmacau.com,,,3DB,Macau
+455,00,*99#,smartgprs,,,SmarToneMacau,Macau
+455,04,*99#,ctm-mobile,,,CTM Mobile,Macau
+244,05,*99#,internet,,,Elisa,Finland
+244,91,*99#,internet,,,Sonera,Finland
+244,12,*99#,internet,,,DNA,Finland
+244,21,*99#,internet.saunalahti,,,Saunalahti,Finland
+505,01,*99#,telstra.internet,,,Telstra,Australia
+505,02,*99#,internet,,,YesOptus,Australia
+505,03,*99#,vfinternet.au,,,Vodafone AU,Australia
+505,06,*99#,3netaccess,,,3 Australia,Australia
+505,14,*99#,vfinternet.au,,,AAPT,Australia
+232,01,*99#,A1.net,ppp@a1plus.at,ppp,A1,Austria
+232,03,*99#,gprsinternet,,,T-Mobile AT,Austria
+232,05,*99#,web.one.at,web,web,ONE,Austria
+232,07,*99#,web,web@telering.at,web,tele.ring,Austria
+232,10,*99#,drei.at,,,3 Austria,Austria
+206,20,*99#,busint.base.be,BusinessInternet,busint,Base,Belgium
+206,10,*99#,internet.be,,,Mobistar,Belgium
+206,01,*99#,internet.proximus.be,,,Proximus,Belgium
+426,01,*99#,internet.batelco.com,wap,wap,Batelco,Bahrain
+426,02,*99#,internet,internet,internet,MTC-Vodafone BH,Bahrain
+426,04,*99#,viva.bh,,,VIVA broadband,Bahrain
+257,01,*99#,web.velcom.by,web,web,Velcom,Belarus
+218,05,*99#,mobisgprs1,,,Telekom Srpske,Bosnia Herzegovina
+284,05,*99#,internet.globul.bg,globul,,Globul,Bulgaria
+284,01,*99#,inet-gprs.mtel.bg,mtel,mtel,M-TEL,Bulgaria
+302,720,*99#,internet.com,wapuser1,wap,Rogers,Canada
+302,37,*99#,internet.fido.ca,,,Fido 37,Canada
+302,370,*99#,internet.mts,,,Fido MicroCell,Canada
+302,500,*99#,ihvm.videotron,,,Videotron,Canada
+302,660,*99#,internet.mts,,,MTS,Canada
+730,01,*99#,imovil.entelpcs.cl,,,Entel PCS,Chile
+730,10,*99#,imovil.entelpcs.cl,entelpcs,entelpcs,Entel,Chile
+730,02,*99#,web.tmovil.cl,web,web,movistar CL,Chile
+730,03,*99#,bam.clarochile.cl,clarochile,clarochile,Banda Ancha Movil,Chile
+219,01,*99#,web.htgprs,,,T-Mobile HR,Croatia
+219,10,*99#,gprs0.vipnet.hr,,,VIP,Croatia
+230,02,*99#,internet,,,Eurotel,Czech Republic
+230,01,*99#,internet.t-mobile.cz,,,T-Mobile CZ,Czech Republic
+230,03,*99#,internet,,,Oskar,Czech Republic
+238,06,*99#,bredband.tre.dk,,,3 DK 06,Denmark
+238,01,*99#,bredband.tre.dk,,,3 DK 01,Denmark
+238,30,*99#,web.orange.dk,,,Orange DK,Denmark
+238,02,*99#,internet,sonofon,,Sonofon,Denmark
+238,20,*99#,www.internet.mtelia.dk,telia,1010,Telia DK,Denmark
+602,01,*99#,mobinilweb,,,MobiNil,Egypt
+602,02,*99#,internet.vodafone.net,internet,internet,Vodafone EG,Egypt
+602,03,*99#,internet.etisalat,,,Etisalat EG,Egypt
+248,01,*99#,internet.emt.ee,,,EMT,Estonia
+248,02,*99#,internet,,,RLE,Estonia
+248,03,*99#,internet.tele2.ee,wap,wap,Tele2 EE,Estonia
+208,01,*99#,orange.fr,orange,orange,Orange FR,France
+208,10,*99#,websfr,,,SFR,France
+208,20,*99#,ebouygtel.com,,,Bouygues Telecom,France
+262,03,*99#,internet.eplus.de,eplus,web,E-Plus,Germany
+262,07,*99#,internet,,,o2 Surf DE,Germany
+262,08,*99#,internet,,,o2 Surf DE 08,Germany
+262,01,*99#,internet.t-mobile,t-mobile,tm,T-Mobile DE,Germany
+262,02,*99#,web.vodafone.de,,,Vodafone DE,Germany
+202,01,*99#,internet,,,Cosmote,Greece
+202,10,*99#,gint.b-online.gr,web,web,WINDHellas,Greece
+202,05,*99#,internet.vodafone.gr,,,Vodafone GR,Greece
+340,01,*99#,orangewap,,,Orange GP,Guadeloupe
+216,01,*99#,net,,,Pannon,Hungary
+216,30,*99#,internet,felhaszn?l?n?v,,T-Mobile HU,Hungary
+216,70,*99#,internet.vodafone.net,,,Vodafone HU,Hungary
+274,01,*99#,gprs.simi.is,,,Siminn,Iceland
+404,57,*99#,bsnlnet,,,BSNL-Gujrat,India
+404,58,*99#,bsnlnet,,,BSNL-Madhya Pradesh,India
+404,66,*99#,bsnlnet,,,BSNL-Maharashtra,India
+404,38,*99#,bsnlnet,,,BSNL-Assam,India
+404,74,*99#,bsnlnet,,,BSNL-West Bengal,India
+404,75,*99#,bsnlnet,,,BSNL-Bihar,India
+404,76,*99#,bsnlnet,,,BSNL-Orissa,India
+404,77,*99#,bsnlnet,,,BSNL-North East,India
+404,81,*99#,bsnlnet,,,BSNL-Kolkatta,India
+404,34,*99#,bsnlnet,,,BSNL-Haryana,India
+404,51,*99#,bsnlnet,,,BSNL-Himachal Pradesh,India
+404,53,*99#,bsnlnet,,,BSNL-Punjab,India
+404,54,*99#,bsnlnet,,,BSNL-Uttar Pradesh (west),India
+404,55,*99#,bsnlnet,,,BSNL-Uttar Pradesh (east),India
+404,59,*99#,bsnlnet,,,BSNL-Rajasthan,India
+404,62,*99#,bsnlnet,,,BSNL-Jammu&Kashmir,India
+404,64,*99#,bsnlnet,,,BSNL-Chennai,India
+404,80,*99#,bsnlnet,,,BSNL-Tamil Nadu,India
+404,71,*99#,bsnlnet,,,BSNL-Karnataka,India
+404,72,*99#,bsnlnet,,,BSNL-Kerela,India
+404,73,*99#,bsnlnet,,,BSNL-Andhra Pradesh,India
+404,21,*99#,bplgprs.com,,,BPL 21,India
+404,27,*99#,bplgprs.com,,,BPL 27,India
+404,05,*99#,www,,,Hutch 05,India
+404,13,*99#,www,,,Hutch 13,India
+404,86,*99#,www,,,Hutch 86,India
+404,04,*99#,internet,,,Idea 04,India
+404,22,*99#,internet,,,Idea 22,India
+404,20,*99#,www,,,Orange IN,India
+404,14,*99#,spicegprs,,,Spice Punjab,India
+404,02,*99#,airtelgprs.com,,,Airtel 02,India
+404,03,*99#,airtelgprs.com,,,Airtel 03,India
+404,10,*99#,airtelgprs.com,,,Airtel 10,India
+404,31,*99#,airtelgprs.com,,,Airtel 31,India
+404,40,*99#,airtelgprs.com,,,Airtel 40,India
+404,45,*99#,airtelgprs.com,,,Airtel 45,India
+404,49,*99#,airtelgprs.com,,,Airtel 49,India
+404,70,*99#,airtelgprs.com,,,Airtel 70,India
+404,92,*99#,airtelgprs.com,,,Airtel 92,India
+404,93,*99#,airtelgprs.com,,,Airtel 93,India
+404,95,*99#,airtelgprs.com,,,Airtel 95,India
+404,96,*99#,airtelgprs.com,,,Airtel 96,India
+404,97,*99#,airtelgprs.com,,,Airtel 97,India
+404,98,*99#,airtelgprs.com,,,Airtel 98,India
+510,21,*99#,www.indosat-m3.net,gprs,im3,Indosat,Indonesia
+510,10,*99#,internet,,,Tsel Internet,Indonesia
+510,11,*99#,www.xlgprs.net,xlgprs,proxl,XL 3G-HSDPA,Indonesia
+510,01,*99#,indosat3g,,,INDOSAT HSPA,Indonesia
+510,01,*99#,indosatm2,,,Indosat M2,Indonesia
+510,89,*99#,3gprs,3gprs,3gprs,Three 3G,Indonesia
+510,08,*99#,axis,axis,123456,AXIS 3G,Indonesia
+272,01,*99#,isp.vodafone.ie,vodafone,vodafone,Vodafone IE,Ireland
+272,02,*99#,internet,user,user123,O2 IE,Ireland
+272,03,*99#,isp.mymeteor.ie,my,meteor,Meteor,Ireland
+272,05,*99#,3internet,,,3 Ireland (internet),Ireland
+425,02,*99#,internetg,,,Cellcom Internet,Israel
+425,03,*99#,internet.pelephone.net.il,pcl@3g,pcl,Pelephone Internet,Israel
+425,01,*99#,uinternet,,,Orange IL 01,Israel
+425,10,*99#,uinternet,,,Orange IL 10,Israel
+222,99,*99#,datacard.tre.it,tre,tre,3 Italia,Italy
+222,98,*99#,INTERNET,,,BLU,Italy
+222,01,*99#,ibox.tim.it,,,TIM IT,Italy
+222,10,*99#,web.omnitel.it,,,Vodafone IT,Italy
+222,88,*99#,internet.wind,,,Wind IT,Italy
+338,180,*99#,internet,,,C&W,Jamaica
+338,05,*99#,web.digiceljamaica.com,wapuser,wap03jam,Digicel,Jamaica
+416,01,*99#,zain,Zain,Zain,Zain JO,Jordan
+416,77,*99#,net.mobilecom.jo,internet,internet,MobileCom,Jordan
+401,01,*99#,test.beeline.kz,,,Beeline KZ,Kazakhstan
+401,02,*99#,internet,,,Kcell,Kazakhstan
+419,02,*99#,apn01,,,MTC-Vodafone KW,Kuwait
+419,03,*99#,action.wataniya.com,,,Wataniya,Kuwait
+419,04,*99#,VIVA,,,VIVA,kuwait
+247,01,*99#,internet.lmt.lv,,,LMT,Latvia
+247,02,*99#,internet.tele2.lv,,,Tele2 LV,Latvia
+415,01,*99#,internet.mic1.com.lb,mic1,mic1,Fal-Dete,Lebanon
+415,03,*99#,isurf.libancell.com.lb,,,LibanCell,Lebanon
+295,05,*99#,mobilkom.li,ppp@A1plus.at,,FL1,Liechtenstein
+246,02,*99#,banga,,,Bite,Lithuania
+246,01,*99#,gprs.omnitel.net,,,Omnitel,Lithuania
+246,03,*99#,internet.tele2.lt,,,Tele2 LT,Lithuania
+270,01,*99#,web.pt.lu,,,LUXGSM,Luxembourg
+270,77,*99#,internet,,,Tango,Luxembourg
+294,01,*99#,internet,internet,mobimak,Mobimak,Macedonia
+502,19,*99#,celcom3g,,,Celcom 3G 19,Malaysia
+502,16,*99#,3gdgnet,,,Digi,Malaysia
+502,12,*99#,maxisbb,,,Maxis 3G,Malaysia
+502,13,*99#,celcom3g,,,Celcom 3G 13,Malaysia
+502,18,*99#,my3g,,,U Mobile,Malaysia
+278,01,*99#,internet,,,Vodafone MT,Malta
+278,21,*99#,gointernet,,,GO internet,Malta
+334,02,*99#,ba.amx,,,Telcel 3G,Mexico
+334,03,*99#,internet.movistar.mx,movistar,movistar,movistar MX,Mexico
+204,08,*99#,internet,,,KPN Mobile,Netherlands
+204,20,*99#,internet,,,Orange NL,Netherlands
+204,12,*99#,internet,,,Telfort,Netherlands
+204,16,*99#,internet,,,T-Mobile NL,Netherlands
+204,04,*99#,office.vodafone.nl,vodafone,vodafone,Vodafone NL,Netherlands
+530,01,*99#,www.vodafone.net.nz,,,Vodafone NZ,New Zealand
+530,05,*99#,internet.telecom.co.nz,,,XT MOBILE,New Zealand
+530,24,*99#,internet,,,2DEGREES,New Zealand
+242,02,*99#,internet.netcom.no,,,NetCom,Norway
+242,05,*99#,internet.tele2.no,wap,wap,Tele2 NO,Norway
+242,01,*99#,,telenor,1111,Telenor,Norway
+242,03,*99#,www.teletopia.no,,,Teletopia,Norway
+410,03,*99#,ufone.internet,ufone,ufone,PK-Ufone,Pakistan
+716,10,*99#,tim.pe,,,TIM PE,Peru
+515,02,*99#,internet.globe.com.ph,,,Globe,Philippines
+515,03,*99#,internet,,,Smart PH,Philippines
+515,01,*99#,mbband,,,SUN 3G 01,Philippines
+515,05,*99#,mbband,,,SUN 3G 05,Philippines
+260,01,*99#,internet,,,Cyfrowy Polsat,Poland
+260,02,*99#,erainternet,,,Cyfrowy Polsat,Poland
+260,03,*99#,internet,,,Cyfrowy Polsat,Poland
+260,05,*99#,internet,,,Cyfrowy Polsat,Poland
+260,06,*99#,internet,,,Cyfrowy Polsat,Poland
+260,07,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,08,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,09,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,10,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,11,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,12,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,13,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,14,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,15,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,16,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+260,17,*99#,multi.internet,,,Cyfrowy Polsat,Poland
+268,03,*99#,internet,,,Optimus,Portugal
+268,06,*99#,internet,,,TMN,Portugal
+268,01,*99#,internet.vodafone.pt,vodafone,vodafone,Vodafone PT,Portugal
+427,01,*99#,web.qtel,,,Qtel,Qatar
+226,01,*99#,internet.connex.ro,internet.connex.ro,connex,Connex,Romania
+226,10,*99#,internet,Internet,Orange,Orange RO,Romania
+250,99,*99#,internet.beeline.ru,beeline,beeline,Beeline,Russia
+250,28,*99#,internet.beeline.ru,beeline,beeline,Extel,Russia
+250,02,*99#,internet.msk,,,Megafon,Russia
+250,01,*99#,internet.mts.ru,mts,mts,MTS,Russia
+250,92,*99#,internet.primtel.ru,,,Primtel,Russia
+420,01,*99#,jawalnet.com.sa,,,ALJAWAL,Saudi Arabia
+420,07,*99#,wogstc.com,stc,stc,STC,Saudi Arabia
+420,03,*99#,web2,,,Mobily,Saudi Arabia
+220,01,*99#,internet,mobtel,gprs,Mobtel,Serbia and Montenegro
+220,04,*99#,gprs.monetcg.com,,,Monet,Serbia and Montenegro
+220,03,*99#,gprsinternet,mts,64,Telekom Srbija,Serbia and Montenegro
+525,03,*99#,sunsurf,,,M1,Singapore
+525,01,*99#,internet,,,SingTel 01,Singapore
+525,02,*99#,internet,,,SingTel 02,Singapore
+525,05,*99#,shinternet,,,Starhub,Singapore
+231,02,*99#,internet,,,T-Mobile SK,Slovakia
+231,06,*99#,o2internet,,,O2 internet,Slovakia
+293,41,*99#,internet,mobitel,internet,Mobitel,Slovenia
+293,40,*99#,internet.simobil.si,simobil,internet,SI.mobil,Slovenia
+655,10,*99#,internet,,,MTN ZA,South Africa
+655,01,*99#,internet,,,VodaCom,South Africa
+655,07,*99#,internet,,,Cell C,South Africa
+214,03,*99#,internet,CLIENTE,AMENA,Amena 03,Spain
+214,09,*99#,internet,CLIENTE,AMENA,Amena 09,Spain
+214,07,*99#,movistar.es,MOVISTAR,MOVISTAR,Telefonica Movistar ES 07,Spain
+214,05,*99#,movistar.es,MOVISTAR,MOVISTAR,Telefonica Movistar ES 05,Spain
+214,01,*99#,ac.vodafone.es,vodafone,vodafone,Vodafone ES 01,Spain
+214,06,*99#,ac.vodafone.es,vodafone,vodafone,Vodafone ES 06,Spain
+413,01,*99#,mobitel3g,,,Mobitel,Sri Lanka
+413,02,*99#,dialogbb,,,Dialog,Sri Lanka
+413,05,*99#,airtelDATA,,,Airtel LK,Sri Lanka
+240,02,*99#,bredband.tre.se,,,3 SE 02,Sweden
+240,04,*99#,bredband.tre.se,,,3 SE 04,Sweden
+240,07,*99#,isplnk1.swip.net,wap,wap,Comviq 07,Sweden
+240,05,*99#,isplnk1.swip.net,wap,wap,Comviq 05,Sweden
+240,01,*99#,online.telia.se,,,Telia SE,Sweden
+240,08,*99#,internet.vodafone.net,,,Vodafone SE,Sweden
+228,03,*99#,internet,,,Orange SZ,Switzerland
+228,02,*99#,internet,,,Sunrise,Switzerland
+228,01,*99#,gprs.swisscom.ch,,,Swisscom,Switzerland
+520,01,*99#,internet,,,TH GSM,Thailand
+520,02,*99#,Ving Internet,,,Ving TV,Thiland
+520,23,*99#,internet,,,Hello TH,Thailand
+520,18,*99#,www.dtac.co.th,,,DTAC,Thailand
+520,99,*99#,internet,true,true,True,Thailand
+347,12,*99#,internet,,,TSTT,Trinidad and Tobago
+286,03,*99#,internet,,,Avea,Turkey
+286,02,*99#,telsim,,,Telsim,Turkey
+286,01,*99#,internet,,,Turkcell,Turkey
+234,50,*99#,pepper,,,JT,UK
+234,58,*99#,web.manxpronto.net,gprs,gprs,Manx Pronto,UK
+234,10,*99#,mobile.o2.co.uk,O2web,password,O2 UK,UK
+234,33,*99#,orangeinternet,,,Orange UK,UK
+234,30,*99#,general.t-mobile.uk,user,wap,T-Mobile UK,UK
+234,31,*99#,goto.virginmobile.uk,user,,Virgin UK 31,UK
+234,32,*99#,goto.virginmobile.uk,user,,Virgin UK 32,UK
+234,15,*99#,Internet,web,web,Vodafone UK,UK
+234,20,*99#,3internet,,,3 UK (internet),UK
+255,03,*99#,www.kyivstar.net,igprs,internet,Kyivstar,Ukraine
+255,01,*99#,www.umc.ua,,,UMC,Ukraine
+424,01,*99#,Etisalat.ae,,,Etisalat UAE 01,United Arab Emirates
+424,02,*99#,Etisalat.ae,,,Etisalat UAE 02,United Arab Emirates
+310,20,*99#,union.wap.com,,,Union Wireless,U.S.
+310,16,*99#,internet2.voicestream.com,,,T-Mobile USA 16,USA
+310,21,*99#,internet2.voicestream.com,,,T-Mobile USA 21,USA
+310,22,*99#,internet2.voicestream.com,,,T-Mobile USA 22,USA
+310,23,*99#,internet2.voicestream.com,,,T-Mobile USA 23,USA
+310,24,*99#,internet2.voicestream.com,,,T-Mobile USA 24,USA
+310,25,*99#,internet2.voicestream.com,,,T-Mobile USA 25,USA
+310,26,*99#,internet2.voicestream.com,,,T-Mobile USA 26,USA
+310,27,*99#,internet2.voicestream.com,,,T-Mobile USA 27,USA
+310,31,*99#,internet2.voicestream.com,,,T-Mobile USA 31,USA
+310,80,*99#,internet.wcc.net,1325763000,mmsc,West Central Wireless,U.S.
+310,100,*99#,isp.plateau,,,Plateau Wireless,U.S.
+310,420,*99#,web.gocbw.com,cbw,,CBW,USA
+310,150,*99#,ISP.CINGULAR,ISP@CINGULARGPRS.COM,CINGULAR1,Cingular 150,USA
+310,170,*99#,ISP.CINGULAR,ISP@CINGULARGPRS.COM,CINGULAR1,Cingular 170,USA
+310,380,*99#,ISP.CINGULAR,ISP@CINGULARGPRS.COM,CINGULAR1,Cingular 380,USA
+310,410,*99#,ISP.CINGULAR,ISP@CINGULARGPRS.COM,CINGULAR1,Cingular 410,USA
+310,980,*99#,ISP.CINGULAR,ISP@CINGULARGPRS.COM,CINGULAR1,Cingular 980,USA
+310,160,*99#,internet2.voicestream.com,,,T-Mobile USA 160,USA
+310,200,*99#,internet2.voicestream.com,,,T-Mobile USA 200,USA
+310,210,*99#,internet2.voicestream.com,,,T-Mobile USA 210,USA
+310,220,*99#,internet2.voicestream.com,,,T-Mobile USA 220,USA
+310,230,*99#,internet2.voicestream.com,,,T-Mobile USA 230,USA
+310,240,*99#,internet2.voicestream.com,,,T-Mobile USA 240,USA
+310,250,*99#,internet2.voicestream.com,,,T-Mobile USA 250,USA
+310,260,*99#,epc.tmobile.com,,,tmobile USA,USA
+310,270,*99#,internet2.voicestream.com,,,T-Mobile USA 270,USA
+310,280,*99#,internet2.voicestream.com,,,T-Mobile USA 280,USA
+310,290,*99#,internet2.voicestream.com,,,T-Mobile USA 290,USA
+310,300,*99#,internet2.voicestream.com,,,T-Mobile USA 300,USA
+310,310,*99#,internet2.voicestream.com,,,T-Mobile USA 310,USA
+310,630,*99#,avbi.net.lte,avbi,pigeon,Agri-Valley Broadband,USA
+310,660,*99#,internet2.voicestream.com,,,T-Mobile USA 660,USA
+310,800,*99#,internet2.voicestream.com,,,T-Mobile USA 800,USA
+310,030,*99#,private.centennialwireless.com,privuser,priv,Centennial Wireless,USA
+311,80,*99#,isp.pinecell,,,Pine Cellular,U.S.
+311,650,*99#,unitedwireless,,,United Wireless,USA
+310,450,*99#,internet.vedge.com,,,Viaero Wireless,U.S.
+310,500,*99#,internet.lte.psdatawireless.com,,,Public Service Data Wireless,USA
+302,490,*99#,broadband.windmobile.ca,,,WIND Mobile,Canada
+311,030,*99#,internet.indigo,user1@internet.indigo,indigo,Indigo,U.S.
+310,870,*99#,internet.kaplan,,,PACE Communications,U.S.
+310,320,*99#,isp.cellularoneaz.net,,,CellularONE of NEAZ,U.S.
+311,530,*99#,mymobiletxt.com,,,NewCore Wireless,U.S.
+310,570,*99#,internet,,,Cellular One,U.S.
+310,880,*99#,wapdtcw.com,,,DTC Wireless,U.S.
+310,460,*99#,wap,,,Simmetry Wireless,U.S.
+734,002,*99#,gprsweb.digitel.ve,,,Digitel GSM,Venezuela
+734,02,*99#,gprsweb.digitel.ve,,,Digitel,Venezuela
+734,04,*99#,internet.movistar.ve,,,movistar VE,Venezuela
+452,01,*99#,m-wap,mms,mms,Mobifone,Vietnam
+452,02,*99#,m3-world,mms,mms,Vinaphone,Vietnam
+452,04,*99#,v-internet,,,Viettel,Vietnam
+716,06,*99#,movistar.pe,movistar@datos,movistar,Movistar PE,Peru
+460,00,*99#,cmnet,guest,guest,CMCC,China
+460,01,*99#,3gnet,,,Unicom,China
+748,07,*99#,apnumt.movistar.com.uy,movistar,movistar,movistar UY,Uruguay
+748,01,*99#,antel.lte,,,ANTEL,Uruguay
+724,02,*99#,Tim.br,,,TIM BR 02,Brazil
+724,03,*99#,Tim.br,,,TIM BR 03,Brazil
+724,04,*99#,Tim.br,,,TIM BR 04,Brazil
+724,05,*99#,claro.com.br,claro,claro,Claro BR,Brazil
+724,06,*99#,zap.vivo.com.br,vivo,vivo,Vivo BR 06,Brazil
+724,10,*99#,zap.vivo.com.br,vivo,vivo,Vivo BR 10,Brazil
+724,11,*99#,zap.vivo.com.br,vivo,vivo,Vivo BR 11,Brazil
+724,16,*99#,brt.br,,,Brasil Telecom,Brazil
+724,23,*99#,zap.vivo.com.br,vivo,vivo,Vivo BR 23,Brazil
+724,24,*99#,gprs.amazoniacelular.com.br,celular,celular,Amazonia Celular,Brazil
+724,31,*99#,gprs.oi.com.br,,,Oi,Brazil
+724,32,*99#,ctbc.br,ctbc,1212,CTBC 32,Brazil
+724,33,*99#,ctbc.br,ctbc,1212,CTBC 33,Brazil
+724,34,*99#,ctbc.br,ctbc,1212,CTBC 34,Brazil
+639,02,*99#,Safaricom,web,web,Safaricom,Kenya
+311,360,*99#,isp.stelera.net,,,Stelera,USA
+311,570,*99#,ISP,,,BendBroadband,USA
+621,20,*99#,internet.ng.zain.com,internet,internet,Zain-NG,Nigeria
+621,30,*99#,web.gprs.mtnnigeria.net,web,web,MTN-NG,Nigeria
+621,50,*99#,gloflat,flat,flat,GLO,Nigeria
+621,60,*99#,etisalat,,,Etisalat-NG,Nigeria
+704,01,*99#,internet.ideasclaro,,,Claro Guatemala,Guatemala
+704,02,*99#,broadband.tigo.gt,,,Tigo GT,Guatemala
+704,03,*99#,internet.movistar.gt,movistargt,movistargt,movistar GT,Guatemala
+714,020,*99#,internet.movistar.pa,movistarpa,movistarpa,movistar PA,Panama
+528,11,*99#,dst.internet,internet,internet,DST 3G,Brunei
+528,02,*99#,bmobilewap,,,B-Mobile,Brunei
+422,02,*99#,taif,taif,taif,Oman Mobile,Oman
+722,07,*99#,internet.gprs.unifon.com.ar,wap,wap,movistar AR,Argentina
+722,34,*99#,internet.personal.com,gprs,adgj,Personal Internet Movil,Argentina
+363,01,*99#,internet.setar.aw,,,Setar,Aruba
+710,21,*99#,web.emovil,webemovil,webemovil,Claro NI,Nicaragua
+710,73,*99#,internet.ideasalo.ni,internet,internet,PCS ALO,Nicaragua
+710,300,*99#,internet.movistar.ni,movistarni,movistarni,movistar NI,Nicaragua
+311,030,*99#,internet.indigo,user1@indigo.internet,indigo,Indigo Wireless,USA
+732,101,*99#,internet.comcel.com.co,COMCELWEB,COMCELWEB,COMCEL,Colombia
+732,103,*99#,web.colombiamovil.com.co,,,Tigo CO,Colombia
+732,123,*99#,internet.movistar.com.co,movistar,movistar,movistar CO,Colombia
+744,04,*99#,internet.tigo.py,,,TIGO PY,Paraguay
+714,001,*99#,apn01.cwpanama.com.pa,,,Cable and Wireless,Panama
+706,02,*99#,web.digicelsv.com,,,Digicel,El Salvador
+706,01,*99#,internet.ideasclaro,,,CLARO SV,El Salvador
+706,04,*99#,internet.movistar.sv,movistarsv,movistarsv,movistar SV,El Salvador
+740,00,*99#,internet.movistar.ec,movistar,movistar,movistar EC,Ecuador
+362,91,*99#,utsnet.uts.an,netuser,net123,CHIPPIE,CURACAO
+418,05,*99#,net.asiacell.com,,,Asianet (GPRS-WEB),Iraq
+440,00,*99#,emb.ne.jp,em,em,EMobile,Japan
+440,04,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,06,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,20,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,40,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,41,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,42,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,43,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,44,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,45,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,46,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,47,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,48,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,90,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,92,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,93,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,94,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,95,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,96,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,97,*99#,softbank,ai@softbank,softbank,softbank,Japan
+440,98,*99#,softbank,ai@softbank,softbank,softbank,Japan
+634,01,*99#,internet,,,ZAIN,Sudan
+547,20,*99#,internet,,,Vini,French Polynesia
+372,01,*99#,internet.voila.ht,,,Voila,Haiti
+456,01,*99#,cellcard,mobitel,mobitel,Mobitel,Cambodia
+456,02,*99#,Hellowww,,,Hello KH,Cambodia
+456,04,*99#,WAP,,,QB,Cambodia
+456,05,*99#,internet,,,Star Cell,Cambodia
+456,06,*99#,smart,,,Smart mobile,Cambodia
+456,08,*99#,Metfone,,,Metfone,Cambodia
+456,09,*99#,gprs.beeline.com.kh,,,Beeline KH,Cambodia
+456,18,*99#,Mfone,,,Mfone,Cambodia
+631,02,*99#,internet.unitel.co.ao,,,UNITEL,Angola
+350,000,*99#,web.c1.bm,,,CELLULARONE3G,Bermuda
+330,110,*99#,ba.amx,,,Claro Banda Ancha,Puerto Rico
+311,500,*99#,INT,,,MOSAIC INT,USA
+736,03,*99#,internet.tigo.bo,,,Tigo BO,Bolivia

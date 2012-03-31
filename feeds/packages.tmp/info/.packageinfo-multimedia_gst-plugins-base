@@ -1,0 +1,332 @@
+Source-Makefile: feeds/packages/multimedia/gst-plugins-base/Makefile
+Package: gst-plugins-base-libgstapp
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstapp)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstapp
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstaudio
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstaudio)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstaudio
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstinterfaces
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstinterfaces)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstinterfaces
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstpbutils
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstpbutils)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstpbutils
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgsttag
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgsttag)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgsttag
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstriff
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstriff)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstriff
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstcdda
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstcdda)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstcdda
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstfft
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstfft)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstfft
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstnetbuffer
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstnetbuffer)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstnetbuffer
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstrtp
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstrtp)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstrtp
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstvideo
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstvideo)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstvideo
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstrtsp
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstrtsp)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstrtsp
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-libgstsdp
+Version: 0.10.25-1
+Depends: +gstreamer +libogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (libgstsdp)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer libgstsdp
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-ogg
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +liboil +gst-plugins-base-libgstriff +gst-plugins-base-libgsttag +gst-plugins-base-libgstaudio +gst-plugins-base-libgstinterfaces
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (ogg)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer OGG plugins
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-vorbis
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +libvorbis +gst-plugins-base-ogg +gst-plugins-base-libgsttag +gst-plugins-base-libgstaudio +gst-plugins-base-libgstinterfaces
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (vorbis)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer Vorbis plugins
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-theora
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +libogg +libtheora +gst-plugins-base-ogg
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (theora)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer Theora plugins
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-alsa
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +liboil
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (alsa)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer ALSA plugins
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-app
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +liboil +gst-plugins-base-libgstapp
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (app)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer app plugins
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-audioconvert
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +liboil +gst-plugins-base-libgstaudio +gst-plugins-base-libgstinterfaces
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (audioconvert)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer audioconvert plugins
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-gio
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +liboil +glib2
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer GIO plugins
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-typefindfunctions
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +liboil
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (typefind)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer typefind plugins
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-base-decodebin
+Version: 0.10.25-1
+Depends: +gstreamer +libogg +liboil +gst-plugins-base-libgstpbutils
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-base (decodebin)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-base-0.10.25.tar.bz2
+Type: ipkg
+Description:   gstreamer decodebin plugins
+http://gstreamer.freedesktop.org/
+@@
+
+

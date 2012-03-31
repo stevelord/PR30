@@ -1,0 +1,33 @@
+# Copyright (C) 2006 OpenWrt.org
+
+config interface loopback
+	option ifname	lo
+	option proto	static
+	option ipaddr	127.0.0.1
+	option netmask	255.0.0.0
+
+config interface lan
+	option ifname	"usb0"
+	option type 	bridge
+	option proto	static
+	option ipaddr	192.168.21.1
+	option netmask	255.255.255.0
+
+
+config interface wan
+        option ifname "eth0"
+        option proto  "dhcp"
+        option apn    internet
+        option ppp_redial persist
+        option defaultroute 1
+        option dialnum "*99#"
+        option 'roaming'  'true' 
+        option 'auth'     'pap' 
+        option 'prefer'   'both'
+	option keepalive   0
+	option demand	   180
+	option autoapn	   1
+	option username	   ''
+	option password    ''
+	option network_auto    'auto'
+	option plmn	   ''

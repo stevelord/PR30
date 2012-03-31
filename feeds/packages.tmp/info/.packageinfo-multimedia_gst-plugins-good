@@ -1,0 +1,17 @@
+Source-Makefile: feeds/packages/multimedia/gst-plugins-good/Makefile
+Package: gst-plugins-good-id3demux
+Version: 0.10.17-2
+Depends: +gstreamer +gst-plugins-base-libgsttag +gst-plugins-base-libgstpbutils +libid3tag
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-good (id3demux)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-good-0.10.17.tar.bz2
+Type: ipkg
+Description:   gstreamer FLAC plugins
+http://gstreamer.freedesktop.org/
+@@
+
+

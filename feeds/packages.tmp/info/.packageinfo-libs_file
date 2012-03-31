@@ -1,0 +1,30 @@
+Source-Makefile: feeds/packages/libs/file/Makefile
+Package: file
+Version: 4.26-2
+Depends: +libmagic
+Provides: 
+Build-Depends: libtool
+Section: utils
+Category: Utilities
+Title:  utility
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: file-4.26.tar.gz
+Type: ipkg
+Description:  utility
+@@
+
+Package: libmagic
+Version: 4.26-2
+Depends: +zlib
+Provides: 
+Build-Depends: libtool
+Section: libs
+Category: Libraries
+Title:  library
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: file-4.26.tar.gz
+Type: ipkg
+Description:  library
+@@
+
+

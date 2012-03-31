@@ -1,0 +1,7 @@
+bandLuxe=BandLuxe
+Disconnected=Disconnected
+(%d) - SSID :=(%d) - SSID :
+WPS on:press 5s WPS key=WPS on : press 5s WPS key
+No Device found=No Device found
+New device connected=New device connected
+Reset to default=Reset to default

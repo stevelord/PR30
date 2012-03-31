@@ -1,0 +1,121 @@
+ /* color theme: blue */
+#header {
+    color: #001C2E;
+    background-color: #E8DFC2;
+    background-image: url('/themes/bandluxe/logo_blue.png');
+}
+
+
+#header #header-signal {
+	color: #001C2E;
+}
+
+#submenu{
+   
+    background-color: #ffffff;
+    border-bottom: 2px solid #177182;
+    color: #000000;
+}
+#mainmenu{
+    background-color: #177182;
+    color: #000000;
+}
+
+#mainmenu li a {
+	color: White;
+}
+
+a {
+	color: #001C2E;
+}
+
+#save .page-save, #footer { background-color: #177182; }
+
+#save .apply { background-color: #177182; }
+
+#mainmenu a:hover,
+#mainmenu .selected a{ 
+    background-color: #A7E2FF;
+    color: #001C2E;
+}
+
+#submenu a:hover,
+#submenu .selected a{
+    background-color: #177182;
+    color: White;
+}
+
+
+#save a:hover { background-color: #A7E2FF; }
+
+#content h3 { 
+    background-color: #E8DFC2; 
+    color: #D90050;
+}
+
+#update-available
+{
+	color: #FF0000;
+}
+
+#update-unavailable
+{
+	color: #000000;
+}
+
+#update-error
+{
+	color: #FF0000;
+}
+
+
+#content .settings-block .settings-block-title h2
+{
+	color: #000;
+}
+
+#content .settings-block
+{
+	color: #000;
+	background-color: #FFF;
+}
+
+#content .settings-title
+{
+	color: #000;
+	background-color: #86a0bb;
+}
+
+#content .settings
+{
+	color: #000;
+}
+
+
+.progressbar-filled
+{
+	color: #FFFFFF;
+	background-color: #2b1b9f;
+}
+
+.progressbar-unfilled
+{
+	color: #000;
+	background-color: #000;
+}
+
+.kb
+{
+	color: #222;
+}
+
+.mount-target
+{
+	color: #222;
+}
+
+.warning
+{
+	color: red;
+}
+

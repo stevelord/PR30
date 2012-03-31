@@ -1,0 +1,365 @@
+This package was debianized by GOTO Masanori <gotom@debian.org> on
+Fri, 18 Jun 2004 13:03:45 +0900.
+
+It was downloaded from http://sourceforge.jp/projects/efont/files/
+
+Upstream Authors: (C) 
+  Copyright (c) 1990-2003
+  	Wada Laboratory, the University of Tokyo. All rights reserved.
+  Copyright (c) 2003-2004
+  	Electronic Font Open Laboratory (/efont/). All rights reserved.
+
+Copyright:
+
+Upstream author's license information (In Japanese)
+
+  バイナリは、ソースコードのライセンスと同等とします。ただし、フォントの
+  文書への埋め込みなど、フォントとしての再使用を目的としない用途においては、
+  以下で言う Redistribution には当たらず、制限なく行えるものとします。
+  
+  Copyright (c) 1990-2003
+  	Wada Laboratory, the University of Tokyo. All rights reserved.
+  Copyright (c) 2003-2004
+  	Electronic Font Open Laboratory (/efont/). All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+  1. Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright notice,
+     this list of conditions and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+  3. Neither the name of the Wada Laboratory, the University of Tokyo nor
+     the names of its contributors may be used to endorse or promote products
+     derived from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY WADA LABORATORY, THE UNIVERSITY OF TOKYO AND
+  CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+  NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+  PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE LABORATORY OR
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  
+  埋め込まれたビットマップフォントのライセンスについては、各フォントの添付
+  ドキュメントを同梱しておりますので、そちらをご参照ください。
+  
+  本フォントに含まれる東風フォント由来のグリフは、古川泰之さんが単独で作成した
+  オリジナルデザインに基づく Public Domain 相当のデータのみが含まれています。
+  日立製作所とタイプバンクにより開発された 32 ドットビットマップに由来する
+  漢字データ、ビットマップデータ、現在の CLWFK の ライセンスと異なるライセンス
+  で配布されていた和田研フォントに由来するデータは含まれていません。
+
+
+Upstream author's license information (In English, I translate it)
+
+  Binary data is handled equivalent to source code license.  However,
+  there is no limitation and the below description is not applied
+  as for in order not to reuse as font (ex: font is embeddd to documents).
+
+
+  Copyright (c) 1990-2003
+  	Wada Laboratory, the University of Tokyo. All rights reserved.
+  Copyright (c) 2003-2004
+  	Electronic Font Open Laboratory (/efont/). All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+  1. Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright notice,
+     this list of conditions and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+  3. Neither the name of the Wada Laboratory, the University of Tokyo nor
+     the names of its contributors may be used to endorse or promote products
+     derived from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY WADA LABORATORY, THE UNIVERSITY OF TOKYO AND
+  CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+  NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+  PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE LABORATORY OR
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  
+  
+  Licenses for embedded bitmap font are described each font license files.
+  
+  This font includes glyphs derived from Kochi font which is created
+  by only Yasuhiro Furukawa with original design and is Public Domain data.
+
+
+Ayu font license information (In Japanese)
+
+  Ayu ビットマップフォントは public domain です。商用/非商用利用、あ
+らゆる改変、複製、再配布は自由です。
+
+Ayu font license information (In English, I translate it)
+
+  Ayu bitmap font is public domain.
+
+
+Kappa font license information (In Japanese)
+
+  ● Kappa 20dot Fonts について
+  　このアーカイブには、20×20ドット漢字フォントを含む、X Window System 用の
+  フォントが収められています。これらのフォントはすべて作者が作ったもので、自
+  由に利用・複製・改変することができます。
+
+  ●利用について、許諾条件
+  	要旨：public domain で、無保証な物として扱って下さい。
+  (以下は同じ内容を詳しく述べただけです。私的に使用するだけ、変更を加えず
+  再配布するだけなら、この要旨を理解すれば、後の部分は読む必要はありません)
+  
+  ○Kappa 20dot Fonts Version 0.395 の利用許諾条件
+  以下の許諾条件に同意できない場合は、速やかに本ソフトウェアを廃棄して下さい。
+  
+  	Kappa 20dot Fonts は“public domain”であることを標榜していますが、
+  	実際には本許諾条件を伴って配布されています。しかし、この許諾条件
+  	によって制限されるのは、本ソフトウェアの public domain としての
+  	存続を妨げる行為だけですから、“public domain”という形容を用いる
+  	ことに問題はないと考えています。
+  
+  1. 本ソフトウェアの著作者は、著作者であることに由来する独占的権利を
+     主張しません。誰でも、本ソフトウェアを利用することができます。
+     利用には、著作者および再配布者による個別の許諾を必要としません。
+  
+  	「本ソフトウェア」とは、前記「アーカイブの内容一覧」に記した
+  	ファイルのうち、本文書 (README ファイル) を除くすべてを総体と
+  	して指すものです。本ソフトウェアは、本附属文書とともに、1 個の
+  	.tar.bz2 形式のファイルとして、不可分の形で提供されています。
+  
+  	本文書そのものは、「本ソフトウェア」に含まれません。
+  	内容の変更・削除を行わない場合に限り、本ファイルを再配布する
+  	ことができます。参照の用のために本文書の全文を分割せずに
+  	他の文書の中に取り込み、転載することができますが、その場合は
+  	転載部分とそれ以外の部分が明瞭に識別できるようにしなければ
+  	なりません。
+  
+  	「利用」とは、本ソフトウェアの入手・使用 (ドットパターンの
+  	空間的配置形態の再現)・改変・再配布・改変派生物の配布を含む、
+  	本ソフトウェアを用いて行うことのできる全ての行為を指します。
+  
+  2. 誰でも、本ソフトウェアの派生物に独自の著作権標示を付け加え、任意の
+     使用許諾の下で配布することができます。
+     ただし、本条項の各項に反するような形で、排他的権利を主張することは
+     できません(特に次項にご注意下さい)。
+  
+  	「本ソフトウェアの派生物」とは、
+  	・一部または全部の字形あるいは付加情報を変更したフォント
+  	・フォントフォーマットの変換を行った物
+  	・アーカイブ形式の変更や、各ファイルの単独分離を行なった物
+  	・本ソフトウェア内のフォントを利用して表示を行うハードウェア
+  	・フォントを使用して表示した画面のキャプチャー画像
+  	・本ソフトウェアのフォントから部分字形を取り出し、組み替えなど
+  	  の修正を施して作った、別の文字集合のフォント
+  	などの全てを含みます。BDF ファイル内に著作権標示を加えた場合、
+  	それは付加情報を付け加えたものとなります。すなわち、字形や
+  	フォントメトリックなどの、表示に寄与する情報を一切改変せずに
+  	著作権標示のみを付け加えたものも、本ソフトウェアの派生物であり、
+  	本ソフトウェアとは別の物であるとして扱われます。
+  
+  3. 本ソフトウェアの派生物に対する権利を主張する者は、自分が手を加えた
+     改変派生物およびその副次派生物にのみ権利を主張することができます。
+     他人が、本ソフトウェアならびに、上記の改変派生物およびその副次派生物
+     を除く本ソフトウェアの派生物を利用する権利を妨げることはできません。
+  
+  	例えば、自分の作成した OS の表示用フォントとして本ソフトウェアを
+  	フォーマット変換して提供した場合、そのフォントの複製やリバース
+  	エンジニアリング、他 OS での使用を禁止することができます。
+  	しかし、その OS の利用者に対し、本ソフトウェアやそれを変換した
+  	物の使用 (その OS 上に於いても)・変更・配布を行う権利を禁じたり、
+  	これらの行為の有無に基づいて差別的な契約条項を課したりすることは
+  	できません。
+  
+  4. 本ソフトウェアへの通常考え得る改変に対し、その作業結果である改変派生
+     物に著作権を主張することはできますが、その改変行為そのものに対して
+     権利を主張することはできません。その改変派生物の存在を知っていたか
+     否かを問わず、原著作者または第三者が同等の方針に基づいた改変行為を
+     行う権利を妨げることはできません。
+  
+  	例えば、本ソフトウェアの未完成部分の字形を、作成済みの部分の
+  	字形から文字部品を拾い組み合わせて完成した場合、その後に
+  	原著作者が同様の行為を行なって作製したフォントにも同一の字形が
+  	現れます (画素数の制限により、全く同じ字形パターンになる文字が
+  	相当数含まれることが予想されます)。
+  	この、独立に作製された派生物における、偶然の一致および内在的な
+  	制限に因る必然的な一致部分に対し、著作権の侵害を主張することは
+  	できません。
+  	バグ修正に関しても同様です。全文字に対して誤字の有無をチェックし、
+  	誤字形を改変した上でそのフォントを有償提供しても構いません。
+  	その場合、その付属文書にある誤字と修正内容のリスト (例えば
+  	「禄 誤:ころもへん 正:しめすへん」のような)を基に、原著作者が
+  	字体修正を行った場合、それが全く同じ修整字形になったとしても、
+  	誤字指摘者・原修正者の著作権には抵触するものと見做してはなりません。
+  
+  5. 何人も本ソフトウェアの派生物の著作権者であることを主張できますし、
+     著作者名を秘匿してその派生物を配布することはできますが、著作者で
+     あることを偽って主張することはできません。
+     原著作者の名前を著作権標示に記載する必要はありません。とくに、
+     本ソフトウェアの派生物を有償頒布する場合、原著作者が商業的利益を
+     共有していると誤解されることのないように配慮しなければなりません。
+  
+  6. 本ソフトウェアは、「あるがまま」で提供される物であり、著作者および
+     再配布者は、公的・私的な規格や言語慣習への適合性、何らかの用途への有用性
+     などの、品質に関する保証を一切行いません。本文書の記述を、そのような
+     保証を行うものと解してはなりません。
+     本ソフトウェアの利用に起因する損害に対し、その責任はすべて利用者が
+     負うものとします。損害の起こる可能性が知られていた場合でも、著作者
+     および再配布者は、法的・道義的な責任を負うことはありません。
+     著作者および再配布者は、本ソフトウェアに不具合が発見されたときに、それを
+     修正・告知する義務を負いません。
+  
+  7. 本ソフトウェアの派生物に対し、権利の主張または質に関する何らかの保証を
+     行う者は、適切な著作権標示を行い、利用許諾条件と保証の範囲を明確に
+     示さなければなりません。
+     本ソフトウェアと同等の許諾条項に従って派生物を配布する者は、本文書を
+     添付することで許諾条項の提示に代えることができます。
+     本ソフトウェアと異なる許諾条項を提示し、なおかつ本文書を派生物に添付
+     して配布する場合は、本文書の使用許諾条項が有効ではないことが利用者に
+     明瞭に見て取れるように配慮しなければなりません。
+     新たに提示した許諾条件の内容および提示方法の不備に起因する、改変物の
+     著作者・著作権者、利用者および第三者の被った損害に対する責は、改変物
+     の著作権者が負うものとします。
+  
+  8. 本ソフトウェアは、狩野宏樹と永尾制一の共同著作物ですが、狩野宏樹を
+     代表著作者および連絡先とします。
+  
+  以上
+  
+  ○ソフトウェアの配布に関わる混乱を避けるために
+  
+  以下に述べるのは使用許諾条件の一部ではなく、単なるお願いあるいは推奨に
+  過ぎませんが、混乱を避けるためにできる限り従って下さい。
+  
+  ・本バージョンは未完成版です。今後、バージョンアップを行う予定です。
+    変更に追従して、最新版を再配布するように心がけて下さい。転載される
+    方は、ご連絡下さればバージョンアップの際にお知らせします。
+  　ただし、本バージョン
+  
+  ・漢字をフォントとして用いる場合、第二水準までの文字全てを用いるように
+    心がけて下さい。ビットマップパターンをフォントとして利用することの
+    できる形で提供し、なおかつ改変ができない環境(典型的には、表示用ハード
+    ウェアへの組み込み)では、
+  
+  ・フォントの字形に改変を行わない派生物は、「Kappa 20dot Fonts」という
+    呼称を保存して、変更箇所が明らかになる説明的名称を付け加えて下さい。
+  	例：「(機種名)用 Kappa 20dot Fonts」
+    フォントの字形改変を行った場合、「Kappa 20dot Fonts」という名称を
+    用いないか、修正者の名前を明示して下さい。この場合、「Kappa20」という
+    略称を用いても構いません。
+  	例：「(修正者名)修訂版 Kappa 20dot Fonts」
+  	　　「20×24 ドット版 Kappa20」
+  
+  ・バグなどを発見した場合はご報告を願います。
+  
+  なお、本ソフトウェアは「正しい字体」に関する著作者の解釈を示したものでは
+  ありません。
+
+Kappa font license information (In English, I translate it)
+
+  * About Kappa 20dot Fonts
+    This archive has fonts for X Window System including 20x20 dot Kanji font.
+    These fonts are created by author (me), you can freely use, copy, and
+    modify.
+
+  * agreement for use:
+      summary: public domain, and no warranty.
+    (and blow statement describes the same agreement in detail)
+
+
+Misaki font license information (In Japanese)
+
+  Copyright (C) 2002-2004 #Shin.Y
+
+  これらのフォントはフリー（自由な）ソフトウエアです。
+  あらゆる改変の有無に関わらず、また商業的な利用であっても、
+自由にご利用、複製、再配布することができますが、全て無保証
+とさせていただきます。
+
+Misaki font license information (In English, I translate it)
+
+  Copyright (C) 2002-2004 #Shin.Y
+
+  These fonts are free softwares.
+  Unlimited permission is granted to use, copy, and
+distribute it, with or without modification, either
+commercially and noncommercially.
+  THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.
+
+
+Mplus font license information (In Japanese)
+
+	これらのフォントはフリー（自由な）ソフトウエアです。
+	あらゆる改変の有無に関わらず、また商業的な利用であっても、自由にご利用、
+	複製、再配布することができますが、全て無保証とさせていただきます。
+
+Mplus font license information (In English, I translate it)
+
+	These fonts are free softwares.
+	Unlimited permission is granted to use, copy, and distribute it, with
+	or without modification, either commercially and noncommercially.
+	THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.
+
+
+Oradano font license information (In Japanese)
+
+  ■ORADANO明朝フォントの利用
+  
+  このフォントは、印刷・表示、電子文書への埋め込み等の目的で、誰もが自
+  由に無償で用いることができます。
+  このフォントの配布・再配布は、自由に無償で行うことができます。
+  このフォントを、より大きな規模のソフトウエアパッケージの一部として販
+  売するなどしても構いません。
+  このフォントを用いて新たなフォントの開発を行うことも可能です。
+  
+  ■ORADANO明朝フォントの免責事項
+  
+  ORADANO明朝フォントは、「あるがまま」で提供される物であり、製作者およ
+  び再配布者は、公的・私的な規格や言語慣習への適合性、何らかの用途への
+  有用性などの、品質に関する保証を一切行いません。
+  このフォントの利用に起因する損害に対し、その責任はすべて利用者が負う
+  ものとします。損害の起こる可能性が知られていた場合でも、製作者および
+  再配布者は、法的・道義的な責任を負うことはありません。
+  製作者および再配布者は、このフォントに不具合が発見されたときに、それ
+  を修正・告知する義務を負いません。
+
+Oradano font license information (In English, I translate it)
+
+  Use of ORADANO Mincho font
+
+  This font can use freely without regard to the cost for printing,
+  displaying, embedding to the electric font and so on.
+  You can distribute, redistribute freely.
+  You can sell this font in one part of software package.
+  You can develop new font based on this font.
+  
+  Warranty of ORADANO Mincho font
+
+  Summary: ORADANO Mincho fonts are provided "AS IS" without warranty.
+
+Shinonome font license information (In Japanese)
+
+  このアーカイブに含まれるすべてのフォントデータ、ドキュメント、スクリプ
+  ト類はすべて Public Domain で提供されています 。
+  
+  但し、日本に於いては現時点で著作権を放棄することは法律上不可能であり、
+  AUTHORS に列挙されている作者がその権利を行使しないと宣言することで実質
+  的な Public Domain であるとします。
+  
+  自由な改造、他フォーマットへの変換、組込み、再配布を行うことができます。
+  同時に、これらはすべて完全に無保証です。
+
+Shinonome font license information (In English, I translate it)
+
+  Summary: Public Domain

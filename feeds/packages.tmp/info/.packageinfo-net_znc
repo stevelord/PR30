@@ -1,0 +1,19 @@
+Source-Makefile: feeds/packages/net/znc/Makefile
+Package: znc
+Submenu: Instant Messaging
+Version: 0.078-1
+Depends: +libopenssl +uclibcxx
+Provides: 
+Section: net
+Category: Network
+Title: ZNC
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: znc-0.078.tar.gz
+Type: ipkg
+Description: 	ZNC is an IRC bouncer with many advanced features like detaching,
+	multiple users, per channel playback buffer, SSL, IPv6, transparent DCC
+	bouncing, and c++ module support to name a few.
+http://en.znc.in/
+@@
+
+

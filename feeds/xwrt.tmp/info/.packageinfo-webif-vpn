@@ -1,0 +1,16 @@
+Source-Makefile: feeds/xwrt/webif-vpn/Makefile
+Package: webif-vpn
+Submenu: webif
+Version: 0.1-1
+Depends: +webif
+Provides: 
+Section: admin
+Category: Administration
+Title: X-Wrt VPN Pages
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description: X-Wrt VPN Pages
+@@
+
+

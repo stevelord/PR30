@@ -1,0 +1,16 @@
+Source-Makefile: feeds/packages/net/netatalk/Makefile
+Package: netatalk
+Version: 2.0.5-3
+Depends: +libdb47 +libgcrypt +libopenssl
+Provides: 
+Section: net
+Category: Network
+Title: netatalk
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: netatalk-2.0.5.tar.gz
+Type: ipkg
+Description: netatalk
+http://netatalk.sourceforge.net
+@@
+
+

@@ -1,0 +1,381 @@
+﻿# ================================================================================================
+# NOTICE!! Translation principle: ONLY need to modify the strings on the RIGHT HAND SIDE of "=>" .
+# IF you see something like $refresh_timeout (string starts with a $) or <br \>, 
+# please DO NOT modify this kind of variable of our program.
+# ================================================================================================
+# leave at least one comment here to skip the BOM character
+# language name
+Advanced => Advanced
+Wizard => Wizard
+
+# Advanced-confman.sh
+Backup and Restore => Backup and Restore
+confman_noauto_click => If downloading does not start automatically, click here in 30 seconds
+Restore Configuration => Restore Configuration
+confman_restoring_conf => Restoring configuration.
+confman_restoring_file => restoring
+Rebooting now => Rebooting now
+confman_bad_dir => bad directory
+confman_good_conf => The configuration file checked
+Restore => Restore
+Backup Configuration => Backup Configuration
+Name this configuration => Name this configuration
+Backup => Backup
+Saved config.tgz file => Saved config.tgz file
+Reset Function => Reset Function
+Reset To Default => Reset To Default
+Backup &amp; Restore => Backup and Restore
+Reset back to factory default succeeded => Reset back to factory default succeeded
+The system is restarting in 5 seconds => The system is restarting in 5 seconds
+Reset back to factory default failed => Reset back to factory default failed
+
+# Advanced-dhcp.sh
+DHCP Configuration => DHCP Configuration
+DHCP Start IP => DHCP Start IP
+DHCP Limit => DHCP Limit
+DHCP Lease Time => DHCP Lease Time
+DHCP => DHCP
+On => On
+Off => Off
+Start => Start
+Limit => Limit
+Lease Time (in minutes) => Lease Time (in minutes)
+network_hosts_Active_Leases => Active DHCP Leases
+network_hosts_MAC => MAC Address
+network_hosts_IP => IP Address
+network_hosts_Name => Name
+network_hosts_Expires => Expires in
+expired => expired
+network_hosts_No_leases => There are no known DHCP leases.
+DHCP Server => DHCP Server
+IP range cannot be over 255 => IP range cannot be over 255
+
+# Advanced-HSPAconfig.sh
+HSPA Config => HSPA Config
+Authentication Type => Authentication Type
+Roaming Connection => Roaming Connection
+Enabled => Enabled
+Disabled => Disabled
+Redial Policy => Redial Policy
+Connect on Demand => Connect on Demand
+Keep Alive => Keep Alive
+Maximum Idle Time (in minutes) => Maximum Idle Time (in minutes)
+Auto APN => Auto APN
+Update APN => Update APN
+Profile => Profile
+Username => Username
+Password => Password
+Dial Number => Dial Number
+Network Selection => Network Selection
+Preference => Preference
+Automatic => Automatic
+UMTS only => UMTS only
+GPRS only => GPRS only
+Select Network => Select Network
+Auto => Auto
+Manual => Manual
+Availabe Networks => Availabe Networks
+Scan Network => Scan Network
+HSPA Configuration => HSPA Configuration
+Operator => Operator
+Type => Type
+Update APN status => Update APN status
+Success => Success
+Fail => Fail
+Helptext Idle Time => The number of minutes without internet traffic that the router should wait before disconnecting from the Internet (Connect on Demand only)
+Configuration => Configuration
+Information Not Available => Information Not Available
+
+# Advanced-info.sh
+NO SERVICE => NO SERVICE
+Info => Info
+System Information => System Information
+System Status => System Status
+Battery Status => Battery Status
+Battery Capacity => Battery Capacity
+Local Network => Local Network
+Router IP Address (USB) => Router IP Address (USB)
+Router IP Address (WLAN) => Router IP Address (WLAN)
+Netmask (WLAN) => Netmask (WLAN)
+DHCP Start IP Address => DHCP Start IP Address
+DHCP End IP Address => DHCP End IP Address
+Register Network => Register Network
+SIM Status => SIM Status
+Network Name => Network Name
+Network Technology => Network Technology
+Roaming => Roaming
+Internet Connection => Internet Connection
+Connection Type => Connection Type
+Internet IP Address => Internet IP Address
+Subnet Mask => Subnet Mask
+Default Gateway => Default Gateway
+Personal => Personal
+WLAN Network => WLAN Network
+Standard Channel => Standard Channel
+Security => Security
+SSID Broadcast => SSID Broadcast
+Firmware Information => Firmware Information
+Router Firmware Version => Router Firmware Version
+Modem Firmware Version => Modem Firmware Version
+APN Version => APN Version
+APN => APN
+PIN Disabled => PIN Disabled
+PIN Enabled => PIN Enabled
+PIN Enabled requires verification => PIN Enabled requires verification
+PIN Blocked => PIN Blocked
+PIN Invalid => PIN Invalid
+Read SIM Failed => Read SIM Failed
+Home => Home
+Charging Mode => Charging Mode
+Battery Mode => Battery Mode
+
+# Advanced-network.sh
+Network => Network
+WLAN IP Address => WLAN IP Address
+WLAN Netmask => WLAN Netmask
+WLAN Network Configuration => WLAN Network Configuration
+Router IP Address Via WLAN => Router IP Address Via WLAN
+Netmask => Netmask
+USB Network Configuration => USB Network Configuration
+Router IP Address Via USB => Router IP Address Via USB
+Basic Firewall => Basic Firewall
+Firewall Settings => Firewall Settings
+Network Configuration => Network Configuration
+USB IP Address => USB IP Address
+
+# Advanced-password.sh
+Passwords do not match => Passwords do not match
+Password Change => Password Change
+New Password => New Password
+Confirm Password => Confirm Password
+
+# Advanced-pinmanage.sh
+PIN Management => PIN Management
+PIN Code => PIN Code
+PIN Verify => PIN Verify
+Old PIN Code => Old PIN Code
+New PIN Code => New PIN Code
+New PIN Confirm => New PIN Confirm
+PIN Verification => PIN Verification
+Verify => Verify
+PIN Protection => PIN Protection
+Apply => Apply
+PIN Modification => PIN Modification
+Change => Change
+PIN code for the SIM card, should be 4 to 8 digits => PIN code for the SIM card, should be 4 to 8 digits
+Please enter the PIN code => Please enter the PIN code
+PIN Verification Succeeded => PIN Verification Succeeded
+PIN Verification Failed => PIN Verification Failed
+more tries before the SIM locked => more tries before the SIM locked
+PIN Enabled Succeeded => PIN Enabled Succeeded
+PIN Enabled Failed => PIN Enabled Failed
+PIN Disabled Succeeded => PIN Disabled Succeeded
+PIN Disabled Failed => PIN Disabled Failed
+The new PIN codes are not matched => The new PIN codes are not matched
+PIN Change Succeeded => PIN Change Succeeded
+PIN Change Failed => PIN Change Failed
+
+# Advanced-sdcard.sh
+SD Card Settings => SD Card Settings
+Network Sharing => Network Sharing
+SD Memory Card => SD Memory Card
+SD Card => SD Card
+
+# Advanced-upgrade.sh
+Firmware Upgrade => Firmware Upgrade
+Do not save current configuration => Do not save current configuration
+Firmware Image => Firmware Image
+Upgrade => Upgrade
+Upgrading firmware => Upgrading firmware
+Don't backup user configuration => Don't backup user configuration
+Fail to backup user configuration => Fail to backup user configuration
+backup user configuration => backup user configuration
+Browse => Browse
+
+# Advanced-wlan.sh
+Helptext WEP => Helptext WEP
+WLAN => WLAN
+Pre-Shared Key => Pre-Shared Key
+Selected WEP Key => Selected WEP Key
+WEP Key => WEP Key
+Basic Configuration => Basic Configuration
+Operation Mode => Operation Mode
+Auto-off => Auto-off
+Manual-off => Manual-off
+Maximum Idle Time => Maximum Idle Time
+Radio => Radio
+On => On
+Off => Off
+Minutes => Minutes
+Channel => Channel
+WLAN Security Setting => WLAN Security Setting
+Encryption Type => Encryption Type
+Passphrase => Passphrase
+Generate 40/64-bit Keys => Generate 40/64-bit Keys
+Generate 104/128-bit Key => Generate 104/128-bit Key
+WPA Encryption => WPA Encryption
+Pre-shared key => Pre-shared key
+WLAN Configuration => WLAN Configuration
+WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then  enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button. => WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then  enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button.
+WPA offers two encryption methods, TKIP and AES, with dynamic encryption keys. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits. => WPA offers two encryption methods, TKIP and AES, with dynamic encryption keys. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits.
+WPA2 is a stronger encryption method than WPA. This method offers two encryption methods, AES and WPA-TKIP or WPA2-AES, with dynamic encryption keys. Select the type of encryption method you want  to use, AES or TKIP or TKIP+AES. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits. => WPA2 is a stronger encryption method than WPA. This method offers two encryption methods, AES and WPA-TKIP or WPA2-AES, with dynamic encryption keys. Select the type of encryption method you want  to use, AES or TKIP or TKIP+AES. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits.
+
+# Apply.sh
+Processing => Processing
+Critical Error => Critical Error
+Could not replace => Could not replace
+Media full => Media full
+Starting => Starting
+Stopping => Stopping
+config file => config file
+Applying => Applying
+conntrack settings => contract settings
+Setting => Setting
+Done => Done
+Initializing theme ... => Initializing theme ...
+Error => Error
+installing theme package => installing theme package
+Installing language pack => Installing language pack
+Error installing language pack => Error installing language pack
+Committing => Committing
+Waiting for the commit to finish => Waiting for the commit to finish
+Reloading => Reloading
+network => network
+ro=1 and user roaming disable => ro=1 and user roaming disable
+go => go
+change 3g setting => change 3g setting
+wireless => wireless
+OpenVPN => OpenVPN
+Exporting => Exporting
+l2tpns server settings => l2tpns server settings
+l2tpns server => l2tpns server
+TZ setting => TZ setting
+Starting SSL => Starting SSL
+Stopping SSL => Stopping SSL
+upnpd => upnpd
+qos => qos
+syslogd => syslogd
+
+# Browser.awk
+browser_Filesystem_Browser => Filesystem Browser
+browser_Root => Root
+browser_Permissions => Permissions
+browser_Owner => Owner
+browser_Group => Group
+browser_Time => Time
+browser_Parent_Directory => Parent Directory
+browser_Directory => Directory
+browser_Delete => Delete
+browser_File => File
+browser_Edit => Edit
+
+# Common.awk
+Short help => Short help
+caption => caption
+name => name
+
+# Config.sh
+No config change. => No configuration changes were made.
+Config discarded. => Your configuration changes have been discarded.
+Config changes: => Current configuration changes:
+Edited files: => Edited files:
+Updating config... => Updating your configuration..... Please wait for
+second => second
+Stays with the same language configuration. => Stays with the same language configuration.
+Stays with the default configuration. => Stays with the default configuration.
+
+# Editor.awk
+editor_File => File
+editor_click_apply => After you are done changing files and making other configuration adjustments, you must click the Apply link to make the changes permanent.
+
+# Form.awk
+Add => Add
+more... => more...
+Remove => Remove
+
+# Functions.sh
+Installing package => Installing package
+Refreshing outdated packages lists => Refreshing outdated packages lists
+Package install failed. => Package install failed.
+features_require_package => Features on this page require the package
+features_install => install now
+
+# Notes.awk
+notes_header => Notes
+notes_save_changes => The changes are permanent after you click the Save Changes button.
+
+# Reboot.sh
+Yes, really reboot now => Yes, really reboot now
+Rebooting now => Rebooting now
+reboot_wait => Please wait about
+reboot_seconds => seconds.
+reboot_reload => The router should automatically reload.
+
+# Subcategories.awk
+Subcategories => Subcategories
+
+# Validate.awk
+Invalid value => Invalid value
+Invalid key length => Invalid key length
+String too long => String too long
+String too short => String too short
+Invalid hex key => Invalid hex key
+No value entered => No value entered
+Value too small => Value too small
+minimum => minimum
+minimum length => minimum length
+Value too large => Value too large
+maximum => maximum
+maximum length => maximum length
+Invalid dots => Invalid dots
+Invalid spaces => Invalid spaces
+Missing netmask => Missing netmask
+Netmask not allowed => Netmask not allowed
+Error in => Error in
+
+# Webif.sh
+big_warning => WARNING
+page_incomplete => This page is incomplete and may not work correctly, or at all.
+page_untested => This page is untested and may or may not work correctly.
+page_untested_kamikaze => This page has not been updated or checked for correct functionality under Kamikaze.
+features_require_package => Features on this page require the package
+features_install => install now
+Settings saved => Settings saved
+Settings not saved => Settings not saved
+Save Changes => Save Changes
+Administrative Console => Administrative Console
+PR30 Series Administration Console => PR30 Series Administration Console
+Password_mismatch => The entered passwords do not match!
+Warning => Warning
+Password_warning => You haven't set a password for the Web interface and SSH access.<br />Please enter one now (the user name in your browser will be 'root').
+Set => Set
+Proceed Changes => Proceed Changes
+Apply Changes => Apply Changes
+Clear Changes => Clear Changes
+Review Changes => Review Changes
+Previous => Previous
+Next => Next
+Save => Save
+Cancel => Cancel
+Finish => Finish
+
+# Wizard-finish.sh
+Setup Wizard Completed! The router is functional now. => Setup Wizard Completed! The router is functional now.
+
+# Wizard-language.sh
+OK => OK
+Language Settings => Language Settings
+Language => Language
+English => English
+Traditional Chinese => 繁體中文
+Arabic => العربية
+Spanish => Español
+French => Français
+
+# Wizard-wifi.sh
+WLAN Settings => WLAN Settings
+SSID => SSID
+Generate 40bit Keys => Generate 40bit Keys
+Generate 128bit Key => Generate 128bit Key
+WPA Pre-shared key => WPA Pre-shared key
+WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to  enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button. => WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to  enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button.

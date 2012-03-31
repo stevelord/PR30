@@ -1,0 +1,31 @@
+#!/bin/sh /etc/rc.common
+
+START=15
+USERDATA_PATH=`br_mount_point /dev/mtdblock5`
+
+start() {
+        echo "Check backup folder..."
+        if [ -d "$USERDATA_PATH/recover" ]; then
+                echo "backup folder is exist"
+                cp -r $USERDATA_PATH/recover/config /etc
+		cp -f $USERDATA_PATH/recover/passwd /etc
+                rm -rf $USERDATA_PATH/recover
+        else
+                echo "Backup folder is not exist"
+        fi
+
+	if [ -d "$USERDATA_PATH/default_bk" ]; then
+                echo "backup folder is exist"
+                cp -r $USERDATA_PATH/default_bk/config /etc
+		cp -f $USERDATA_PATH/default_bk/passwd /etc
+                rm -rf $USERDATA_PATH/default_bk
+        else
+                echo "Backup folder is not exist"
+        fi
+}
+
+stop() {
+        echo "..."
+
+}
+

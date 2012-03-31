@@ -1,0 +1,33 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006 OpenWrt.org 
+
+START=99
+BR_FACTORY_ENABLE=`br_factory`
+SD_PATH=`br_mount_point /dev/mmcblk0p1`
+
+start() {
+        if [ ${BR_FACTORY_ENABLE} -eq 1 ]; then
+		echo "[BANDRICH] factory mode"
+
+	        rmmod g_ether
+	        insmod g_serial
+
+
+		cd $SD_PATH
+		./brftmserver &	
+		echo "[BANDRICH] factory test finish ..."
+
+
+
+        elif [ ${BR_FACTORY_ENABLE} -eq 2 ]; then
+		echo "[BANDRICH] factory WiFi mode"
+		cd /mnt/client
+		./wifi_client_test.sh &	
+	else
+		echo "[BANDRICH] normal mode"
+		if [ -f /mnt/ft_upgrade.sh ]; then
+			echo "[BANDRICH] Run ft_upgrade.sh"
+			/mnt/ft_upgrade.sh &
+		fi
+	fi
+}

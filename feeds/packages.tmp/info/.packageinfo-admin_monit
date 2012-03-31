@@ -1,0 +1,32 @@
+Source-Makefile: feeds/packages/admin/monit/Makefile
+Package: monit
+Version: 5.0.3-1
+Depends: +libpthread +libopenssl
+Provides: 
+Section: admin
+Category: Administration
+Title: System services monitoring utility (with SSL support)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: monit-5.0.3.tar.gz
+Type: ipkg
+Description: 	An utility for monitoring services on a Unix system
+	This package is built with SSL support.
+http://mmonit.com/monit/
+@@
+
+Package: monit-nossl
+Version: 5.0.3-1
+Depends: +libpthread
+Provides: 
+Section: admin
+Category: Administration
+Title: System services monitoring utility (without SSL support)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: monit-5.0.3.tar.gz
+Type: ipkg
+Description: 	An utility for monitoring services on a Unix system
+	This package is built without SSL support.
+http://mmonit.com/monit/
+@@
+
+

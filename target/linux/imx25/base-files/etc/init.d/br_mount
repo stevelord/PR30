@@ -1,0 +1,22 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006 OpenWrt.org 
+
+START=13
+BR_FACTORY_ENABLE=`br_factory`
+start() {
+        USERDATA_MTD=`cat /proc/mtd | grep userdata | awk -F":" '{ print $1 }' | cut -dd -f 2`
+
+	[ -d /userdata ] && /bin/mount -t jffs2 -o rw /dev/mtdblock$USERDATA_MTD /userdata
+	if [ ${BR_FACTORY_ENABLE} -eq 1 ]; then
+		echo "[BANDRICH] Factory mode, data partition is RW"
+	else
+		echo "[BANDRICH] Normal mode, data partition is RO"
+		/bin/umount /data
+                [ -d /data ] && /bin/mount -t jffs2 -o ro /dev/mtdblock1 /data
+
+		if [ ${BR_FACTORY_ENABLE} -eq 0 ]; then
+
+			/usr/bin/GDevSwitch otg-switch /userdata/cdrom.iso &
+		fi
+	fi
+}

@@ -1,0 +1,34 @@
+Source-Makefile: feeds/packages/ipv6/miredo/Makefile
+Package: miredo-server
+Submenu: miredo: Teredo (IPv6 tunneling over UDP through NAT)
+Version: 1.1.7-3
+Depends: +libpthread +uclibcxx +kmod-ipv6 +kmod-tun
+Provides: 
+Build-Depends: libtool
+Section: ipv6
+Category: IPv6
+Title: Teredo (IPv6 tunneling over UDP through NAT) server daemon
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: miredo-1.1.7.tar.bz2
+Type: ipkg
+Description: Teredo (IPv6 tunneling over UDP through NAT) server daemon
+http://www.simphalempin.com/dev/miredo/
+@@
+
+Package: miredo-client
+Submenu: miredo: Teredo (IPv6 tunneling over UDP through NAT)
+Version: 1.1.7-3
+Depends: +libpthread +uclibcxx +kmod-ipv6 +kmod-tun
+Provides: 
+Build-Depends: libtool
+Section: ipv6
+Category: IPv6
+Title: Teredo (IPv6 tunneling over UDP through NAT) client and relay daemon
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: miredo-1.1.7.tar.bz2
+Type: ipkg
+Description: Teredo (IPv6 tunneling over UDP through NAT) client and relay daemon
+http://www.simphalempin.com/dev/miredo/
+@@
+
+

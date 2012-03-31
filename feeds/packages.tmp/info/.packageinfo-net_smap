@@ -1,0 +1,18 @@
+Source-Makefile: feeds/packages/net/smap/Makefile
+Package: smap
+Version: 0.6.0-2
+Depends: +libpthread
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: A SIP network discovery tool
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: smap-20081016.tar.gz
+Type: ipkg
+Description:  Discovers and identifies SIP devices on the network including hardware
+ phones, softphones, PBX software, and PBX equipment.
+http://www.wormulon.net/smap/
+@@
+
+

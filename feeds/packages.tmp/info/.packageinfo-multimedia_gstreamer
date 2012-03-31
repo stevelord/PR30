@@ -1,0 +1,77 @@
+Source-Makefile: feeds/packages/multimedia/gstreamer/Makefile
+Package: gstreamer
+Version: 0.10.25-1
+Depends: +libxml2 +glib2
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gstreamer
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gstreamer-0.10.25.tar.bz2
+Type: ipkg
+Description: 	A framework for streaming media.
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gstreamer-libgstcheck
+Version: 0.10.25-1
+Depends: +gstreamer
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gstreamer (libgstcheck)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gstreamer-0.10.25.tar.bz2
+Type: ipkg
+Description: 	gstreamer libgstcheck
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gstreamer-libgstcontroller
+Version: 0.10.25-1
+Depends: +gstreamer
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gstreamer (libgstcontroller)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gstreamer-0.10.25.tar.bz2
+Type: ipkg
+Description: 	gstreamer libgstcontroller
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gstreamer-libgstdataprotocol
+Version: 0.10.25-1
+Depends: +gstreamer
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gstreamer (libgstdataprotocol)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gstreamer-0.10.25.tar.bz2
+Type: ipkg
+Description: 	gstreamer libgstdataprotocol
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gstreamer-libgstnet
+Version: 0.10.25-1
+Depends: +gstreamer
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gstreamer (libgstnet)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gstreamer-0.10.25.tar.bz2
+Type: ipkg
+Description: 	gstreamer libgstnet
+http://gstreamer.freedesktop.org/
+@@
+
+

@@ -1,0 +1,18 @@
+webif_header_title='<link rel="alternate stylesheet" type="text/css" href="/themes/active/color_yellow.css" title="yellow" />
+<link rel="alternate stylesheet" type="text/css" href="/themes/active/color_pink.css" title="pink" />
+<link rel="alternate stylesheet" type="text/css" href="/themes/active/color_blue.css" title="blue" />
+<link rel="alternate stylesheet" type="text/css" href="/themes/active/color_grey.css" title="grey" />
+<link rel="alternate stylesheet" type="text/css" href="/themes/active/color_black.css" title="black" />
+<link rel="alternate stylesheet" type="text/css" href="/themes/active/color_green.css" title="green" />
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="/themes/active/ie_lt7.css" />
+<![endif]-->'
+
+colorswitcher="<div id=\"colorswitcher\">
+	<div style=\"background: #000000\" title=\"black\" onclick=\"setActiveStyleSheet('black'); return false;\"></div>
+	<div style=\"background: #7B7F7C\" title=\"grey\" onclick=\"setActiveStyleSheet('grey'); return false;\"></div>
+	<div style=\"background: #177182\" title=\"blue\" onclick=\"setActiveStyleSheet('blue'); return false;\"></div>
+	<div style=\"background: #A9E947\" title=\"green\" onclick=\"setActiveStyleSheet('green'); return false;\"></div>
+	<div style=\"background: #D90050\" title=\"pink\" onclick=\"setActiveStyleSheet('pink'); return false;\"></div>
+	<div style=\"background: #FFCA29\" title=\"yellow\" onclick=\"setActiveStyleSheet('yellow'); return false;\"></div>
+</div>"

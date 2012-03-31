@@ -1,0 +1,16 @@
+Source-Makefile: feeds/packages/net/mdnsresponder/Makefile
+Package: mdnsresponder
+Version: 107.6-1
+Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: mDNSResponder
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: mDNSResponder-107.6.tar.gz
+Type: ipkg
+Description: mDNSResponder
+http://developer.apple.com/networking/bonjour/
+@@
+
+

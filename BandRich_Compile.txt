@@ -1,0 +1,5 @@
+Compile Steps:
+ .make
+ .br_openwrt_all-in-one.sh
+
+After the compile finish you can find the target image F/W in "./bin/imx25/temp/web/openwrt-web-upgrade.bin"

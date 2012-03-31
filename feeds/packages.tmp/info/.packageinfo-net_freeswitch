@@ -1,0 +1,1625 @@
+Source-Makefile: feeds/packages/net/freeswitch/Makefile
+Package: freeswitch
+Menu: 1
+Version: 1.0.6-1
+Depends: +libopenssl +libreadline +libncurses +libpthread +libstdcpp
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FreeSWITCH open source telephony platform
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description:   FreeSWITCH is an open source telephony platform designed to 
+  facilitate the creation of voice and chat driven products scaling 
+  from a soft-phone up to a soft-switch.
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-default
+Version: 1.0.6-1
+Depends: freeswitch +freeswitch-mod-commands +freeswitch-mod-conference +freeswitch-mod-console +freeswitch-mod-curl +freeswitch-mod-dialplan-xml +freeswitch-mod-dptools +freeswitch-mod-event-socket +freeswitch-mod-g723-1 +freeswitch-mod-ilbc +freeswitch-mod-local-stream +freeswitch-mod-logfile +freeswitch-mod-lua +freeswitch-mod-native-file +freeswitch-mod-sndfile +freeswitch-mod-sofia +freeswitch-mod-speex +freeswitch-mod-tone-stream +freeswitch-mod-voipcodecs +freeswitch-mod-xml-curl +freeswitch-mod-xml-rpc
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FreeSWITCH default config
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FreeSWITCH default config
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-minimal
+Version: 1.0.6-1
+Depends: freeswitch +freeswitch-mod-commands +freeswitch-mod-console +freeswitch-mod-curl +freeswitch-mod-dialplan-xml +freeswitch-mod-dptools +freeswitch-mod-local-stream +freeswitch-mod-sndfile +freeswitch-mod-sofia +freeswitch-mod-tone-stream +freeswitch-mod-voipcodecs
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FreeSWITCH minimal config
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FreeSWITCH minimal config
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-sounds-en
+Version: 1.0.6-1
+Depends: freeswitch
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FreeSWITCH english sounds
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FreeSWITCH english sounds
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-sounds-moh
+Version: 1.0.6-1
+Depends: freeswitch
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FreeSWITCH music-on-hold sounds
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FreeSWITCH music-on-hold sounds
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-tools
+Version: 1.0.6-1
+Depends: freeswitch
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FreeSWITCH control tools
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FreeSWITCH control tools
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-alsa
+Version: 1.0.6-1
+Depends: freeswitch  +alsa-lib
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Alsa endpoint module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Alsa endpoint module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-amr
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS GSM-AMR codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS GSM-AMR codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-amrwb
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS GSM-AMRWB module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS GSM-AMRWB module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-bv
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS codec mod_bv module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS codec mod_bv module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-cdr-csv
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS CSV-CDR handler module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS CSV-CDR handler module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-celt
+Version: 1.0.6-1
+Depends: freeswitch  +libogg
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS CELT ultra-low delay codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS CELT ultra-low delay codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-cepstral
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Cepstral interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Cepstral interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-cidlookup
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS applications mod_cidlookup module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS applications mod_cidlookup module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-cluechoo
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Framework Demo module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Framework Demo module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-commands
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS API commands module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS API commands module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-conference
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Conference room module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Conference room module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-console
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Console logger module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Console logger module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-curl
+Version: 1.0.6-1
+Depends: freeswitch  +libcurl
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS HTTP request module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS HTTP request module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-dahdi-codec
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS DAHDI codecs module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS DAHDI codecs module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-dialplan-asterisk
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Asterisk dialplan parser module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Asterisk dialplan parser module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-dialplan-directory
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Dialplan-Directory interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Dialplan-Directory interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-dialplan-xml
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Dialplan-XML interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Dialplan-XML interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-dingaling
+Version: 1.0.6-1
+Depends: freeswitch  +libgnutls-openssl
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Jabber interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Jabber interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-directory
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS application mod_directory module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS application mod_directory module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-distributor
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS application mod_distributor module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS application mod_distributor module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-dptools
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Dialplan tools module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Dialplan tools module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-easyroute
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS DID routing module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS DID routing module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-enum
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS ENUM routing module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS ENUM routing module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-erlang-event
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Erlang event handler module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Erlang event handler module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-esf
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Extra SIP Functionality module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Extra SIP Functionality module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-event-multicast
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Multicast event handler module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Multicast event handler module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-event-socket
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Socket event handler module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Socket event handler module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-expr
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Expression evaluation module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Expression evaluation module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-fax
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN +libjpeg
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Fax module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Fax module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-fifo
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS FIFO module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS FIFO module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-file-string
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS File streaming module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS File streaming module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-flite
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Festival TTS module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Festival TTS module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-fsv
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Video module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Video module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-g723-1
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS G.723.1 codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS G.723.1 codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-g729
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS G.729 codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS G.729 codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-h26x
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS H26X linear codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS H26X linear codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-h323
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS h323 endpoint module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS h323 endpoint module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-java
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Java language interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Java language interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-ilbc
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS ILBC codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS ILBC codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-lcr
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Least Cost Routing module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Least Cost Routing module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-ldap
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS LDAP interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS LDAP interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-limit
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Resource limitation module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Resource limitation module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-local-stream
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Local streaming module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Local streaming module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-logfile
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS File logger module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS File logger module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-loopback
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Loopback endpoint module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Loopback endpoint module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-lua
+Version: 1.0.6-1
+Depends: freeswitch  +libstdcpp
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Lua language interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Lua language interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-managed
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS language mod_managed module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS language mod_managed module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-memcache
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS MemCached interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS MemCached interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-native-file
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Native files module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Native files module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-nibblebill
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Billing module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Billing module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-opal
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Multi-Protocol endpoint module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Multi-Protocol endpoint module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-openzap
+Version: 1.0.6-1
+Depends: freeswitch  +libpcap
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Zaptel hardware interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Zaptel hardware interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-perl
+Version: 1.0.6-1
+Depends: freeswitch  +perl @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Perl language interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Perl language interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-pocketsphinx
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS PocketSphinx SR module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS PocketSphinx SR module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-portaudio
+Version: 1.0.6-1
+Depends: freeswitch  +alsa-lib
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Local audio endpoint module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Local audio endpoint module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-portaudio-stream
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS format mod_portaudio_stream module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS format mod_portaudio_stream module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-python
+Version: 1.0.6-1
+Depends: freeswitch  +python @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Python language interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Python language interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-radius-cdr
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Radius-CDR interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Radius-CDR interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-rss
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS RRS feeds via TTS module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS RRS feeds via TTS module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-de
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS German say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS German say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-en
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS English say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS English say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-es
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Spanish say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Spanish say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-fr
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS French say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS French say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-it
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Italian say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Italian say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-nl
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Dutch say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Dutch say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-ru
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Russian say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Russian say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-th
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS mod_th say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS mod_th say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-say-zh
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Chineese say module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Chineese say module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-shell-stream
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS  module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS  module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-shout
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS MP3 and Shoutcast stream module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS MP3 and Shoutcast stream module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-silk
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS codec mod_silk module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS codec mod_silk module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-siren
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS G.722.1 codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS G.722.1 codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-skinny
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS endpoint mod_skinny module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS endpoint mod_skinny module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-skypopen
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Skype compatible endpoint module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Skype compatible endpoint module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-sangoma-codec
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS codec sangoma-codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS codec sangoma-codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-snapshot
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS application mod_snapshot module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS application mod_snapshot module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-snipe-hunt
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS application mod_snipe_hunt module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS application mod_snipe_hunt module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-sndfile
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Multi-Format file transcoder module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Multi-Format file transcoder module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-snom
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS SNOM specific features module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS SNOM specific features module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-sofia
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS SIP module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS SIP module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-soundtouch
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Sound effects module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Sound effects module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-speex
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Speex codec module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Speex codec module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-spidermonkey
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS JavaScript module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS JavaScript module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-spidermonkey-core_db
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS JavaScript DB module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS JavaScript DB module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-spidermonkey-curl
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS JavaScript Curl module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS JavaScript Curl module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-spidermonkey-odbc
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS JavaScript ODBC module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS JavaScript ODBC module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-spidermonkey-socket
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS JavaScript socket module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS JavaScript socket module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-spidermonkey-teletone
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS JavaScript teletone module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS JavaScript teletone module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-spy
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS User spy module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS User spy module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-stress
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS application mod_stress module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS application mod_stress module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-syslog
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS SysLog logger module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS SysLog logger module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-tone-stream
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS Tone generation stream module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS Tone generation stream module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-unimrcp
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS MRCP interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS MRCP interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-valet-parking
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS application mod_valet_parking module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS application mod_valet_parking module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-vmd
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS VoiceMail beep detection module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS VoiceMail beep detection module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-voicemail
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS VoiceMail module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS VoiceMail module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-voipcodecs
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS VoIP codecs module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS VoIP codecs module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-xml-cdr
+Version: 1.0.6-1
+Depends: freeswitch  +libcurl
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS XML-CDR handler module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS XML-CDR handler module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-xml-curl
+Version: 1.0.6-1
+Depends: freeswitch  +libcurl
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS XML-Curl gateway module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS XML-Curl gateway module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-xml-ldap
+Version: 1.0.6-1
+Depends: freeswitch  @BROKEN
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS LDAP-XML gateway module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS LDAP-XML gateway module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-xml-rpc
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS XML-RPC interface module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS XML-RPC interface module
+http://www.freeswitch.org/
+@@
+
+Package: freeswitch-mod-yaml
+Version: 1.0.6-1
+Depends: freeswitch  
+Provides: 
+Build-Depends: libtool
+Section: net
+Category: Network
+Title: FS YAML dialplans module
+Maintainer: Daniel Dickinson <ddickinson@vertical.com>
+Source: freeswitch-1.0.6.tar.gz
+Type: ipkg
+Description: FS YAML dialplans module
+http://www.freeswitch.org/
+@@
+
+

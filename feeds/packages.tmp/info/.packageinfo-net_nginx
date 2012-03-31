@@ -1,0 +1,18 @@
+Source-Makefile: feeds/packages/net/nginx/Makefile
+Package: nginx
+Version: 0.7.65-1
+Depends: +libpcre +libopenssl
+Provides: 
+Section: net
+Category: Network
+Title: Nginx web server
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: nginx-0.7.65.tar.gz
+Type: ipkg
+Description: 	Nginx is a free, open-source, high-performance HTTP server
+	and reverse proxy, as well as an IMAP/POP3 proxy server,
+	written by Igor Sysoev.
+http://nginx.net/
+@@
+
+

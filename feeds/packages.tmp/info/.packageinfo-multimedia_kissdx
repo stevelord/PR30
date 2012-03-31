@@ -1,0 +1,18 @@
+Source-Makefile: feeds/packages/multimedia/kissdx/Makefile
+Package: kissdx
+Version: 0.14.0.b1a-7
+Depends: +libjpeg +libiconv +libdvdread
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: PC-Link clone for KiSS media players
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: kissdx-0.14.0.b1a.zip
+Type: ipkg
+Description: 	kissdx is a PC-Link clone for KiSS media players, based for
+	the most part on kissd (which it now replaces), with added
+	features for media playback, management, flexibility and more.
+http://kissdx.vidartysse.net
+@@
+
+

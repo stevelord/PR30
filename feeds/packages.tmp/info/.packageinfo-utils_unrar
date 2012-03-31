@@ -1,0 +1,16 @@
+Source-Makefile: feeds/packages/utils/unrar/Makefile
+Package: unrar
+Version: 3.8.5-1
+Depends: +libstdcpp
+Provides: 
+Section: utils
+Category: Utilities
+Title: unrar application
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: unrarsrc-3.8.5.tar.gz
+Type: ipkg
+Description:    unrar is an application that can decompress files and archives created using the RAR compression scheme
+http://www.rarlab.com/
+@@
+
+

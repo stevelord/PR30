@@ -1,0 +1,3 @@
+config wfpower  default
+	option  'offmode'  'auto'
+	option  'idletime'  '600'

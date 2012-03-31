@@ -1,0 +1,26 @@
+#!/bin/sh /etc/rc.common
+# Editor      : BandRich Inc.
+# Date        : 2010/06/08
+# Description : Auto mount SD card 
+
+START=50
+SD_DEVICE="/dev/mmcblk0p1"
+SD_DEVICE1="/dev/mmcblk0"
+
+start() {
+	echo "Check SD card..."
+	if [ -e "$SD_DEVICE" ]; then
+		echo "mount SD card..."
+		/bin/mount -o rw,umask=000,utf8=1 "$SD_DEVICE" /mnt
+	elif [ -e "$SD_DEVICE1" ]; then
+		echo "mount SD card..."
+		/bin/mount -o rw,umask=000,utf8=1 "$SD_DEVICE1" /mnt
+	else
+		echo "No SD card"
+	fi
+}
+
+stop() {
+	echo "umount SD card..."
+	umount /mnt
+}

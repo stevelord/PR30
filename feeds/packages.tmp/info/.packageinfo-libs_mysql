@@ -1,0 +1,32 @@
+Source-Makefile: feeds/packages/libs/mysql/Makefile
+Package: libmysqlclient
+Version: 5.0.18-3
+Depends: +zlib
+Provides: 
+Build-Depends: libncurses libreadline libtool
+Section: libs
+Category: Libraries
+Title: MySQL client library
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: mysql-5.0.18.tar.gz
+Type: ipkg
+Description: MySQL client library
+http://dev.mysql.com/
+@@
+
+Package: libmysqlclient_r
+Version: 5.0.18-3
+Depends: +zlib
+Provides: 
+Build-Depends: libncurses libreadline libtool
+Section: libs
+Category: Libraries
+Title: MySQL client library threadsafe
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: mysql-5.0.18.tar.gz
+Type: ipkg
+Description: MySQL client library threadsafe
+http://dev.mysql.com/
+@@
+
+

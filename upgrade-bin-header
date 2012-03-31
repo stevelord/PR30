@@ -1,0 +1,23 @@
+#!/bin/sh 
+echo "Source file validation..."
+err_chk=`sed -e '1,/^exit$/d' "$0" | tar xzOf - | grep "tar: Error"`
+if [ -z "$err_chk"]; then
+	echo "Firmware Upgrading..."
+	if [ -z $1 ]; then
+        	echo "backup user setting files"
+		temp="$(/bin/grep /dev/mtdblock6 /proc/mounts | /usr/bin/awk -F" " '{ print $2 }')"
+		echo "$temp"	
+		cp -r /etc/config $temp
+		umount /userdata
+		umount /tmp/root/userdata
+    	fi
+	sync
+	mtd erase mtd5
+	sed -e '1,/^exit$/d' "$0" | tar xzOf - | dd of=/dev/mtdblock5
+    	echo "Upgrade Finish..."
+else
+    echo "Source file uncompress error..."    
+fi
+echo "Device will reboot at few seconds..."
+reboot
+exit

@@ -1,0 +1,20 @@
+#!/bin/sh 
+echo "Source file validation..."
+err_chk=`sed -e '1,/^exit$/d' "$0" | tar xzOf - | grep "tar: Error"`
+if [ -z "$err_chk"]; then
+	echo "Firmware Upgrading..."
+	sync
+	sync
+	sync
+	mount -o remount,ro /
+	mtd erase mtd3
+#	sed -e '1,/^exit$/d' "$0" | tar xzOf - | dd of=/dev/mtdblock3
+	sed -e '1,/^exit$/d' "$0" | tar xzOf - | mtd write - mtd3
+    	echo "Upgrade Finish..."
+	sync
+else
+    echo "Source file uncompress error..."    
+fi
+#echo "Device will reboot at few seconds..."
+#reboot
+exit

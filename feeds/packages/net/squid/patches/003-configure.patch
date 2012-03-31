@@ -1,0 +1,52 @@
+Index: squid-2.6.STABLE23/configure
+===================================================================
+--- squid-2.6.STABLE23.orig/configure	2009-09-17 01:35:13.000000000 +0200
++++ squid-2.6.STABLE23/configure	2009-11-11 14:19:11.000000000 +0100
+@@ -5053,10 +5053,6 @@
+   if test -z "$SSLLIB"; then
+     SSLLIB="-lcrypto" # for MD5 routines
+   fi
+-  if $PKGCONFIG --exists openssl; then
+-    SSLLIB="`$PKGCONFIG --libs openssl`"
+-    SSLFLAGS="`$PKGCONFIG --cflags openssl`"
+-  fi
+   CPPFLAGS="${SSLFLAGS} $CPPFLAGS"
+ fi
+ 
+@@ -26292,7 +26288,7 @@
+ See \`config.log' for more details." >&5
+ $as_echo "$as_me: error: cannot run test program while cross compiling
+ See \`config.log' for more details." >&2;}
+-   { (exit 1); exit 1; }; }
++   { (true); true; }; }
+ else
+   cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+@@ -26455,8 +26451,7 @@
+   { { $as_echo "$as_me:$LINENO: error: cannot run test program while cross compiling
+ See \`config.log' for more details." >&5
+ $as_echo "$as_me: error: cannot run test program while cross compiling
+-See \`config.log' for more details." >&2;}
+-   { (exit 1); exit 1; }; }
++See \`config.log' for more details." >&2;} }
+ else
+   cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+@@ -26707,7 +26702,7 @@
+ See \`config.log' for more details." >&5
+ $as_echo "$as_me: error: cannot run test program while cross compiling
+ See \`config.log' for more details." >&2;}
+-   { (exit 1); exit 1; }; }
++   { (true); true; }; }
+ else
+   cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+@@ -26789,7 +26784,7 @@
+ See \`config.log' for more details." >&5
+ $as_echo "$as_me: error: cannot run test program while cross compiling
+ See \`config.log' for more details." >&2;}
+-   { (exit 1); exit 1; }; }
++   { (true); true; }; }
+ else
+   cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */

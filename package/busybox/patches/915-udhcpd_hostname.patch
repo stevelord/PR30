@@ -1,0 +1,12 @@
+diff -Nru busybox-1.15.3-old/networking/udhcp/leases.c busybox-1.15.3-new/networking/udhcp/leases.c
+--- busybox-1.15.3-old/networking/udhcp/leases.c	2009-12-12 09:45:08.000000000 +0800
++++ busybox-1.15.3-new/networking/udhcp/leases.c	2010-08-18 14:48:59.000000000 +0800
+@@ -64,6 +64,8 @@
+ 		oldest->hostname[0] = '\0';
+ 		if (hostname) {
+ 			char *p;
++			hostname_len = hostname_len + 1; // bcz safe_strncpy
++			//fprintf(stderr, "h(%d)=(%s)\n", hostname_len, hostname);
+ 			if (hostname_len > sizeof(oldest->hostname))
+ 				hostname_len = sizeof(oldest->hostname);
+             		p = safe_strncpy(oldest->hostname, hostname, hostname_len);

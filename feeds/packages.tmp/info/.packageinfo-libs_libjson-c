@@ -1,0 +1,17 @@
+Source-Makefile: feeds/packages/libs/libjson-c/Makefile
+Package: libjson
+Version: 0.9-2
+Depends: 
+Provides: 
+Build-Depends: libtool
+Section: libs
+Category: Libraries
+Title: javascript object notation
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: json-c-0.9.tar.gz
+Type: ipkg
+Description:  This package contains a library for javascript object notation backends.
+http://oss.metaparadigm.com/json-c/
+@@
+
+

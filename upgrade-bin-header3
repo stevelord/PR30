@@ -1,0 +1,59 @@
+#!/bin/sh 
+echo "Source file validation..."
+
+sed -e '1,/^exit$/d' "$0" | gzip -t -
+err_chk=$?
+if [ $err_chk -ne 1 ]; then
+	KERNEL_IMAGE=`sed -e '1,/^exit$/d' "$0" | tar ztf - | sed -n '1,1p' -`
+	echo $KERNEL_IMAGE
+	if [ 1 -eq 1 ]; then 
+		echo "Upgrading kernel image..."
+		/etc/init.d/br_wifi stop > /dev/null
+		/etc/init.d/samba stop > /dev/null
+		/usr/bin/killall -9 MonitorWan
+		/bin/kill -s USR1 `cat /tmp/lock/brlcd.lock`
+		/usr/bin/killall bandluxed
+		/usr/bin/killall BatteryMonitor
+		/usr/bin/killall crond
+		/usr/bin/killall udhcpd
+		/usr/bin/killall klogd
+		/usr/bin/killall syslogd
+		/bin/umount /data
+		/bin/umount /userdata
+		/bin/umount /mnt
+		sync
+		sync
+		mtd erase mtd2
+		sed -e '1,/^exit$/d' "$0" | tar xzOf - $KERNEL_IMAGE | mtd write - mtd2
+		sync
+	else
+		echo "Extract kernel image..."
+		sed -e '1,/^exit$/d' "$0" | tar xzOf - $KERNEL_IMAGE > uImage.temp
+	fi
+
+	echo "..."
+
+	ROOTFS_IMAGE=`sed -e '1,/^exit$/d' "$0" | tar ztf - | sed -n '2,2p' -`
+	echo $ROOTFS_IMAGE
+	if [ 1 -eq 1 ]; then 
+		echo "Upgrading rootfs..."
+		sync
+		mount -o remount,ro /
+		mtd erase mtd3
+		sed -e '1,/^exit$/d' "$0" | tar xzOf - $ROOTFS_IMAGE | mtd write - mtd3
+		echo "...Upgrade Finish"
+		echo "System will reboot..."
+		sync
+		sync
+		sync
+		sleep 3
+		reboot -f
+	else
+		echo "Extract rootfs..."
+		sed -e '1,/^exit$/d' "$0" | tar xzOf - $ROOTFS_IMAGE > rootfs_jffs2.temp
+	fi
+else
+	echo "Fail to decompress kernel image!"    
+fi
+
+exit

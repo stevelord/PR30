@@ -1,0 +1,25 @@
+#!/bin/sh /etc/rc.common
+. /etc/br_udhcpd.sh
+ 
+START=44
+#STOP=75
+
+echo "br-lan udhcpd = $br_enable"
+
+start() {
+        case $br_enable in
+            0) echo "user disable udhcpd";;
+            1) 
+                echo "Start UDHCPD..."
+		udhcpd_br_start
+		produce_ap_conf
+                ;;
+            *) echo "ignore unknown value";;
+        esac
+}
+
+stop() {
+        echo "Stop UDHCPD..."
+	udhcpd_br_stop
+}
+

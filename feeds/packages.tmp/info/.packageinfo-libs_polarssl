@@ -1,0 +1,32 @@
+Source-Makefile: feeds/packages/libs/polarssl/Makefile
+Package: libpolarssl
+Submenu: SSL
+Version: 0.12.1-2
+Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Embedded SSL (library)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: polarssl-0.12.1-gpl.tgz
+Type: ipkg
+Description: Embedded SSL (library)
+http://polarssl.org/
+@@
+
+Package: polarssl-progs
+Submenu: SSL
+Version: 0.12.1-2
+Depends: +libpolarssl
+Provides: 
+Section: utils
+Category: Utilities
+Title: Embedded SSL (programs)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: polarssl-0.12.1-gpl.tgz
+Type: ipkg
+Description: Embedded SSL (programs)
+http://polarssl.org/
+@@
+
+

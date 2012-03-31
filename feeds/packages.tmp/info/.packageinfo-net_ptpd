@@ -1,0 +1,16 @@
+Source-Makefile: feeds/packages/net/ptpd/Makefile
+Package: ptpd
+Version: 1.0.0-2
+Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Precision Time protocol (PTP) daemon
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: ptpd-1.0.0.tar.gz
+Type: ipkg
+Description: Precision Time protocol (PTP) daemon
+http://ptpd.sourceforge.net/
+@@
+
+

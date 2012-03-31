@@ -1,0 +1,46 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006 OpenWrt.org
+
+START=40
+STOP=90
+
+boot() {
+	setup_switch() { return 0; }
+
+	include /lib/network
+	setup_switch
+#	[ -s /etc/config/wireless ] || \
+#		/sbin/wifi detect > /etc/config/wireless
+#	/sbin/wifi up
+#        if [ `pidof pppd` ]; then
+#          echo "have pppd"
+#        else    
+#          PIN=`ushm show | grep PIN_status | cut -d= -f2`
+#	  if [ "$PIN" = "0" ]; then
+#            ifup wan
+#          else
+#            echo "PIN_status!=0"
+#	  fi
+#        fi     
+}
+
+start() {
+	setup_switch() { return 0; }
+	
+	include /lib/network
+	setup_switch
+	# ifup -a
+	# /sbin/wifi up
+	ifup loopback
+	ifup lan
+}
+
+stop() {
+	# ifdown -a
+	ifdown lan
+	ifdown loopback
+}
+
+restart() {
+	start
+}

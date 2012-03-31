@@ -1,0 +1,796 @@
+Source-Makefile: feeds/packages/net/strongswan4/Makefile
+Package: strongswan4
+Menu: 1
+Submenu: VPN
+Version: 4.3.6-2
+Depends: +libpthread +ip +kmod-crypto-authenc +kmod-ipsec +kmod-ipsec4 +kmod-ipt-ipsec +iptables-mod-ipsec
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux 
+ operating system.
+ .
+ This package contains shared libraries and scripts.
+http://www.strongswan.org/
+@@
+Config:
+	source "feeds/packages/net/strongswan4/Config.in"
+@@
+
+Package: strongswan4-default
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +strongswan4-app-charon +strongswan4-app-pluto +strongswan4-mod-aes +strongswan4-mod-attr +strongswan4-mod-des +strongswan4-mod-dnskey +strongswan4-mod-fips-prf +strongswan4-mod-gmp +strongswan4-mod-hmac +strongswan4-mod-md5 +strongswan4-mod-pem +strongswan4-mod-pgp +strongswan4-mod-pkcs1 +strongswan4-mod-pubkey +strongswan4-mod-random +strongswan4-mod-resolve +strongswan4-mod-sha1 +strongswan4-mod-sha2 +strongswan4-mod-stroke +strongswan4-mod-updown +strongswan4-mod-x509 +strongswan4-mod-xcbc +strongswan4-utils
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan (default)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux 
+ operating system.
+ .
+ This meta-package contains only dependencies to match upstream
+ defaults.
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-full
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +strongswan4-app-charon +strongswan4-app-pluto +strongswan4-mod-aes +strongswan4-mod-agent +strongswan4-mod-attr +strongswan4-mod-attr-sql +strongswan4-mod-blowfish +strongswan4-mod-curl +strongswan4-mod-des +strongswan4-mod-dnskey +strongswan4-mod-eap-md5 +strongswan4-mod-eap-mschapv2 +strongswan4-mod-eap-radius +strongswan4-mod-fips-prf +strongswan4-mod-gcrypt +strongswan4-mod-gmp +strongswan4-mod-hmac +strongswan4-mod-kernel-klips +strongswan4-mod-kernel-netlink +strongswan4-mod-kernel-pfkey +strongswan4-mod-ldap +strongswan4-mod-load-tester +strongswan4-mod-md5 +strongswan4-mod-medcli +strongswan4-mod-medsrv +strongswan4-mod-mysql +TARGET_x86:strongswan4-mod-padlock +strongswan4-mod-pem +strongswan4-mod-pgp +strongswan4-mod-pkcs1 +strongswan4-mod-pubkey +strongswan4-mod-random +strongswan4-mod-resolve +strongswan4-mod-sha1 +strongswan4-mod-sha2 +strongswan4-mod-smp +strongswan4-mod-sql +strongswan4-mod-sqlite +strongswan4-mod-stroke +strongswan4-mod-uci +strongswan4-mod-updown +strongswan4-mod-x509 +strongswan4-mod-xcbc +strongswan4-utils
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan (full)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux 
+ operating system.
+ .
+ This meta-package contains only dependencies for a complete setup.
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-minimal
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +strongswan4-app-charon +strongswan4-mod-aes +strongswan4-mod-gmp +strongswan4-mod-hmac +strongswan4-mod-pubkey +strongswan4-mod-random +strongswan4-mod-sha1 +strongswan4-mod-stroke +strongswan4-mod-updown +strongswan4-mod-x509 +strongswan4-mod-xcbc
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan (minimal)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux 
+ operating system.
+ .
+ This meta-package contains only dependencies for a minimal setup.
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-app-charon
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan IKEv2 keying daemon
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux 
+ operating system.
+ .
+ This package contains charon, an IKEv2 keying daemon.
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-app-pluto
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan IKEv1 keying daemon
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux 
+ operating system.
+ .
+ This package contains pluto, an IKEv1 keying daemon.
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-utils
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan utilities
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description:  StrongSwan is an OpenSource IPsec implementation for the Linux 
+ operating system.
+ .
+ This package contains the openac, pki & scepclient utilities.
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-aes
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan AES crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan AES crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-agent
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan SSH agent signing plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan SSH agent signing plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-attr
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan File-based config attr plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan File-based config attr plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-attr-sql
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +strongswan4-mod-sql
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan SQL-based config attrib plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan SQL-based config attrib plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-blowfish
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan Blowfish crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan Blowfish crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-curl
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +libcurl
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan cURL plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan cURL plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-des
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan DES crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan DES crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-dnskey
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan DNS RR key decoding plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan DNS RR key decoding plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-eap-md5
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan MD5 EAP (CHAP) auth plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan MD5 EAP (CHAP) auth plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-eap-mschapv2
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan MS-CHAPv2 EAP auth plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan MS-CHAPv2 EAP auth plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-eap-radius
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan RADIUS proxy auth plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan RADIUS proxy auth plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-fips-prf
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan FIPS PRF crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan FIPS PRF crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-gcrypt
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +libgcrypt
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan libgcrypt plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan libgcrypt plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-gmp
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +libgmp
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan libgmp plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan libgmp plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-hmac
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan HMAC crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan HMAC crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-kernel-klips
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan KLIPS kernel interface plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan KLIPS kernel interface plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-kernel-netlink
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan netlink kernel interface plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan netlink kernel interface plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-kernel-pfkey
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan PK_KEY kernel interface plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan PK_KEY kernel interface plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-ldap
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +libopenldap
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan LDAP plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan LDAP plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-load-tester
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan load testing plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan load testing plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-md5
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan MD5 crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan MD5 crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-medcli
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan mediation client configuration database plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan mediation client configuration database plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-medsrv
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan mediation server configuration database plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan mediation server configuration database plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-mysql
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +strongswan4-mod-sql +PACKAGE_strongswan4-mod-mysql:libmysqlclient
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan MySQL database interface plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan MySQL database interface plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-padlock
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 @TARGET_x86
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan VIA PadLock crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan VIA PadLock crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-pem
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan PEM decoding plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan PEM decoding plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-pgp
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan PGP key decoding plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan PGP key decoding plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-pkcs1
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan PKCS1 key decoding plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan PKCS1 key decoding plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-pubkey
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan raw public key plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan raw public key plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-random
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan RNG plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan RNG plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-resolve
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan DNS resolver plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan DNS resolver plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-sha1
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan SHA1 crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan SHA1 crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-sha2
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan SHA2 crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan SHA2 crypto plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-smp
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +PACKAGE_strongswan4-mod-smp:libxml2
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan SMP configuration and control interface plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan SMP configuration and control interface plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-sql
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan SQL database interface plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan SQL database interface plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-sqlite
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +strongswan4-mod-sql +PACKAGE_strongswan4-mod-sqlite:libsqlite3
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan SQLite database interface plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan SQLite database interface plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-stroke
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan Stroke plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan Stroke plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-uci
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 +libuci
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan UCI config interface plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan UCI config interface plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-updown
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan updown firewall plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan updown firewall plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-x509
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan x509 certificate plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan x509 certificate plugin
+http://www.strongswan.org/
+@@
+
+Package: strongswan4-mod-xcbc
+Submenu: VPN
+Version: 4.3.6-2
+Depends: strongswan4 
+Provides: 
+Build-Depends: clearsilver fcgi  libtool
+Section: net
+Category: Network
+Title: StrongSwan xcbc crypto plugin
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: strongswan-4.3.6.tar.bz2
+Type: ipkg
+Description: StrongSwan xcbc crypto plugin
+http://www.strongswan.org/
+@@
+
+

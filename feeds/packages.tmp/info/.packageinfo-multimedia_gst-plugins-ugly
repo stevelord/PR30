@@ -1,0 +1,33 @@
+Source-Makefile: feeds/packages/multimedia/gst-plugins-ugly/Makefile
+Package: gst-plugins-ugly-lame
+Version: 0.10.13-2
+Depends: +gstreamer +lame-lib
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-ugly (lame)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-ugly-0.10.13.tar.bz2
+Type: ipkg
+Description: 	gstreamer MP3 encoder plugin
+http://gstreamer.freedesktop.org/
+@@
+
+Package: gst-plugins-ugly-mad
+Version: 0.10.13-2
+Depends: +gstreamer +gst-plugins-base-libgsttag +gst-plugins-base-libgstaudio +gst-plugins-base-libgstinterfaces +libmad +libid3tag
+Provides: 
+Build-Depends: libtool
+Section: multimedia
+Category: Multimedia
+Title: gst-plugins-ugly (mad)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: gst-plugins-ugly-0.10.13.tar.bz2
+Type: ipkg
+Description: =
+	gstreamer MP3 decoder plugins
+http://gstreamer.freedesktop.org/
+@@
+
+

@@ -1,0 +1,382 @@
+?# ================================================================================================
+# NOTICE!! Translation principle: ONLY need to modify the strings on the RIGHT HAND SIDE of => .
+# IF you see something like $refresh_timeout (string starts with a $) or <br \>, 
+# please DO NOT modify this kind of variable of our program.
+# ================================================================================================
+# leave at least one comment here to skip the BOM character
+# language name
+Advanced => خيارات متقدمة
+Wizard => المعالج
+
+# Advanced-confman.sh
+Backup and Restore => نسخ احتياطي واستعادة
+confman_noauto_click => إذا لم يبدأ التنزيل تلقائيًا، فانقر هنا في غضون 30 ثانية
+Restore Configuration => استعادة التكوين
+confman_restoring_conf => استعادة التكوين.
+confman_restoring_file => استعادة
+Rebooting now => قيد إعادة التمهيد الآن
+confman_bad_dir => دليل سيئ
+confman_good_conf => تم فحص ملف التكوين
+Restore => استعادة
+Backup Configuration => تكوين النسخ الاحتياطي
+Name this configuration => تسمية هذا التكوين
+Backup => نسخ احتياطي
+Saved config.tgz file => تم حفظ ملف config.tgz
+Reset Function => إعادة تعيين الوظيفة
+Reset To Default => إعادة تعيين إلى الافتراضي
+Backup &amp; Restore => نسخ احتياطي واستعادة
+Reset back to factory default succeeded => نجحت عملية استعادة إعدادات المصنع الافتراضية
+The system is restarting in 5 seconds => جار إعادة تشغيل النظام خلال 5 ثوانٍ
+Reset back to factory default failed => فشل عملية استعادة إعدادات المصنع الافتراضية
+
+# Advanced-dhcp.sh
+DHCP Configuration => تكوين DHCP
+DHCP Start IP => عنوان IP الأول لـ DHCP
+DHCP Limit => حد DHCP
+DHCP Lease Time => مدة تأجير DHCP
+DHCP => DHCP
+On => تشغيل
+Off => إيقاف تشغيل
+Start => بدء
+Limit => الحد
+Lease Time (in minutes) => مدة التأجير (بالدقائق)
+network_hosts_Active_Leases => مدد تأجير DHCP النشطة
+network_hosts_MAC => عنوان MAC
+network_hosts_IP => عنوان IP
+network_hosts_Name => الاسم
+network_hosts_Expires => تنتهي الصلاحية في
+expired => انتهت صلاحيته
+network_hosts_No_leases => لا توجد مدد تأجير DHCP معلومة.
+DHCP Server => خادم DHCP
+IP range cannot be over 255 => لا يتعين أن يتجاوز نطاق عنوان IP 255
+
+# Advanced-HSPAconfig.sh
+HSPA Config => تكوين HSPA
+Authentication Type => نوع المصادقة
+Roaming Connection => اتصال التجوال
+Enabled => مُمكن
+Disabled => مُعطل
+Redial Policy => نهج إعادة الاتصال
+Connect on Demand => الاتصال عند الطلب
+Keep Alive => استمرار النشاط
+Maximum Idle Time (in minutes) => الحد الأقصى لوقت الخمول (بالدقائق)
+Auto APN => APN تلقائي
+Update APN => تحديث APN
+Profile => ملف التعريف
+Username => اسم المستخدم
+Password => كلمة المرور
+Dial Number => رقم الطلب
+Network Selection => تحديد الشبكة
+Preference => التفضيل
+Automatic => تلقائي
+UMTS only => UMTS فقط
+GPRS only => GPRS فقط
+Select Network => تحديد الشبكة
+Auto => تلقائي
+Manual => يدوي
+Availabe Networks => الشبكات المتوفرة
+Scan Network => مسح الشبكة
+HSPA Configuration => تكوين HSPA
+Operator => المُشغل
+Type => النوع
+Update APN status => تحديث حالة APN
+Success => عملية ناجحة
+Fail => عملية فاشلة
+Helptext Idle Time => عدد الدقائق بخلاف سرعة نقل البيانات عبر الإنترنت التي ينتظر خلالها الموجه قبل قطع الاتصال بالإنترنت (الاتصال عند الطلب فقط)
+Configuration => التكوين
+Information Not Available => المعلومات غير متوفرة
+
+# Advanced-info.sh
+NO SERVICE => لا توجد خدمة
+Info => معلومات
+System Information => معلومات النظام
+System Status => حالة النظام
+Battery Status => حالة البطارية
+Battery Capacity => سعة البطارية
+Local Network => الشبكة المحلية
+Router IP Address (USB) => عنوان IP للموجه (USB)
+Router IP Address (WLAN) => عنوان IP للموجه (WLAN)
+Netmask (WLAN) => قناع الشبكة (WLAN)
+DHCP Start IP Address => عنوان IP الأول لـ DHCP
+DHCP End IP Address => عنوان IP الأخير لـ DHCP
+Register Network => تسجيل الشبكة
+SIM Status => حالة SIM
+Network Name => اسم الشبكة
+Network Technology => تقنية الشبكة
+Roaming => التجوال
+Internet Connection => اتصال الإنترنت
+Connection Type => نوع الاتصال
+Internet IP Address => عنوان IP للإنترنت
+Subnet Mask => قناع الشبكة الفرعية
+Default Gateway => البوابة الافتراضية
+Personal => Personal
+WLAN Network => شبكة WLAN
+Standard Channel => القناة القياسية
+Security => الحماية
+SSID Broadcast => بث SSID
+Firmware Information => معلومات البرنامج الثابت
+Router Firmware Version => إصدار البرنامج الثابت للموجه
+Modem Firmware Version => إصدار البرنامج الثابت للمودم
+APN Version => إصدار APN
+APN => APN
+PIN Disabled => PIN مُعطل
+PIN Enabled => PIN مُمكن
+PIN Enabled requires verification => PIN الممكن يتطلب التحقق
+PIN Blocked => PIN محظور
+PIN Invalid => PIN غير صالح
+Read SIM Failed => فشل قراءة SIM
+Home => الرئيسية
+Charging Mode => وضع الشحن
+Battery Mode => وضع البطارية
+
+# Advanced-network.sh
+Network => الشبكة
+WLAN IP Address => عنوان IP لـ WLan
+WLAN Netmask => قناع شبكة WLAN
+WLAN Network Configuration => تكوين شبكة WLAN
+Router IP Address Via WLAN => عنوان IP للموجه عبر WLAN
+Netmask => قناع الشبكة
+USB Network Configuration => تكوين شبكة USB
+Router IP Address Via USB => عنوان IP للموجه عبر USB
+Basic Firewall => جدار الحماية الأساسي
+Firewall Settings => إعدادات جدار الحماية
+Network Configuration => تكوين الشبكة
+USB IP Address => عنوان IP لـ USB
+
+# Advanced-password.sh
+Passwords do not match => كلمتا المرور غير متطابقتين
+Password Change => تغيير كلمة المرور
+New Password => كلمة المرور الجديدة
+Confirm Password => تأكيد كلمة المرور
+
+# Advanced-pinmanage.sh
+PIN Management => إدارة PIN
+PIN Code => رمز PIN
+PIN Verify => التحقق من PIN
+Old PIN Code => رمز PIN القديم
+New PIN Code => رمز PIN الجديد
+New PIN Confirm => تأكيد رمز PIN الجديد
+PIN Verification => التحقق من PIN
+Verify => تحقق
+PIN Protection => حماية PIN
+Apply => تطبيق
+PIN Modification => تعديل PIN
+Change => تغيير
+PIN code for the SIM card, should be 4 to 8 digits => يتعين أن يتراوح رمز PIN لبطاقة SIM بين 4 إلى 8 أرقام
+Please enter the PIN code => يُرجى إدخال رمز PIN
+PIN Verification Succeeded => تم التحقق من رمز PIN بنجاح
+PIN Verification Failed => فشل التحقق من رمز PIN
+more tries before the SIM locked => محاولات إضافية قبل قفل SIM
+PIN Enabled Succeeded => تم تمكين PIN بنجاح
+PIN Enabled Failed => فشل تمكين PIN
+PIN Disabled Succeeded => تم تعطيل PIN بنجاح
+PIN Disabled Failed => فشل تعطيل PIN
+The new PIN codes are not matched => رمزا PIN الجديدان غير متطابقين
+PIN Change Succeeded => تم تغيير PIN بنجاح
+PIN Change Failed => فشل تغيير PIN
+
+# Advanced-sdcard.sh
+SD Card Settings => إعدادات بطاقة SD
+Network Sharing => مشاركة الشبكة
+SD Memory Card => بطاقة ذاكرة SD
+SD Card => بطاقة SD
+
+# Advanced-upgrade.sh
+Firmware Upgrade => ترقية البرنامج الثابت
+Do not save current configuration => لا تحفظ التكوين الحالي
+Firmware Image => صورة البرنامج الثابت
+Upgrade => ترقية
+Upgrading firmware => ترقية البرنامج الثابت
+Don't backup user configuration => لا تنشئ نسخة احتياطية لتكوين المستخدم
+Fail to backup user configuration => فشل النسخ الاحتياطي لتكوين المستخدم
+backup user configuration => تكوين مستخدم النسخ الاحتياطي
+Browse => استعراض
+
+# Advanced-wlan.sh
+Helptext WEP => WEP نص التعليمات
+WLAN => WLAN
+Pre-Shared Key => مفتاح مشترك مسبقًا
+Selected WEP Key => مفتاح WEP المحدد
+WEP Key => مفتاح WEP
+Basic Configuration => التكوين الأساسي
+Operation Mode => وضع التشغيل
+Auto-off => إيقاف تشغيل تلقائي
+Manual-off => إيقاف تشغيل يدوي
+Maximum Idle Time => الحد الأقصى لوقت الخمول
+Radio => الراديو
+On => تشغيل
+Off => إيقاف تشغيل
+Minutes => دقائق
+Channel => قناة
+WLAN Security Setting => إعداد حماية WLAN
+Encryption Type => نوع التشفير
+Passphrase => عبارة المرور
+Generate 40/64-bit Keys => إنشاء مفاتيح 40/64 بت
+Generate 104/128-bit Key => إنشاء مفتاح 104/128 بت
+WPA Encryption => تشفير WPA
+Pre-shared key => مفتاح مشترك مسبقًا
+WLAN Configuration => تكوين WLAN
+WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then  enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button. => WEP هي طريقة التشفير الأساسية، إلا أنها ليست آمنة مثل الطريقتين الأخريين WPA وWPA2. إذا رغبت في استخدام عبارة مرور، فأدخلها في حقل Passphrase (عبارة المرور) وانقر فوق زر Generate (إنشاء) بمستوى تشفير WEP الذي تختاره، 40/64 بت أو 104/128 بت. إذا أردت إدخال مفتاح WEP يدويًا، فأدخله في الحقل (الحقول) 1-4 لمفتاح WEP. لتحديد مفتاح WEP الذي سيتم استخدامه، حدد زر الخيار الملائم.
+WPA offers two encryption methods, TKIP and AES, with dynamic encryption keys. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits. => يوفر WPA طريقتين للتشفير، وهما TKIP وAES، مع مفاتيح تشفير ديناميكية. أدخل عبارة المرور (8 إلى 63 حرف ASCII) أو 64 رقمًا سداسيًا عشريًا.
+WPA2 is a stronger encryption method than WPA. This method offers two encryption methods, AES and WPA-TKIP or WPA2-AES, with dynamic encryption keys. Select the type of encryption method you want  to use, AES or TKIP or TKIP+AES. Enter the Passphrase (8 to 63 ASCII characters) or 64 hexadecimal digits. => وتعتبر طريقة التشفير WPA2 أكثر فاعلية من WPA. تقدم هذه الطريقة طريقتين للتشفير، وهما AES وWPA-TKIP أو WPA2-AES، مع مفاتيح تشفير ديناميكية. حدد نوع طريقة التشفير المطلوب استخدامه من بين AES وTKIP وTKIP+AES. أدخل عبارة المرور (8 إلى 63 حرف ASCII) أو 64 حرفًا سداسيًا عشريًا.
+
+# Apply.sh
+Processing => قيد المعالجة
+Critical Error => خطأ فادح
+Could not replace => يتعذر الاستبدال
+Media full => الوسائط ممتلئة
+Starting => بدء
+Stopping => إيقاف
+config file => ملف التكوين
+Applying => تطبيق
+conntrack settings => إعدادات conntrack
+Setting => إعداد
+Done => تم
+Initializing theme ... => جار تهيئة السمة...
+Error => خطأ
+installing theme package => تثبيت حزمة السمة
+Installing language pack => تثبيت حزمة اللغة
+Error installing language pack => خطأ في تثبيت حزمة اللغة
+Committing => قيد الإكمال
+Waiting for the commit to finish => في انتظار الإكمال
+Reloading => إعادة التحميل
+network => الشبكة
+ro=1 and user roaming disable => ro=1 وتعطيل تجوال المستخدم
+go => انتقال
+change 3g setting => تغيير إعداد 3g
+wireless => لاسلكي
+OpenVPN => OpenVPN
+Exporting => قيد التصدير
+l2tpns server settings => إعدادات خادم l2tpns
+l2tpns server => خادم l2tpns
+TZ setting => إعداد TZ
+Starting SSL => بدء SSL
+Stopping SSL => إيقاف SSL
+upnpd => upnpd
+qos => qos
+syslogd => syslogd
+
+# Browser.awk
+browser_Filesystem_Browser => مستعرض Filesystem
+browser_Root => الجذر
+browser_Permissions => الأذونات
+browser_Owner => المالك
+browser_Group => المجموعة
+browser_Time => الوقت
+browser_Parent_Directory => الدليل الأصل
+browser_Directory => الدليل
+browser_Delete => حذف
+browser_File => ملف
+browser_Edit => تحرير
+
+# Common.awk
+Short help => تعليمات مختصرة
+caption => تسمية توضيحية
+name => الاسم
+
+# Config.sh
+No config change. => لم يتم إجراء تغييرات على التكوين.
+Config discarded. => تم تجاهل التغييرات التي قمت بإدخالها على التكوين.
+Config changes: => التغييرات الحالية على التكوين:
+Edited files: => الملفات المحررة:
+Updating config... => جار تحديث التكوين الخاص بك.... يُرجى الانتظار
+second => ثانية
+Stays with the same language configuration. => يظل بنفس تكوين اللغة.
+Stays with the default configuration. => يظل بالتكوين الافتراضي.
+
+# Editor.awk
+editor_File => ملف
+editor_click_apply => بعد انتهائك من تغيير الملفات وإجراء التعديلات الأخرى على التكوين، يتعين النقر فوق رابط Apply (تطبيق) لجعل التغييرات دائمة.
+
+# Form.awk
+Add => إضافة
+more... => المزيد...
+Remove => إزالة
+
+# Functions.sh
+Installing package => تثبيت الحزمة
+Refreshing outdated packages lists => تجديد قوائم الحزم القديمة
+Package install failed. => فشل تثبيت الحزمة.
+features_require_package => الميزات في هذه الصفحة تتطلب الحزمة
+features_install => تثبيت الآن
+
+# Notes.awk
+notes_header => ملاحظات
+notes_save_changes => تصبح التغييرات دائمة بعد النقر فوق زر Save Changes (حفظ التغييرات).
+
+# Reboot.sh
+Yes, really reboot now => نعم، إعادة التمهيد الآن بالفعل
+Rebooting now => قيد إعادة التمهيد الآن
+reboot_wait => يُرجى الانتظار حوالي
+reboot_seconds => ثانية.
+reboot_reload => يتعين إعادة تحميل الموجه تلقائيًا.
+
+# Subcategories.awk
+Subcategories => الفئات الفرعية
+
+# Validate.awk
+Invalid value => قيمة غير صالحة
+Invalid key length => طول مفتاح غير صالح
+String too long => السلسلة طويلة للغاية
+String too short => السلسلة قصيرة للغاية
+Invalid hex key => مفتاح سدادسي غير صالح
+No value entered => لم يتم إدخال قيمة
+Value too small => القيمة صغيرة للغاية
+minimum => الحد الأدنى
+minimum length => الطول الأدنى
+Value too large => القيمة كبيرة للغاية
+maximum => الحد الأقصى
+maximum length => الطول الأقصى
+Invalid dots => نقاط غير صالحة
+Invalid spaces => مسافات غير صالحة
+Missing netmask => قناع الشبكة مفقود
+Netmask not allowed => قناع الشبكة محظور
+Error in => خطأ في
+
+# Webif.sh
+big_warning => تحذير
+page_incomplete => هذه الصفحة غير كاملة وربما لا تعمل بشكل صحيح أو لا تعمل على الإطلاق.
+page_untested => لم يتم اختبار هذه الصفحة وربما تعمل او لا تعمل بشكل صحيح.
+page_untested_kamikaze => لم يتم تحديث هذه الصفحة أو التحقق من وظيفتها مع kamikaze.
+features_require_package => الميزات في هذه الصفحة تتطلب الحزمة
+features_install => تثبيت الآن
+Settings saved => تم حفظ الإعدادات
+Settings not saved => لم يتم حفظ الإعدادات
+Save Changes => حفظ التغييرات
+Administrative Console => وحدة التحكم الإدارية
+PR30 Series Administration Console => وحدة التحكم الإدارية لسلسلة PR30
+Password_mismatch => كلمتا المرور اللتان تم إدخالهما غير متطابقتين!
+Warning => تحذير
+Password_warning => إنك لم تقم بتعيين كلمة مرور لواجهة الويب والوصول إلى SSH.<br />يُرجى إدخال واحدة الآن (سيكون اسم المستخدم في المستعرض الخاص بك هو root).
+Set => تعيين
+Proceed Changes => متابعة التغييرات
+Apply Changes => تطبيق التغييرات
+Clear Changes => مسح التغييرات
+Review Changes => مراجعة التغييرات
+Previous => السابق
+Next => التالي
+Save => حفظ
+Cancel => إلغاء
+Finish => إنهاء
+
+# Wizard-finish.sh
+Setup Wizard Completed! The router is functional now. => اكتمال معالج الإعداد! الموجه يعمل الآن.
+
+# Wizard-language.sh
+OK => موافق
+Language Settings => إعدادات اللغة
+Language => اللغة
+English => English
+Traditional Chinese => 繁體中文
+Arabic => العربية
+Spanish => Español
+French => Français
+
+# Wizard-wifi.sh
+WLAN Settings => إعدادات WLAN
+SSID => SSID
+Generate 40bit Keys => إنشاء مفاتيح 40 بت
+Generate 128bit Key => إنشاء مفتاح 128 بت
+WPA Pre-shared key => مفتاح WPA مشترك مسبقًا
+WEP is a basic encryption method, which is not as secure as the other two methods, WPA and WPA2. If you want to use a Passphrase, then enter it in the Passphrase field and click the Generate button of the WEP encryption level you choose, 40/64-bit or 104/128-bit. If you want to  enter the WEP key manually, then enter it in the WEP Key 1-4 field(s). To indicate which WEP key to use, select the appropriate radio button. => WEP هي طريقة التشفير الأساسية، إلا أنها ليست آمنة مثل الطريقتين الأخريين WPA وWPA2. إذا رغبت في استخدام عبارة مرور، فأدخلها في حقل Passphrase (عبارة المرور) وانقر فوق زر Generate (إنشاء) بمستوى تشفير WEP الذي تختاره، 40/64 بت أو 104/128 بت. إذا أردت إدخال مفتاح WEP يدويًا، فأدخله في الحقل (الحقول) 1-4 لمفتاح WEP. لتحديد مفتاح WEP الذي سيتم استخدامه، حدد زر الخيار الملائم.
+

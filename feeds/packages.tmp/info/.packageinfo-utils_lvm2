@@ -1,0 +1,44 @@
+Source-Makefile: feeds/packages/utils/lvm2/Makefile
+Package: libdevmapper
+Submenu: disc
+Version: 2.02.64-1
+Depends: +kmod-dm
+Provides: 
+Section: libs
+Category: Libraries
+Title: The Linux Kernel Device Mapper userspace library
+Maintainer: Stefan Monnier <monnier@iro.umontreal.ca>
+Source: LVM2.2.02.64.tgz
+Type: ipkg
+Description:   The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Management)
+  Team\'s implementation of a minimalistic kernel-space driver that handles
+  volume management, while keeping knowledge of the underlying device layout
+  in user-space.  This makes it useful for not only LVM, but EVMS, software
+  raid, and other drivers that create "virtual" block devices.
+  .
+  This package contains the (user-space) shared library for accessing the
+  device-mapper; it allows usage of the device-mapper through a clean,
+  consistent interface (as opposed to through kernel ioctls).
+http://sourceware.org/dm/
+@@
+
+Package: lvm2
+Submenu: disc
+Version: 2.02.64-1
+Depends: +libdevmapper +libreadline
+Provides: 
+Section: utils
+Category: Utilities
+Title: The Linux Logical Volume Manager
+Maintainer: Stefan Monnier <monnier@iro.umontreal.ca>
+Source: LVM2.2.02.64.tgz
+Type: ipkg
+Description:   This is LVM2, the rewrite of The Linux Logical Volume Manager.  LVM
+  supports enterprise level volume management of disk and disk subsystems
+  by grouping arbitrary disks into volume groups. The total capacity of
+  volume groups can be allocated to logical volumes, which are accessed as
+  regular block devices.
+http://sourceware.org/lvm2/
+@@
+
+

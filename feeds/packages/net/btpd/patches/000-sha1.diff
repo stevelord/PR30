@@ -1,0 +1,729 @@
+diff -urN btpd-0.15/btpd/content.c btpd-0.15-new/btpd/content.c
+--- btpd-0.15/btpd/content.c	2009-02-03 10:15:01.000000000 -0500
++++ btpd-0.15-new/btpd/content.c	2009-06-19 15:02:48.000000000 -0400
+@@ -1,6 +1,6 @@
+ #include "btpd.h"
+ 
+-#include <openssl/sha.h>
++#include "sha1.h"
+ #include <stream.h>
+ 
+ struct content {
+diff -urN btpd-0.15/btpd/download_subr.c btpd-0.15-new/btpd/download_subr.c
+--- btpd-0.15/btpd/download_subr.c	2009-02-07 16:45:36.000000000 -0500
++++ btpd-0.15-new/btpd/download_subr.c	2009-06-19 15:03:06.000000000 -0400
+@@ -21,7 +21,6 @@
+ 
+ #include "btpd.h"
+ 
+-#include <openssl/sha.h>
+ #include <stream.h>
+ 
+ static void
+diff -urN btpd-0.15/btpd/torrent.c btpd-0.15-new/btpd/torrent.c
+--- btpd-0.15/btpd/torrent.c	2009-01-26 16:15:10.000000000 -0500
++++ btpd-0.15-new/btpd/torrent.c	2009-06-19 15:03:24.000000000 -0400
+@@ -1,7 +1,5 @@
+ #include "btpd.h"
+ 
+-#include <openssl/sha.h>
+-
+ #define SAVE_INTERVAL 300
+ 
+ static unsigned m_nghosts;
+diff -urN btpd-0.15/configure.ac btpd-0.15-new/configure.ac
+--- btpd-0.15/configure.ac	2009-02-09 16:04:53.000000000 -0500
++++ btpd-0.15-new/configure.ac	2009-06-19 15:04:12.000000000 -0400
+@@ -29,13 +29,6 @@
+ rm -f conftest.c conftest.$OBJEXT
+ [$3]))
+ 
+-AC_ARG_WITH(openssl,
+-[  --with-openssl=dir      use openssl installed in dir],
+-[
+-    AC_SUBST(openssl_LDFLAGS,["-L${withval}/lib -Wl,-R,${withval}/lib"])
+-    AC_SUBST(openssl_CPPFLAGS,"-I${withval}/include")
+-])
+-
+ AC_ARG_WITH(evloop-method,
+ [  --with-evloop-method    select evloop method (epoll,poll,kqueue)],
+     evloop_methods=$withval,
+@@ -76,11 +69,6 @@
+ ,
+     AC_MSG_RESULT(no))
+ 
+-old_LDFLAGS="$LDFLAGS"
+-LDFLAGS="$LDFLAGS $openssl_LDFLAGS"
+-AC_CHECK_LIB(crypto, SHA1_Final,:,AC_MSG_FAILURE(btpd needs openssl's libraries and headers))
+-LDFLAGS=$old_LDFLAGS
+-
+ for m in $evloop_methods; do
+     case $m in
+     epoll)
+diff -urN btpd-0.15/Makefile.in btpd-0.15-new/Makefile.in
+--- btpd-0.15/Makefile.in	2009-02-09 16:08:59.000000000 -0500
++++ btpd-0.15-new/Makefile.in	2009-06-19 15:21:05.000000000 -0400
+@@ -58,7 +58,8 @@
+ am_misc_libmisc_a_OBJECTS = misc/benc.$(OBJEXT) misc/btpd_if.$(OBJEXT) \
+ 	misc/metainfo.$(OBJEXT) misc/hashtable.$(OBJEXT) \
+ 	misc/http_client.$(OBJEXT) misc/iobuf.$(OBJEXT) \
+-	misc/stream.$(OBJEXT) misc/subr.$(OBJEXT)
++	misc/stream.$(OBJEXT) misc/subr.$(OBJEXT) \
++	misc/sha1.$(OBJEXT) 
+ misc_libmisc_a_OBJECTS = $(am_misc_libmisc_a_OBJECTS)
+ am__installdirs = "$(DESTDIR)$(bindir)"
+ binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
+@@ -213,8 +214,8 @@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+ AM_CFLAGS = -std=c99 -Wall @WARNNPS@
+-AM_CPPFLAGS = -D_FILE_OFFSET_BITS=64 -D@EVLOOP_METHOD@ -I$(top_srcdir)/misc -I$(top_srcdir)/evloop @openssl_CPPFLAGS@
+-AM_LDFLAGS = @openssl_LDFLAGS@
++AM_CPPFLAGS = -D_FILE_OFFSET_BITS=64 -D@EVLOOP_METHOD@ -I$(top_srcdir)/misc -I$(top_srcdir)/evloop 
++AM_LDFLAGS = 
+ noinst_LIBRARIES = misc/libmisc.a evloop/libevloop.a
+ EXTRA_DIST = COPYRIGHT CHANGES
+ 
+@@ -256,7 +257,8 @@
+ 	misc/iobuf.c misc/iobuf.h\
+ 	misc/queue.h\
+ 	misc/stream.c misc/stream.h\
+-	misc/subr.c misc/subr.h
++	misc/subr.c misc/subr.h\
++	misc/sha1.c misc/sha1.h
+ 
+ 
+ # evloop
+@@ -349,6 +351,8 @@
+ 	misc/$(DEPDIR)/$(am__dirstamp)
+ misc/subr.$(OBJEXT): misc/$(am__dirstamp) \
+ 	misc/$(DEPDIR)/$(am__dirstamp)
++misc/sha1.$(OBJEXT): misc/$(am__dirstamp) \
++	misc/$(DIPDIR)/$(am__dirstamp)
+ misc/libmisc.a: $(misc_libmisc_a_OBJECTS) $(misc_libmisc_a_DEPENDENCIES) misc/$(am__dirstamp)
+ 	-rm -f misc/libmisc.a
+ 	$(misc_libmisc_a_AR) misc/libmisc.a $(misc_libmisc_a_OBJECTS) $(misc_libmisc_a_LIBADD)
+@@ -492,6 +496,7 @@
+ 	-rm -f misc/metainfo.$(OBJEXT)
+ 	-rm -f misc/stream.$(OBJEXT)
+ 	-rm -f misc/subr.$(OBJEXT)
++	-rm -f misc/sha1.$(OBJEXT)
+ 
+ distclean-compile:
+ 	-rm -f *.tab.c
+@@ -538,6 +543,7 @@
+ @AMDEP_TRUE@@am__include@ @am__quote@misc/$(DEPDIR)/metainfo.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@misc/$(DEPDIR)/stream.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@misc/$(DEPDIR)/subr.Po@am__quote@
++@AMDEP_TRUE@@am__include@ @am__quote@misc/$(DEPDIR)/sha1.Po@am__quote@
+ 
+ .c.o:
+ @am__fastdepCC_TRUE@	depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
+diff -urN btpd-0.15/misc/metainfo.c btpd-0.15-new/misc/metainfo.c
+--- btpd-0.15/misc/metainfo.c	2009-01-12 17:43:18.000000000 -0500
++++ btpd-0.15-new/misc/metainfo.c	2009-06-19 15:02:20.000000000 -0400
+@@ -6,8 +6,7 @@
+ #include <string.h>
+ #include <strings.h>
+ 
+-#include <openssl/sha.h>
+-
++#include "sha1.h"
+ #include "benc.h"
+ #include "metainfo.h"
+ #include "subr.h"
+@@ -159,7 +158,7 @@
+     if (hash == NULL)
+         if ((hash = malloc(20)) == NULL)
+             return NULL;
+-    return SHA1(info, benc_length(info), hash);
++    return (uint8_t *)sha1_buffer(info, benc_length(info), hash);
+ }
+ 
+ char *
+diff -urN btpd-0.15/misc/sha1.c btpd-0.15-new/misc/sha1.c
+--- btpd-0.15/misc/sha1.c	1969-12-31 19:00:00.000000000 -0500
++++ btpd-0.15-new/misc/sha1.c	2009-06-19 15:02:20.000000000 -0400
+@@ -0,0 +1,423 @@
++/* sha1.c - Functions to compute SHA1 message digest of files or
++   memory blocks according to the NIST specification FIPS-180-1.
++
++   Copyright (C) 2000, 2001, 2003, 2004, 2005 Free Software Foundation, Inc.
++
++   This program is free software; you can redistribute it and/or modify it
++   under the terms of the GNU General Public License as published by the
++   Free Software Foundation; either version 2, or (at your option) any
++   later version.
++
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software Foundation,
++   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
++
++/* Written by Scott G. Miller
++   Credits:
++      Robert Klep <robert@ilse.nl>  -- Expansion function fix
++*/
++
++#ifdef HAVE_CONFIG_H
++# include <config.h>
++#endif
++
++#include "sha1.h"
++
++#include <stddef.h>
++#include <string.h>
++
++#if USE_UNLOCKED_IO
++# include "unlocked-io.h"
++#endif
++
++/* SWAP does an endian swap on architectures that are little-endian,
++   as SHA1 needs some data in a big-endian form.  */
++
++#ifdef WORDS_BIGENDIAN
++# define SWAP(n) (n)
++#else
++# define SWAP(n) \
++    (((n) << 24) | (((n) & 0xff00) << 8) | (((n) >> 8) & 0xff00) | ((n) >> 24))
++#endif
++
++#define BLOCKSIZE 4096
++#if BLOCKSIZE % 64 != 0
++# error "invalid BLOCKSIZE"
++#endif
++
++/* This array contains the bytes used to pad the buffer to the next
++   64-byte boundary.  (RFC 1321, 3.1: Step 1)  */
++static const unsigned char fillbuf[64] = { 0x80, 0 /* , 0, 0, ...  */ };
++
++
++/*
++  Takes a pointer to a 160 bit block of data (five 32 bit ints) and
++  intializes it to the start constants of the SHA1 algorithm.  This
++  must be called before using hash in the call to sha1_hash.
++*/
++void
++sha1_init_ctx (struct sha1_ctx *ctx)
++{
++  ctx->A = 0x67452301;
++  ctx->B = 0xefcdab89;
++  ctx->C = 0x98badcfe;
++  ctx->D = 0x10325476;
++  ctx->E = 0xc3d2e1f0;
++
++  ctx->total[0] = ctx->total[1] = 0;
++  ctx->buflen = 0;
++}
++
++/* Put result from CTX in first 20 bytes following RESBUF.  The result
++   must be in little endian byte order.
++
++   IMPORTANT: On some systems it is required that RESBUF is correctly
++   aligned for a 32 bits value.  */
++void *
++sha1_read_ctx (const struct sha1_ctx *ctx, void *resbuf)
++{
++  ((uint32_t *) resbuf)[0] = SWAP (ctx->A);
++  ((uint32_t *) resbuf)[1] = SWAP (ctx->B);
++  ((uint32_t *) resbuf)[2] = SWAP (ctx->C);
++  ((uint32_t *) resbuf)[3] = SWAP (ctx->D);
++  ((uint32_t *) resbuf)[4] = SWAP (ctx->E);
++
++  return resbuf;
++}
++
++/* Process the remaining bytes in the internal buffer and the usual
++   prolog according to the standard and write the result to RESBUF.
++
++   IMPORTANT: On some systems it is required that RESBUF is correctly
++   aligned for a 32 bits value.  */
++void *
++sha1_finish_ctx (struct sha1_ctx *ctx, void *resbuf)
++{
++  /* Take yet unprocessed bytes into account.  */
++  uint32_t bytes = ctx->buflen;
++  size_t pad;
++
++  /* Now count remaining bytes.  */
++  ctx->total[0] += bytes;
++  if (ctx->total[0] < bytes)
++    ++ctx->total[1];
++
++  pad = bytes >= 56 ? 64 + 56 - bytes : 56 - bytes;
++  memcpy (&ctx->buffer[bytes], fillbuf, pad);
++
++  /* Put the 64-bit file length in *bits* at the end of the buffer.  */
++  *(uint32_t *) &ctx->buffer[bytes + pad + 4] = SWAP (ctx->total[0] << 3);
++  *(uint32_t *) &ctx->buffer[bytes + pad] = SWAP ((ctx->total[1] << 3) |
++						    (ctx->total[0] >> 29));
++
++  /* Process last bytes.  */
++  sha1_process_block (ctx->buffer, bytes + pad + 8, ctx);
++
++  return sha1_read_ctx (ctx, resbuf);
++}
++
++/* Compute SHA1 message digest for bytes read from STREAM.  The
++   resulting message digest number will be written into the 16 bytes
++   beginning at RESBLOCK.  */
++int
++sha1_stream (FILE *stream, void *resblock)
++{
++  struct sha1_ctx ctx;
++  char buffer[BLOCKSIZE + 72];
++  size_t sum;
++
++  /* Initialize the computation context.  */
++  sha1_init_ctx (&ctx);
++
++  /* Iterate over full file contents.  */
++  while (1)
++    {
++      /* We read the file in blocks of BLOCKSIZE bytes.  One call of the
++	 computation function processes the whole buffer so that with the
++	 next round of the loop another block can be read.  */
++      size_t n;
++      sum = 0;
++
++      /* Read block.  Take care for partial reads.  */
++      while (1)
++	{
++	  n = fread (buffer + sum, 1, BLOCKSIZE - sum, stream);
++
++	  sum += n;
++
++	  if (sum == BLOCKSIZE)
++	    break;
++
++	  if (n == 0)
++	    {
++	      /* Check for the error flag IFF N == 0, so that we don't
++		 exit the loop after a partial read due to e.g., EAGAIN
++		 or EWOULDBLOCK.  */
++	      if (ferror (stream))
++		return 1;
++	      goto process_partial_block;
++	    }
++
++	  /* We've read at least one byte, so ignore errors.  But always
++	     check for EOF, since feof may be true even though N > 0.
++	     Otherwise, we could end up calling fread after EOF.  */
++	  if (feof (stream))
++	    goto process_partial_block;
++	}
++
++      /* Process buffer with BLOCKSIZE bytes.  Note that
++			BLOCKSIZE % 64 == 0
++       */
++      sha1_process_block (buffer, BLOCKSIZE, &ctx);
++    }
++
++ process_partial_block:;
++
++  /* Process any remaining bytes.  */
++  if (sum > 0)
++    sha1_process_bytes (buffer, sum, &ctx);
++
++  /* Construct result in desired memory.  */
++  sha1_finish_ctx (&ctx, resblock);
++  return 0;
++}
++
++/* Compute MD5 message digest for LEN bytes beginning at BUFFER.  The
++   result is always in little endian byte order, so that a byte-wise
++   output yields to the wanted ASCII representation of the message
++   digest.  */
++void *
++sha1_buffer (const char *buffer, size_t len, void *resblock)
++{
++  struct sha1_ctx ctx;
++
++  /* Initialize the computation context.  */
++  sha1_init_ctx (&ctx);
++
++  /* Process whole buffer but last len % 64 bytes.  */
++  sha1_process_bytes (buffer, len, &ctx);
++
++  /* Put result in desired memory area.  */
++  return sha1_finish_ctx (&ctx, resblock);
++}
++
++void
++sha1_process_bytes (const void *buffer, size_t len, struct sha1_ctx *ctx)
++{
++  /* When we already have some bits in our internal buffer concatenate
++     both inputs first.  */
++  if (ctx->buflen != 0)
++    {
++      size_t left_over = ctx->buflen;
++      size_t add = 128 - left_over > len ? len : 128 - left_over;
++
++      memcpy (&ctx->buffer[left_over], buffer, add);
++      ctx->buflen += add;
++
++      if (ctx->buflen > 64)
++	{
++	  sha1_process_block (ctx->buffer, ctx->buflen & ~63, ctx);
++
++	  ctx->buflen &= 63;
++	  /* The regions in the following copy operation cannot overlap.  */
++	  memcpy (ctx->buffer, &ctx->buffer[(left_over + add) & ~63],
++		  ctx->buflen);
++	}
++
++      buffer = (const char *) buffer + add;
++      len -= add;
++    }
++
++  /* Process available complete blocks.  */
++  if (len >= 64)
++    {
++#if !_STRING_ARCH_unaligned
++# define alignof(type) offsetof (struct { char c; type x; }, x)
++# define UNALIGNED_P(p) (((size_t) p) % alignof (uint32_t) != 0)
++      if (UNALIGNED_P (buffer))
++	while (len > 64)
++	  {
++	    sha1_process_block (memcpy (ctx->buffer, buffer, 64), 64, ctx);
++	    buffer = (const char *) buffer + 64;
++	    len -= 64;
++	  }
++      else
++#endif
++	{
++	  sha1_process_block (buffer, len & ~63, ctx);
++	  buffer = (const char *) buffer + (len & ~63);
++	  len &= 63;
++	}
++    }
++
++  /* Move remaining bytes in internal buffer.  */
++  if (len > 0)
++    {
++      size_t left_over = ctx->buflen;
++
++      memcpy (&ctx->buffer[left_over], buffer, len);
++      left_over += len;
++      if (left_over >= 64)
++	{
++	  sha1_process_block (ctx->buffer, 64, ctx);
++	  left_over -= 64;
++	  memcpy (ctx->buffer, &ctx->buffer[64], left_over);
++	}
++      ctx->buflen = left_over;
++    }
++}
++
++/* --- Code below is the primary difference between md5.c and sha1.c --- */
++
++/* SHA1 round constants */
++#define K1 0x5a827999L
++#define K2 0x6ed9eba1L
++#define K3 0x8f1bbcdcL
++#define K4 0xca62c1d6L
++
++/* Round functions.  Note that F2 is the same as F4.  */
++#define F1(B,C,D) ( D ^ ( B & ( C ^ D ) ) )
++#define F2(B,C,D) (B ^ C ^ D)
++#define F3(B,C,D) ( ( B & C ) | ( D & ( B | C ) ) )
++#define F4(B,C,D) (B ^ C ^ D)
++
++/* Process LEN bytes of BUFFER, accumulating context into CTX.
++   It is assumed that LEN % 64 == 0.
++   Most of this code comes from GnuPG's cipher/sha1.c.  */
++
++void
++sha1_process_block (const void *buffer, size_t len, struct sha1_ctx *ctx)
++{
++  const uint32_t *words = buffer;
++  size_t nwords = len / sizeof (uint32_t);
++  const uint32_t *endp = words + nwords;
++  uint32_t x[16];
++  uint32_t a = ctx->A;
++  uint32_t b = ctx->B;
++  uint32_t c = ctx->C;
++  uint32_t d = ctx->D;
++  uint32_t e = ctx->E;
++
++  /* First increment the byte count.  RFC 1321 specifies the possible
++     length of the file up to 2^64 bits.  Here we only compute the
++     number of bytes.  Do a double word increment.  */
++  ctx->total[0] += len;
++  if (ctx->total[0] < len)
++    ++ctx->total[1];
++
++#define rol(x, n) (((x) << (n)) | ((x) >> (32 - (n))))
++
++#define M(I) ( tm =   x[I&0x0f] ^ x[(I-14)&0x0f] \
++		    ^ x[(I-8)&0x0f] ^ x[(I-3)&0x0f] \
++	       , (x[I&0x0f] = rol(tm, 1)) )
++
++#define R(A,B,C,D,E,F,K,M)  do { E += rol( A, 5 )     \
++				      + F( B, C, D )  \
++				      + K	      \
++				      + M;	      \
++				 B = rol( B, 30 );    \
++			       } while(0)
++
++  while (words < endp)
++    {
++      uint32_t tm;
++      int t;
++      for (t = 0; t < 16; t++)
++	{
++	  x[t] = SWAP (*words);
++	  words++;
++	}
++
++      R( a, b, c, d, e, F1, K1, x[ 0] );
++      R( e, a, b, c, d, F1, K1, x[ 1] );
++      R( d, e, a, b, c, F1, K1, x[ 2] );
++      R( c, d, e, a, b, F1, K1, x[ 3] );
++      R( b, c, d, e, a, F1, K1, x[ 4] );
++      R( a, b, c, d, e, F1, K1, x[ 5] );
++      R( e, a, b, c, d, F1, K1, x[ 6] );
++      R( d, e, a, b, c, F1, K1, x[ 7] );
++      R( c, d, e, a, b, F1, K1, x[ 8] );
++      R( b, c, d, e, a, F1, K1, x[ 9] );
++      R( a, b, c, d, e, F1, K1, x[10] );
++      R( e, a, b, c, d, F1, K1, x[11] );
++      R( d, e, a, b, c, F1, K1, x[12] );
++      R( c, d, e, a, b, F1, K1, x[13] );
++      R( b, c, d, e, a, F1, K1, x[14] );
++      R( a, b, c, d, e, F1, K1, x[15] );
++      R( e, a, b, c, d, F1, K1, M(16) );
++      R( d, e, a, b, c, F1, K1, M(17) );
++      R( c, d, e, a, b, F1, K1, M(18) );
++      R( b, c, d, e, a, F1, K1, M(19) );
++      R( a, b, c, d, e, F2, K2, M(20) );
++      R( e, a, b, c, d, F2, K2, M(21) );
++      R( d, e, a, b, c, F2, K2, M(22) );
++      R( c, d, e, a, b, F2, K2, M(23) );
++      R( b, c, d, e, a, F2, K2, M(24) );
++      R( a, b, c, d, e, F2, K2, M(25) );
++      R( e, a, b, c, d, F2, K2, M(26) );
++      R( d, e, a, b, c, F2, K2, M(27) );
++      R( c, d, e, a, b, F2, K2, M(28) );
++      R( b, c, d, e, a, F2, K2, M(29) );
++      R( a, b, c, d, e, F2, K2, M(30) );
++      R( e, a, b, c, d, F2, K2, M(31) );
++      R( d, e, a, b, c, F2, K2, M(32) );
++      R( c, d, e, a, b, F2, K2, M(33) );
++      R( b, c, d, e, a, F2, K2, M(34) );
++      R( a, b, c, d, e, F2, K2, M(35) );
++      R( e, a, b, c, d, F2, K2, M(36) );
++      R( d, e, a, b, c, F2, K2, M(37) );
++      R( c, d, e, a, b, F2, K2, M(38) );
++      R( b, c, d, e, a, F2, K2, M(39) );
++      R( a, b, c, d, e, F3, K3, M(40) );
++      R( e, a, b, c, d, F3, K3, M(41) );
++      R( d, e, a, b, c, F3, K3, M(42) );
++      R( c, d, e, a, b, F3, K3, M(43) );
++      R( b, c, d, e, a, F3, K3, M(44) );
++      R( a, b, c, d, e, F3, K3, M(45) );
++      R( e, a, b, c, d, F3, K3, M(46) );
++      R( d, e, a, b, c, F3, K3, M(47) );
++      R( c, d, e, a, b, F3, K3, M(48) );
++      R( b, c, d, e, a, F3, K3, M(49) );
++      R( a, b, c, d, e, F3, K3, M(50) );
++      R( e, a, b, c, d, F3, K3, M(51) );
++      R( d, e, a, b, c, F3, K3, M(52) );
++      R( c, d, e, a, b, F3, K3, M(53) );
++      R( b, c, d, e, a, F3, K3, M(54) );
++      R( a, b, c, d, e, F3, K3, M(55) );
++      R( e, a, b, c, d, F3, K3, M(56) );
++      R( d, e, a, b, c, F3, K3, M(57) );
++      R( c, d, e, a, b, F3, K3, M(58) );
++      R( b, c, d, e, a, F3, K3, M(59) );
++      R( a, b, c, d, e, F4, K4, M(60) );
++      R( e, a, b, c, d, F4, K4, M(61) );
++      R( d, e, a, b, c, F4, K4, M(62) );
++      R( c, d, e, a, b, F4, K4, M(63) );
++      R( b, c, d, e, a, F4, K4, M(64) );
++      R( a, b, c, d, e, F4, K4, M(65) );
++      R( e, a, b, c, d, F4, K4, M(66) );
++      R( d, e, a, b, c, F4, K4, M(67) );
++      R( c, d, e, a, b, F4, K4, M(68) );
++      R( b, c, d, e, a, F4, K4, M(69) );
++      R( a, b, c, d, e, F4, K4, M(70) );
++      R( e, a, b, c, d, F4, K4, M(71) );
++      R( d, e, a, b, c, F4, K4, M(72) );
++      R( c, d, e, a, b, F4, K4, M(73) );
++      R( b, c, d, e, a, F4, K4, M(74) );
++      R( a, b, c, d, e, F4, K4, M(75) );
++      R( e, a, b, c, d, F4, K4, M(76) );
++      R( d, e, a, b, c, F4, K4, M(77) );
++      R( c, d, e, a, b, F4, K4, M(78) );
++      R( b, c, d, e, a, F4, K4, M(79) );
++
++      a = ctx->A += a;
++      b = ctx->B += b;
++      c = ctx->C += c;
++      d = ctx->D += d;
++      e = ctx->E += e;
++    }
++}
+diff -urN btpd-0.15/misc/sha1.h btpd-0.15-new/misc/sha1.h
+--- btpd-0.15/misc/sha1.h	1969-12-31 19:00:00.000000000 -0500
++++ btpd-0.15-new/misc/sha1.h	2009-06-19 15:02:20.000000000 -0400
+@@ -0,0 +1,90 @@
++/* Declarations of functions and data types used for SHA1 sum
++   library functions.
++   Copyright (C) 2000, 2001, 2003, 2005 Free Software Foundation, Inc.
++
++   This program is free software; you can redistribute it and/or modify it
++   under the terms of the GNU General Public License as published by the
++   Free Software Foundation; either version 2, or (at your option) any
++   later version.
++
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software Foundation,
++   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
++
++#ifndef SHA1_H
++# define SHA1_H 1
++
++#include <stdio.h>
++
++#include <inttypes.h>
++
++#define SHA_DIGEST_LENGTH 20
++
++/* Structure to save state of computation between the single steps.  */
++struct sha1_ctx
++{
++  uint32_t A;
++  uint32_t B;
++  uint32_t C;
++  uint32_t D;
++  uint32_t E;
++
++  uint32_t total[2];
++  uint32_t buflen;
++  char buffer[128];
++};
++
++
++/* Initialize structure containing state of computation. */
++extern void sha1_init_ctx (struct sha1_ctx *ctx);
++
++/* Starting with the result of former calls of this function (or the
++   initialization function update the context for the next LEN bytes
++   starting at BUFFER.
++   It is necessary that LEN is a multiple of 64!!! */
++extern void sha1_process_block (const void *buffer, size_t len,
++				struct sha1_ctx *ctx);
++
++/* Starting with the result of former calls of this function (or the
++   initialization function update the context for the next LEN bytes
++   starting at BUFFER.
++   It is NOT required that LEN is a multiple of 64.  */
++extern void sha1_process_bytes (const void *buffer, size_t len,
++				struct sha1_ctx *ctx);
++
++/* Process the remaining bytes in the buffer and put result from CTX
++   in first 20 bytes following RESBUF.  The result is always in little
++   endian byte order, so that a byte-wise output yields to the wanted
++   ASCII representation of the message digest.
++
++   IMPORTANT: On some systems it is required that RESBUF be correctly
++   aligned for a 32 bits value.  */
++extern void *sha1_finish_ctx (struct sha1_ctx *ctx, void *resbuf);
++
++
++/* Put result from CTX in first 20 bytes following RESBUF.  The result is
++   always in little endian byte order, so that a byte-wise output yields
++   to the wanted ASCII representation of the message digest.
++
++   IMPORTANT: On some systems it is required that RESBUF is correctly
++   aligned for a 32 bits value.  */
++extern void *sha1_read_ctx (const struct sha1_ctx *ctx, void *resbuf);
++
++
++/* Compute SHA1 message digest for bytes read from STREAM.  The
++   resulting message digest number will be written into the 20 bytes
++   beginning at RESBLOCK.  */
++extern int sha1_stream (FILE *stream, void *resblock);
++
++/* Compute SHA1 message digest for LEN bytes beginning at BUFFER.  The
++   result is always in little endian byte order, so that a byte-wise
++   output yields to the wanted ASCII representation of the message
++   digest.  */
++extern void *sha1_buffer (const char *buffer, size_t len, void *resblock);
++
++#endif
+diff -urN btpd-0.15/misc/stream.c btpd-0.15-new/misc/stream.c
+--- btpd-0.15/misc/stream.c	2008-12-22 17:25:36.000000000 -0500
++++ btpd-0.15-new/misc/stream.c	2009-06-19 15:02:20.000000000 -0400
+@@ -5,7 +5,7 @@
+ #include <stdlib.h>
+ #include <unistd.h>
+ 
+-#include <openssl/sha.h>
++#include "sha1.h"
+ 
+ #include "metainfo.h"
+ #include "subr.h"
+@@ -161,21 +161,21 @@
+ int
+ bts_sha(struct bt_stream *bts, off_t start, off_t length, uint8_t *hash)
+ {
+-    SHA_CTX ctx;
++    struct sha1_ctx ctx;
+     char buf[SHAFILEBUF];
+     size_t wantread;
+     int err = 0;
+ 
+-    SHA1_Init(&ctx);
++    sha1_init_ctx(&ctx);
+     while (length > 0) {
+         wantread = min(length, SHAFILEBUF);
+         if ((err = bts_get(bts, start, buf, wantread)) != 0)
+             break;
+         length -= wantread;
+         start += wantread;
+-        SHA1_Update(&ctx, buf, wantread);
++        sha1_process_bytes(buf, wantread, &ctx);
+     }
+-    SHA1_Final(hash, &ctx);
++    sha1_finish_ctx(&ctx, hash);
+     return err;
+ }
+ 
+diff -urN btpd-0.15/.pc/.version btpd-0.15-new/.pc/.version
+--- btpd-0.15/.pc/.version	1969-12-31 19:00:00.000000000 -0500
++++ btpd-0.15-new/.pc/.version	2009-06-19 15:00:46.000000000 -0400
+@@ -0,0 +1 @@
++2
+diff -urN btpd-0.15/Makefile.am btpd-0.15.new/Makefile.am
+--- btpd-0.15/Makefile.am	2009-02-03 12:09:25.000000000 +0100
++++ btpd-0.15.new/Makefile.am	2009-07-02 17:39:47.000000000 +0200
+@@ -1,6 +1,6 @@
+ AM_CFLAGS=-std=c99 -Wall @WARNNPS@
+-AM_CPPFLAGS=-D_FILE_OFFSET_BITS=64 -D@EVLOOP_METHOD@ -I$(top_srcdir)/misc -I$(top_srcdir)/evloop @openssl_CPPFLAGS@
+-AM_LDFLAGS=@openssl_LDFLAGS@
++AM_CPPFLAGS=-D_FILE_OFFSET_BITS=64 -D@EVLOOP_METHOD@ -I$(top_srcdir)/misc -I$(top_srcdir)/evloop
++AM_LDFLAGS=
+ 
+ bin_PROGRAMS=btpd/btpd cli/btcli cli/btinfo
+ noinst_LIBRARIES=misc/libmisc.a evloop/libevloop.a
+@@ -44,7 +44,8 @@
+ 	misc/iobuf.c misc/iobuf.h\
+ 	misc/queue.h\
+ 	misc/stream.c misc/stream.h\
+-	misc/subr.c misc/subr.h
++	misc/subr.c misc/subr.h\
++	misc/sha1.c misc/sha1.h
+ 
+ # evloop
+ EXTRA_evloop_libevloop_a_SOURCES=evloop/epoll.c evloop/kqueue.c evloop/poll.c

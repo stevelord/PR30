@@ -1,0 +1,32 @@
+Source-Makefile: feeds/packages/net/mini_snmpd/Makefile
+Package: mini-snmpd
+Version: 1.0-7
+Depends: 
+Provides: 
+Build-Variant: ipv4
+Section: net
+Category: Network
+Title: SNMP server for embedded systems (IPv4 only)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: mini_snmpd.tar.gz
+Type: ipkg
+Description: SNMP server for embedded systems (IPv4 only)
+http://members.aon.at/linuxfreak/linux/mini_snmpd.html
+@@
+
+Package: mini-snmpd6
+Version: 1.0-7
+Depends: +kmod-ipv6
+Provides: 
+Build-Variant: ipv6
+Section: ipv6
+Category: IPv6
+Title: SNMP server for embedded systems (IPv6 only)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: mini_snmpd.tar.gz
+Type: ipkg
+Description: SNMP server for embedded systems (IPv6 only)
+http://members.aon.at/linuxfreak/linux/mini_snmpd.html
+@@
+
+

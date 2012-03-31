@@ -1,0 +1,16 @@
+Source-Makefile: feeds/packages/net/bmxd/Makefile
+Package: bmxd
+Version: r1636-1
+Depends: +kmod-tun
+Provides: 
+Section: net
+Category: Network
+Title: B.a.t.M.a.n. eXperimental (BMX) layer 3 routing daemon
+Maintainer: Axel Neumann <bmxd@neumann.cgws.de>
+Source: bmxd-r1636.tar.gz
+Type: ipkg
+Description: B.a.t.M.a.n. eXperimental (BMX) layer 3 routing daemon
+https://www.open-mesh.net/
+@@
+
+

@@ -1,0 +1,18 @@
+Source-Makefile: feeds/packages/libs/libao/Makefile
+Package: libao
+Version: 0.8.8-1
+Depends: +alsa-lib
+Provides: 
+Build-Depends: libtool
+Section: libs
+Category: Libraries
+Title: A cross platform audio library
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: libao-0.8.8.tar.gz
+Type: ipkg
+Description: 	Libao is a cross-platform audio library that allows programs to
+	output audio using a simple API on a wide variety of platforms.
+http://www.xiph.org/ao/
+@@
+
+

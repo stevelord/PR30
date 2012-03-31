@@ -1,0 +1,16 @@
+Source-Makefile: feeds/packages/libs/elfutils/Makefile
+Package: elfutils
+Version: 0.147-1
+Depends: +libintl
+Provides: 
+Section: libs
+Category: Libraries
+Title: ELF utilities
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: elfutils-0.147.tar.bz2
+Type: ipkg
+Description: ELF utilities
+https://fedorahosted.org/elfutils/
+@@
+
+
